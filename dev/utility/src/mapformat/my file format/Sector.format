@@ -1,0 +1,19 @@
+<TERRAIN>
+    CX =
+    CY =
+    <SECTOR>
+        LOAD = 
+        X = 
+        Y =
+    </SECTOR>
+    <SECTOR>
+        LOAD = 
+        X = 
+        Y =
+    </SECTOR>
+    <SECTOR>
+        LOAD = 
+        X = 
+        Y =
+    </SECTOR>
+</TERRAIN>

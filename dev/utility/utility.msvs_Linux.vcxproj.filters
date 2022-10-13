@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{91a64b3f-b710-42e8-b7f8-bfbdc473401a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{c3a03115-87ae-44b0-a0b4-91b5b050b9d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphic">
+      <UniqueIdentifier>{09b3ea27-65c1-471e-80a5-94a6721ac298}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{e7369837-9724-4885-bd30-3b2b8b59b52d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00%29 configure">
+      <UniqueIdentifier>{7733f08b-bed6-473f-b02c-da9018aa107c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\graphic2d.h">
+      <Filter>graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphic3d.h">
+      <Filter>graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\color.h">
+      <Filter>graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pf-def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\timage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pf-time.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pf-timer.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\t_Lock.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pf-cstring.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Unicode.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\buffer_storage.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pf-debug.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pf-binbuf.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pf-share_library.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pf-file.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pf-sfile.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pf-stdlib.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pf-string.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pf-thread.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tchar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pf-system.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pf-math.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\aintersect.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="src\amath.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="src\memio.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="build_linux.sh">
+      <Filter>00%29 configure</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\pf-timer.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pf-cString.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Unicode.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\buffer_storage.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pf-debug.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pf-binbuf.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pf-share_library.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pf-file.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pf-sfile.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pf-stdlib.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pf-string.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pf-thread.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\t_lock.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pf-time.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pf-system.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pf-math.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="project.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+</Project>

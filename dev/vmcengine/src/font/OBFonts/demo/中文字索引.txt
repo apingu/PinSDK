@@ -1,0 +1,39 @@
+int  Text::PutcXY(int x, int y, int highByte, int lowByte)
+// BIG-5 Chinese code:
+//  Full Symbols         0xA140 ~ 0xA3BF            408 
+//                                0xA3C0 ~ 0xA3FE   63  (reserved)
+//  Frequent Char. Set   0xA440 ~ 0xC67E            5401
+//  Added Symbols                 0xC6A1 ~ 0xC8FE   408
+//  Infrequent Char. Set 0xC940 ~ 0xF9D5            7652
+//                                            above 13932 
+//  Eten Char. Set                0xF9D6 ~ 0xF9FE   41  (system dep. don't use)
+//  Custom Char. Set     0xFA40 ~ 0xFEFE            785 (system dep. don't use)
+//                                            above 14758
+//  Valid hi bytes  is 0xA1 ~ 0xFE
+//  Valid low bytes is 0x40 ~ 0x7E, 0xA1 ~ 0xFE
+{
+    int  serial;
+
+    // This character is a special control code
+    if (highByte < 0x20)        // 0x01 <= hb <= 0x1F
+    {
+//      ControlCode(highByte, lowByte);
+        return 0;
+    }
+
+    // This character is a BIG5 Chinese character set
+    //  transfers it to serial num 0, 1, 2... 
+    //  serial = (hb - 0xA1) * 0x9D + (lb - 0x40)        if 0x40 <= lb <= 0x7E
+    //  serial = (hb - 0xA1) * 0x9D + (lb - 0xA1) + 0x3F if 0xA1 <= lb <= 0xFE
+    
+    serial = (highByte - 0xA1) * 0x9D;
+
+    if (lowByte & 0x80)         // 0xA1 <= lowByte <= 0xFE
+        serial = serial + lowByte - 0x62;
+    else                        // 0x40 <= lowByte <= 0x7E
+        serial = serial + lowByte - 0x40;
+
+    Dbcs->Draw(x, y, serial);
+
+    return Dbcs->GetWidth() + HSpace;
+}

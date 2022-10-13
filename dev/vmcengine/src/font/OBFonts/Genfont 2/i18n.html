@@ -1,0 +1,2794 @@
+<!-- BEGIN Naviscope Javascript -->
+<script language='javascript'>
+          NS_ActualOpen=window.open;
+          function NS_NullWindow(){this.window;}
+          function NS_NewOpen(url,nam,atr){return(new NS_NullWindow());}
+          window.open=NS_NewOpen;
+</script>
+<!-- END Naviscope Javascript -->
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Big5">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./i18n.files/filelist.xml">
+<link rel=Edit-Time-Data href="./i18n.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title> Linux 國際化本地化和中文化 </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Yann</o:Author>
+  <o:LastAuthor>Yann</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2001-04-23T07:43:00Z</o:Created>
+  <o:LastSaved>2001-04-23T07:43:00Z</o:LastSaved>
+  <o:Pages>17</o:Pages>
+  <o:Words>3322</o:Words>
+  <o:Characters>18936</o:Characters>
+  <o:Company>Monster</o:Company>
+  <o:Lines>157</o:Lines>
+  <o:Paragraphs>37</o:Paragraphs>
+  <o:CharactersWithSpaces>23254</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:新細明體;
+	panose-1:2 2 3 0 0 0 0 0 0 0;
+	mso-font-alt:PMingLiU;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+@font-face
+	{font-family:細明體;
+	panose-1:2 2 3 9 0 0 0 0 0 0;
+	mso-font-alt:MingLiU;
+	mso-font-charset:136;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+@font-face
+	{font-family:"\@新細明體";
+	panose-1:2 2 3 0 0 0 0 0 0 0;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+@font-face
+	{font-family:"\@細明體";
+	panose-1:2 2 3 9 0 0 0 0 0 0;
+	mso-font-charset:136;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:新細明體;
+	mso-bidi-font-family:"Times New Roman";
+	color:black;}
+h1
+	{color:black;}
+h2
+	{color:black;}
+h4
+	{color:black;}
+p
+	{font-size:12.0pt;
+	font-family:新細明體;
+	mso-bidi-font-family:"Times New Roman";
+	color:black;}
+pre
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:細明體;
+	mso-bidi-font-family:"Courier New";
+	color:black;}
+ /* Page Definitions */
+@page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:28847770;
+	mso-list-type:hybrid;
+	mso-list-template-ids:224183286 1811056258 -1351862066 -1973648308 -414916886 943356004 556974652 813303418 -229762712 531155980;}
+@list l1
+	{mso-list-id:107893859;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1621276482 293111734 -73105320 406506334 1770129692 -632537294 -336438994 -917841422 -742852952 974036728;}
+@list l2
+	{mso-list-id:250355922;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1948073562 -1175945332 -1343064830 1711156124 2101224242 -2125143120 1789933890 -518761410 518974738 2048578786;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:338890741;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-686360244 -1561848766 -1402435048 606924130 1930076098 1357392464 -994547028 -1258504138 2051584820 1261588800;}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4
+	{mso-list-id:953832035;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-526245784 -1501258586 -126075994 -1371657918 314848176 996945678 -1777303896 1961239560 -837130734 1014369484;}
+@list l4:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l5
+	{mso-list-id:1004043495;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-248494892 -484157856 181722880 -1792793688 1190806736 1434723148 -2113339942 689581846 -1486844760 -1596311216;}
+@list l6
+	{mso-list-id:1205018710;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1438267486 -243249154 819094194 -673403486 -929942166 -1665530482 -1932331246 802348160 -1212875242 861024550;}
+@list l7
+	{mso-list-id:1309288100;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1053737290 -342077740 1869640502 1986142792 -2049964104 -1888459782 -464093586 -1614354176 1117968078 1582494180;}
+@list l8
+	{mso-list-id:1818106778;
+	mso-list-type:hybrid;
+	mso-list-template-ids:254946718 1624425230 -1690429896 -1175014628 -569713900 398097248 -1797359160 2097990168 2052739016 114490642;}
+@list l9
+	{mso-list-id:1840585293;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1590060634 -148889008 -953395274 1919604632 -2075108496 1523449892 -933194238 904662402 -2062154686 -1141859764;}
+@list l8:level2 lfo2
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-numbering:continue;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level2 lfo4
+	{mso-level-start-at:0;
+	mso-level-number-format:arabic;
+	mso-level-numbering:continue;
+	mso-level-text:"%2\.";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l3:level2 lfo5
+	{mso-level-start-at:0;
+	mso-level-numbering:continue;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l6:level2 lfo7
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-numbering:continue;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l5:level2 lfo12
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-numbering:continue;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=ZH-TW style='tab-interval:24.0pt' topmargin=5>
+
+<div class=Section1>
+
+<h1 align=center style='text-align:center'><span lang=EN-US>Linux 國際化本地化和中文化 </span></h1>
+
+
+<div class=MsoNormal align=center style='text-align:center'><span lang=EN-US>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+
+<h4 align=center style='text-align:center'>于明儉<span lang=EN-US>
+&lt;justiny@turbolinux.com.cn &gt; </span></h4>
+
+<h2>一 國際化、本地化和中文化</h2>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l8 level1 lfo1;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>國際化、本地化和多語言化的概念 </p>
+
+<p style='margin-left:36.0pt'>一般來說<span lang=EN-US>, &quot;國際化&quot;是指把原來為英文設計的計算機系統或應用
+軟件改寫為同時支持多種語言和文化習俗的過程. 在軟件創作的初期, 一般的編程語言,編譯,開發都是盡支持英文的, 為了適應更廣的語言 和文化習俗, 軟件有必要在設計結構和機制上支持多語言的擴展特性,
+這一過程稱為國際化. 國際化僅僅是在軟件設計上提供了使用多語 言的可能. </span></p>
+
+<p style='margin-left:36.0pt'><span lang=EN-US>&quot;本地化&quot;是指把計算機系統或者應用軟件轉變為使用并兼容某種
+特定語言的過程. 比如, 把原來為英文設計軟件制作為支持中文的軟 件就是本地化的一種. 它主要包括翻譯文本信息,界面信息,重新設計 圖標等等. </span></p>
+
+<p style='margin-left:36.0pt'>語言和文化習俗因地域不同而差別很大<span lang=EN-US>. 對某一特定的地域的 語言環境稱為&quot;locale&quot;.
+它不僅包括語言和貨幣單位, 而且還包括 數字標示格式, 日期和時間格式. 國際化了的軟件含有一個&quot;locale&quot; 的&quot;參量&quot;,
+使用該&quot;locale&quot;參量便可以設置某一區域所用的語言環境. </span></p>
+
+<p style='margin-left:36.0pt'>在國際化部分中只處理語言的部分叫<span lang=EN-US>&quot;多語言化&quot;.
+比如, 一個 &quot;多語言化&quot;的軟件可以同時管理諸如英語,法語,中日韓文, 阿拉伯語等. </span></p>
+
+<p style='margin-left:36.0pt'>在英文中<span lang=EN-US>, 國際化(Internationalization)被縮寫為I18N,
+即只 取首尾兩個字母, 中間字母為18個. 同樣地, 本地化(Localization) 縮寫為L10N, 多語言化(Multilingualization)
+縮寫為M17N. </span></p>
+
+<p style='margin-left:36.0pt'>在今天<span lang=EN-US>, Internet把世界各地的計算機聯接了起來, 共享信息和
+技術是必然的趨勢和需要. 因此各地的計算機系統可以互相交流變得 越來越重要. 在Linux系統向桌面普及的過程中, Linux軟件也需要國 際化和本地化. </span></p>
+
+<p style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l8 level1 lfo1;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>中文化
+</p>
+
+<p style='margin-left:36.0pt'><span lang=EN-US>&quot;中文化&quot;是一個很模糊的概念. 在Linux上的&quot;中文化&quot;它既包含使
+軟件或系統國際化,又包含使軟件本地化. 也就是說, &quot;中文化&quot;不僅僅 是只把軟件本地化這么簡單的事情, 更重要的是因為Linux直接支持中
+文的軟件太少, 做&quot;中文化&quot;必須先做&quot;國際化&quot;. </span></p>
+
+<p style='margin-left:36.0pt'>由于歷史的原因<span lang=EN-US>, 現階段使用的中文又有簡體中文和繁體中文之 分.
+所使用的編碼也不同. 支持中文的軟件應該同時支持簡體中文和 繁體中文, 這對軟件的國際化提出了更高的要求. </span></p>
+
+<p style='margin-left:36.0pt'><span lang=EN-US>1999年是中國Linux發展和普及過程中最重要的一年, 其中涌現了
+許多制作中文Linux發布版本的公司. 中文Linux的技術都是采取了中文 化的捷徑----中文平臺. 盡管都是中文平臺, 但是具體實現的技術特點 各不相同.
+充分展示了中文平臺在Linux中文化過程中的魅力. 中文平臺 在短期內發揮了巨大的作用, 加速Linux的中文化過程并推動Linux在中 國的普及. </span></p>
+
+<p style='margin-left:36.0pt'>中文平臺的主要技術特點是不用修改西文應用軟件<span lang=EN-US>, 便可以顯示和 輸入中文(有的情況下會失效).
+具體地說, 就是利用自己的規范去修改 X系統的底層函數. 從修改的層次上分為(1)修改函數庫libX11.so, 這種 方式是動態修改, 又稱外掛方式. 外掛方式的實現可以是直接修改X11庫
+或使用LD_PRELOAD載入動態庫修改. (2)修改X Server部分, 又稱內嵌方式, 它的實現也分為兩種, 直接修改X Server部分和建立虛擬Display(X傳輸
+協議的部分代理). </span></p>
+
+<p style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l8 level1 lfo1;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN-US>X11 國際化的歷史和級別 </span></p>
+
+<p style='margin-left:36.0pt'>早期的<span lang=EN-US>X11R4版本中, 僅僅含有支持單字節和雙字節字體的函數,
+所以它不能算是國際化的函數庫. 此后, 一個叫做&quot;mltalk&quot;的X協會 成立并著手研究X窗口系統的國際化問題. 眾多的X窗口系統供應商也
+參與了該組織. 因為對國際化的研究剛剛開始, 所以mltalk提出的了 一個基本問題: 什么是X窗口系統的國際化? 對它的解釋也各不相同. 實際上, 即使是現在,
+人們對國際化的定義仍然存在分歧, 分歧的焦點 主要集中于對軟件或系統怎樣程度的國際化才算是真正的國際化. </span></p>
+
+<p style='margin-left:36.0pt'>按國際化的級別來分<span lang=EN-US>, 下列幾種情況都屬于國際化: </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo1;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>語言可以切換<span lang=EN-US>. 在系統啟動時可以設置某種語言 </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo1;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>使用不同語言的軟件可以同時使用<span lang=EN-US>, 在應用軟件啟動時可以 設置某種語言 </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo1;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>使用不同語言的軟件可以同時使用<span lang=EN-US>, 而且應用軟件的語言可 以動態切換 </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo1;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>使用不同語言的軟件可以同時使用<span lang=EN-US>, 而且在應用軟件中可以 同時使用不同語言 </span></p>
+
+<p style='margin-left:36.0pt'>顯然<span lang=EN-US>, 第(4)種國際化方式是最完善的方式, 其次是第(3)種,第(2)種
+和第(1)種. mltalk 最終決定使用第(3)種, 原因是需要支持第(4)種的 X窗口系統供應商是少數的. 從目前Linux上的國際化情況看, 支持第(2),
+(3)種的國際化軟件是最常見的, 但是第(4)種軟件比較少見, 而且應用的 意義不是很大. </span></p>
+
+<p style='margin-left:36.0pt'>基于上述觀點<span lang=EN-US>, X11R5 的目的是, 創建支持不用重新編譯源代碼
+就可以適應于語言環境的應用軟件開發平臺. 確切地說, 就是國際化 的結構是基于標準C函數setlocale的. X11R5 確立了以下規范: </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo1;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>切換語言的機制 </p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo1;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>與語言無關的輸出接口 </p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo1;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>與語言無關的輸入接口 </p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo1;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>資源文件的國際化 </p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo1;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US>9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>X工具(Xt)的國際化 </span></p>
+
+<p style='margin-left:36.0pt'>此后<span lang=EN-US>, 以X11R5 為基礎, OSF/Motif 完成了國際化改造,
+并且成為 被用戶廣泛接受的高層圖形軟件庫, 直到今天, 一些大型的軟件仍然使用 Motif 作為基礎庫使用, 如Java, Netscape等. X11R5的規范在制定的同時,
+為了檢測規范的實用性, 開發了兩套樣本應用, 即 Xsi 和 Ximp. 兩套應用 在輸入協議上和對locale的支持上都不同, 從而為開發商帶來了不便. </span></p>
+
+<p style='margin-left:36.0pt'><span lang=EN-US>X11R6 解決了X11R5中存在的問題, 主要的變化有, </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo1;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US>10.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]>定義了標準的輸入協議
+</p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo1;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US>11.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]><span
+lang=EN-US>Locale數據格式定義 </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo1;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US>12.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]>只采用了一種國際化工具的樣本應用模塊
+</p>
+
+<p style='margin-left:36.0pt'>在輸出上<span lang=EN-US>, X11R6增加了從由到左的的書寫方式, 以支持阿拉伯語和
+希伯來語等, 增加了從上到下的書寫方式, 以支持中文和日文等的書寫. </span></p>
+
+<p style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l8 level1 lfo1;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>國際化標準組織
+</p>
+
+<p style='margin-left:36.0pt'>這里所說的國際化標準是國際化標準組織或一些相關組織制定的一些標準<span lang=EN-US>,
+而且這些標準也會隨時間不同而經常更新. 國際化標準涉及到字符集,編碼, 字體處理,打印,文本繪制, 用戶界面, 語言輸入方法, 數據交換, 文化習俗, 等方方面面.
+</span></p>
+
+<p style='margin-left:36.0pt'>下面列出一些制定國際化標準的組織<span lang=EN-US>: </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo2;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>Li18nux(Linux I18n) </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo2;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>ANSI(American National Standards
+Institute) </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo2;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>POSIX(Portable Operating System
+Interface for Computer Environments) </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo2;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>ISO(International Standards
+Organization) </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo2;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>IEEE(Institute of Electrical and
+Electronics Engineers) </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo2;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>Unicode Consortium </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo2;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>Open Group(X Consortium and OSF) </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo2;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>X/Open and XPG </span></p>
+
+<p style='margin-left:36.0pt'>其中<span lang=EN-US>, ANSI/ISO 制定了使用C編程語言編寫國際化軟件的通用接口.
+ISO 制定了字符集標準和其它影響locale名字的標準. IEEE提供了一些國際化的 通用庫函數和設置管理不同locale的用戶命令. Open Group是Unix和X窗口
+系統的國際化標準設立組織. Li18nux 是一個專門從事Linux上的軟件國際化 規范制定的組織. </span></p>
+
+<p style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l8 level1 lfo2;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>國際化的意義
+</p>
+
+<p style='margin-left:36.0pt'>國際化<span lang=EN-US>, 特別是國際化中制定的標準, 是當今開發國際化軟件所必須
+的. 它也是軟件開發的必然趨勢. 遵循國際化標準, 可以更高效地開發和 調試軟件和移植軟件, 降低軟件的開發費用, 使用戶更方便地使用軟件. 從國際環境來看,
+新開發的基本的庫函數都會支持國際化標準, 基于這些 函數庫所開發的應用軟件理所當然地支持國際化標準, 同時有大批的Linux 愛好者把以前不符合國際化標準的軟件進行了改造,
+使它們在一定程度上 符合國際化標準. 使用國際化標準的軟件, 淘汰非國際化標準的軟件成為 一種趨勢. </span></p>
+
+<p style='margin-left:36.0pt'>從國際化的發展歷史看<span lang=EN-US>, 其中許多標準都有日本的商業機構參與, 支持
+日文的軟件變得越來越多, 而從日語軟件移植為中文軟件相對于直接移植 西文軟件相當容易, 有時甚至不用改動, 這樣就節省了許多不必要的勞動. 反過來, 符合國際化標準的中文軟件又影響日語和韓語軟件,
+成滾雪球之 勢向前發展. 其次, 軟件商的開發比較看好亞洲市場中的日本市場, 在 Unix/Linux上的日語軟件或操作系統一般是符合國際化標準的, 所以兼容
+這一標準是十分必要的. 當然, 目前的國際化標準也存在不足之處, 特別是 對中文這一特殊語言(因為含有GB和Big5兩種不能共存的編碼)的處理上, 應該由中國人在原來的基礎上作相應的擴展.
+</span></p>
+
+<p style='margin-left:36.0pt'>對中文<span lang=EN-US>Linux來說, 遵循國際化也是必然的趨勢. 在以中文平臺為基礎
+的中文Linux上, 軟件移植已成為必須解決的問題, 這個問題的最終解決 方法就是遵循同一標準, 就目前來說遵循國際化標準是唯一的方法. 鑒于 目前中文Linux上的中文平臺的混亂狀態,
+國際化標準是從無序到有序過渡 的必然途徑. </span></p>
+
+<p style='margin-left:36.0pt'>軟件的國際標準化也為最終用戶帶來極大的好處<span lang=EN-US>, 如同時支持簡體中文
+和繁體中文, 中文操作為雙字節操作, 中文輸入能夠在更大的程度上使用 標準輸入接口帶來的好處, 如輸入服務器的定位等交互式操作. </span></p>
+
+<p style='margin-left:36.0pt'>國際化的另一個特點是工作在應用軟件級別<span lang=EN-US>, 所以國際化不會給X窗口
+系統帶來不穩定性. </span></p>
+
+<p style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l8 level1 lfo2;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>參考資料<span
+lang=EN-US>: </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l8 level2 lfo2;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>Linux I18N: http://www.li18nux.org/ </span></p>
+
+<h2>二<span lang=EN-US> Locale</span></h2>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo3;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>Locale 的概念 </span></p>
+
+<p style='margin-left:36.0pt'><span lang=EN-US>Locale 是ANSI C語言中最基本的支持國際化的標志, 對中文Linux來說,
+如果它支持國際化, 那么支持中文Locale是最基本的要求. </span></p>
+
+<p style='margin-left:36.0pt'><span lang=EN-US>Locale 是軟件在運行時的語言環境, 它包括語言(Language),
+地域 (Territory) 和字符集(Codeset). 其格式為: 語言[_地域[.字符集]]. 如對中文GBK字符集, locale的格式是:zh_CN.GBK.
+目前Linux上的中文 Locale還不完善, glibc2.1.x中的許多涉及Locale的C函數還不正確. 如果 用戶需要安裝中文GBK Locale, 可以直接使用TLC6.0中的:
+</span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo3;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>glibc-2.1.2(含有GBK模塊) </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo3;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>localedata-zh-0.07 </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo3;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>/usr/X11R6/lib/X11/locale/zh_CN.GBK/XLC_LOCALE(X
+下的 GBK Locale) </span></p>
+
+<p style='margin-left:36.0pt'><span lang=EN-US>Locale 包含了以下分類: </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo4'><![if !supportLists]><span
+lang=EN-US>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>LC_COLLATE, 用于比較和排序. 排序對中文來說也比較重要, 但是現在的glibc中的locale對中文支持有些問題.
+漢字排序的 的方式有許多種, 按照發音(漢語拼音)或者漢字筆畫來排序 是比較容易被接受的. </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo4'><![if !supportLists]><span
+lang=EN-US>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>LC_CTYPE, 用于字符分類 </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo4'><![if !supportLists]><span
+lang=EN-US>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>LC_MONETORY, 用于貨幣單位 </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo4'><![if !supportLists]><span
+lang=EN-US>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>LC_NUMERIC, 用于數字顯示格式. 下面是不同國家的在貨幣符號 和數字格式上的不同:
+</span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:108.0pt;text-indent:-18.0pt;mso-list:l3 level3 lfo4;tab-stops:list 108.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>中國大陸<span lang=EN-US>: 1,234.56RMB </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:108.0pt;text-indent:-18.0pt;mso-list:l3 level3 lfo4;tab-stops:list 108.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>美國<span lang=EN-US>: $1,234.56 </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:108.0pt;text-indent:-18.0pt;mso-list:l3 level3 lfo4;tab-stops:list 108.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>德國<span lang=EN-US>: 1.234,56DM </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo4'><![if !supportLists]><span
+lang=EN-US>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>LC_TIME, 用于時間和日期. 時間可以用12小時或者24小時的 格式來計算.
+在小時和分鐘之間可以用逗點或者冒號隔開. 下面 是一些Locale設置的時間和日期的格式: </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:108.0pt;text-indent:-18.0pt;mso-list:l3 level3 lfo4;tab-stops:list 108.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>中國<span lang=EN-US>: 14點20分 2000年三月十四號 </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:108.0pt;text-indent:-18.0pt;mso-list:l3 level3 lfo4;tab-stops:list 108.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>英國<span lang=EN-US>: 02:20pm 14/03/2000 </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:108.0pt;text-indent:-18.0pt;mso-list:l3 level3 lfo4;tab-stops:list 108.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>美國<span lang=EN-US>: 02:20pm 03/14/2000 </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:108.0pt;text-indent:-18.0pt;mso-list:l3 level3 lfo4;tab-stops:list 108.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>芬蘭<span lang=EN-US>: 14.20 14.03.2000 </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo4'><![if !supportLists]><span
+lang=EN-US>9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>LC_MESSAGES, 用于國際化信息, 主要是提示信息,錯誤信息, 狀態信息,
+標題, 標簽, 按鈕和菜單等. </span></p>
+
+<p style='margin-left:36.0pt'><span lang=EN-US>Locale 通過ANSI C 函數setlocale(分類,
+locale)來初始化locale 數據. 當locale設置為空時, locale的值便從系統的環境變量中取得. 為了 方便應用軟件, 設置所有的分類, 可以采用下述方式:
+</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN-US>setlocale(LC_ALL,
+&quot;&quot;); </span></p>
+
+<p style='margin-left:36.0pt'>如果不成功<span lang=EN-US>, 該函數返回NULL. 函數應該回落到setlocale(LC_ALL,&quot;C&quot;).
+</span></p>
+
+<p style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo4;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>在<span
+lang=EN-US>X中使用Locale </span></p>
+
+<p style='margin-left:36.0pt'>在<span lang=EN-US>X的客戶程序中使用Locale的機制和在標準C函數中使用Locale的方式一樣,
+除此之外, 在X庫中還定義了另外兩個函數來判斷X的locale支持和設置locale 的修飾(XModifier), 在X中使用Locale和libX11的基本步驟如下:
+</span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo5;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>setlocale(): 設置當前的locale </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo5;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>XSupportLocale(): 用來判斷X是否支持目前設置的locale.
+</span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo5;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>XSetLocaleModifier(): 它用來指定一系列的locale修正值.
+它的參量的格式是@分類=賦值. 目前唯一可用的是輸入 服務器的名稱&quot;im&quot;. 如果參量為空, 則根據系統的環境 變量XMODIFIERS查找.
+比如在系統上設置了環境變量: </span></p>
+
+<p style='margin-left:72.0pt'><span lang=EN-US>% setenv XMODIFIERS @im=Chinput
+(csh) 或<br>
+% export XMODIFIERS=im=Chinput (bash)</span></p>
+
+<p style='margin-left:72.0pt'>則客戶程序將查找到輸入服務器<span lang=EN-US>Chinput,
+&quot;Chinput&quot;是 輸入服務器所設置的名稱. </span></p>
+
+<p style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo5;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>文化習俗的差別
+</p>
+
+<p style='margin-left:36.0pt'>下面是在國際化和本地化過程中常常遇到的并且應當注意的地方<span lang=EN-US>, 對國際化
+軟件的開發, 應該充分注意到各個地域的文化和習慣, 開發出通用的軟件, 對于本地化過程, 則應選擇與本地域相符的習慣. </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo5;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>姓名<span lang=EN-US>,地址等特殊信息 <br>
+姓名中的&quot;姓&quot;和&quot;名&quot;的先后次序, 地址書寫的先后次序 電話號碼的長度等等 </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo5;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>圖標的通用性<span lang=EN-US> <br>
+圖標是易于接受的用戶界面, 設計時應考慮到地域習慣, 而且圖標上不能有圖形文字, 否則需要重新設計本地圖標, 并翻譯圖標上的文字. </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo5;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>聲音使用<span lang=EN-US> <br>
+不適當的聲音或提示可能會引起人的反感. 另外, 聲音 的性別對某些國家是敏感的. </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo5;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>顏色使用<span lang=EN-US> <br>
+顏色和色調與民俗有關, 比如紅色在美國表示危險, 在中國 表示喜慶. </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo5;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>紙張尺寸<span lang=EN-US> <br>
+打印紙的尺寸因地域而不同, 在選擇缺省尺寸時應注意. </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo5;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>鍵盤差別<span lang=EN-US> <br>
+在鍵盤上的鍵可能因國家而異, 鍵的個數也可能不一樣. </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo5;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>政治因素<span lang=EN-US> <br>
+在產品設計上, 盡量不要有政治敏感性部分. </span></p>
+
+<p style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo5;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>參考資料<span
+lang=EN-US>: </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo5;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>Linux 上的Locale<br>
+http://www.ping.be/linux/locales/index.shtml </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l3 level2 lfo5;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>GBK Locale<br>
+ftp://ftp.turbolinux.com.cn/pub/turbolinux/TurboLinuxC-6.0/SRPMS/SRPMS/localedata-zh-0.07-1.src.rpm
+</span></p>
+
+<h2>三<span lang=EN-US> X 窗口系統的國際化</span></h2>
+
+<p>在<span lang=EN-US> X 窗口系統上的國際化, 特別是中文化, 主要體現在顯示,輸入和打印三個方面. </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>顯示的國際化 </p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l6 level2 lfo6;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>字符集和編碼 </p>
+
+<p style='margin-left:72.0pt'>在<span lang=EN-US>Linux上經常使用的字符集是ISO 8859系列的字符集. 它包含了10個
+多語言的單字節編碼字符集. 它們分別是, </span></p>
+
+<div align=center>
+
+<table border=1 cellpadding=0 style='mso-cellspacing:1.5pt;margin-left:72.0pt;
+ border:outset 1.5pt'>
+ <tr>
+  <td width=200 style='width:150.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>字符集</p>
+  </td>
+  <td width=400 style='width:300.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>涵蓋語言</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>ISO 8859-1(Latin1)</span></p>
+  </td>
+  <td width=400 style='width:300.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>拉丁一字符集<span lang=EN-US>, 包含絕大多數的歐洲語言, 例如French(fr),
+  Spanish (es), Catalan (ca), Basque (eu), Portuguese (pt), Italian (it),
+  Albanian (sq), Rhaeto-Romanic (rm), Dutch (nl), German (de), Danish (da),
+  Swedish (sv), Norwegian (no), Finnish (fi), Faroese (fo), Icelandic (is),
+  Irish (ga), Scottish (gd), English (en), Afrikaans (af) 和 Swahili (sw). 影響了美洲,
+  澳洲和非洲. </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>ISO 8859-2(Latin2)</span></p>
+  </td>
+  <td width=400 style='width:300.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>拉丁二字符集<span lang=EN-US>, 包含了中歐和東歐的語言:Czech (cs), Hungarian
+  (hu), Polish (pl), Romanian (ro), Croatian (hr), Slovak (sk), Slovenian (sl),
+  Sorbian. </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>ISO 8859-3(Latin3)</span></p>
+  </td>
+  <td width=400 style='width:300.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>拉丁三字符集<span lang=EN-US>, 包括: Esperanto (eo) and Maltese
+  (mt)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  lang=EN-US><o:p></o:p></span></p>
+  </td>
+  <td style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";color:windowtext'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>ISO 8859-4(Latin4)</span></p>
+  </td>
+  <td width=400 style='width:300.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>拉丁四字符集<span lang=EN-US>, 包括: Estonian (et), 巴爾地克 Latvian
+  (lv) 和 Lithuanian (lt), Greenlandic (kl) , Lappish. </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>ISO 8859-5(西里爾語)</span></p>
+  </td>
+  <td width=400 style='width:300.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Bulgarian (bg), Byelorussian (be),
+  Macedonian (mk), Russian (ru), Serbian (sr) </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>ISO 8859-6(阿拉伯語)</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>阿拉伯語<span lang=EN-US>(ar)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>ISO 8859-7(希臘語)</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>希臘語<span lang=EN-US>(el)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>ISO 8859-8(希伯來語)</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Hebrew (iw) 和Yiddish (ji)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>ISO 8859-9(Latin5)</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>重排了<span lang=EN-US>Latin1, 用土耳其語的幾個字母做了替換</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>ISO 8859-9(Latin6)</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>重排了<span lang=EN-US>Latin4, 去掉了某些符號, 增加了Inuit等</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>ISO 8859-11(泰國語)</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>泰國語<span lang=EN-US>(th)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  lang=EN-US><o:p></o:p></span></p>
+  </td>
+  <td style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";color:windowtext'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>ISO 8859-12</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Celtic</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  lang=EN-US><o:p></o:p></span></p>
+  </td>
+  <td style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  lang=EN-US style='font-size:10.0pt;font-family:"Times New Roman";color:windowtext'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>ISO 8859-13(Latin7)</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Baltic Rim 和 Lativian(lv)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>ISO 8859-14(Latin8)</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Gaelic 和 Welsh (cy)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>ISO 8859-15(Latin9)</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Latin1的變種, 修改了某些字母</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p style='margin-left:72.0pt'>雙字節字符集主要包含中文<span lang=EN-US>,日文和韓文. 它由前導字節(Lead
+Byte) 和尾部字節(Trail Byte)構成, 由于一個字符采用了兩個字節, 在軟件的 國際化方面又增加了一些麻煩, 比如在顯示上, 光標的位置不能位于漢字
+之間, 刪除和移動時必須是整字操作等, 在輸入上, 一般需要預編輯服務器 才能輸入漢字. 下表列出了中日韓語言編碼的有關信息: </span></p>
+
+<div align=center>
+
+<table border=1 cellpadding=0 style='mso-cellspacing:1.5pt;margin-left:72.0pt;
+ border:outset 1.5pt'>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>語言</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>字符集</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>代碼頁</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>前導字節范圍</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>尾部字節范圍</p>
+  </td>
+ </tr>
+ <tr>
+  <td rowspan=2 style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>簡體中文</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>GB2312-1980</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>CP936</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>0xA1-0xF7</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>0xA1-0xFE</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>GBK</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>無</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>0x81-0xFE</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>0x40-0x7E, 0x80-0xFE</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>中文繁體</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>BIG-5</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>CP950</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>0x81-0xFE</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>0x40-0x7E, 0xA1-0xFE</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>日文</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Shift-JIS</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>CP932</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>0x81-0x9F, 0xE0-0xFC</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>0x40-0xFC(0x7F除外)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td rowspan=2 style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>韓文</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>KSC-5601-1987</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>CP949</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>0x81-0xFE</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>0x41-0x5A,0x61-0x7A,0x81-0xFE</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>KSC-5601-1992</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>CP1361</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>0x84-0xD3<br>
+  0xD8<br>
+  0xD90-0xDE<br>
+  0xE0-0xF9<br>
+  0x41,0xFE</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>0x41-0x7E<br>
+  0x81-0xFE<br>
+  0x31-0x7E</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p style='margin-left:72.0pt'>最近<span lang=EN-US>, 信息產業部和國家質量技術監督局聯合發布了兩項新的中文信息
+處理基礎性國家標準，為解決偏、生漢字的輸入提供了方案。其中GB18030- 2000《信息技術和信息交換用漢字編碼字符集、基本集的擴充》，為強制性 國家標準.
+它收錄了2.7萬多個漢字，總編碼空間超過150萬個碼位，為徹底 解決郵政、戶政、金融、 地理信息系統等迫切需要的人名、地名用字問題 提供了解決方案，也為漢字研究、古籍整理等領域提供了統一的信息平臺基礎。
+這項標準還同時收錄了藏文、蒙文、維吾爾文等主要的少數民族文字. 字符 集編碼范圍是: </span></p>
+
+<div align=center>
+
+<table border=1 cellpadding=0 style='mso-cellspacing:1.5pt;margin-left:72.0pt;
+ border:outset 1.5pt'>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>字節數<span
+  lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>編碼空間<span
+  lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>碼位數目<span
+  lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>單字節</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>0x00-0x80</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>129</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>雙字節</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>第一字節<span lang=EN-US>:0x81-0xFE<br>
+  第二字節:0x40-0x7E,0x80-0xFE</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>23940</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>四字節</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>四字節范圍分別是<span lang=EN-US>:<br>
+  0x80-0xFE,0x30-0x39,0x81-0xFE,0x30-0x39</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>1587600</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p style='margin-left:72.0pt'>香港特別行政區也對<span lang=EN-US>Big5編碼提出了&quot;香港增補字符集&quot;,
+其目的，是 收納香港特區政府及市民在中文電子通訊中有需要使用的字符，來補充目前 大五碼和ISO10646編碼標準內并未包含的字符，以作為一個通用的中文界面， 方便大家能準確地以中文進行電子通訊。香港增補字符集有兩套編碼方案，
+一套適用於大五碼系統，另一套適用於ISO10646平臺。香港增補字符集的大 五碼版本，實際上是政府通用字庫的增訂版。ISO10646國際編碼標準目前并 未包含香港增補字符集內的所有字符。目前尚未收納在ISO10646內的香港增
+補字符集字符，均已提交國際標準化組織管轄下的表意文字小組，以考慮是 否納入ISO10646日后的新增版本內. </span></p>
+
+<p style='margin-left:72.0pt'>上述標準和草案應該是以后的中文<span lang=EN-US>Linux所應該遵循的. </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l6 level2 lfo6;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>多字節字符<span
+lang=EN-US>(Multibyte)和寬字符(WideChar)的使用 </span></p>
+
+<p style='margin-left:72.0pt'>我們平時見到的以文本方式存在的字符都是多字節字符<span lang=EN-US>, 它主要用于 文件存儲和網絡上的以流(Stream)的方式傳輸.
+一個GB編碼的漢字需要兩個 字節. 多字節字符的缺點是在中文處理上不方便, 比如漢字的刪除和光標的 移動都會有半漢字問題. 為了文本處理的方便, 在內部操作上通常是把漢字
+與英文的混和字符串先轉換成等寬度的字符串, 即寬字符, 為軟件的內部處理 提供方便. </span></p>
+
+<p style='margin-left:72.0pt'><span lang=EN-US>glibc2.1.x中多字節字符串和寬字符串的轉換有時有問題. 在X下還可以
+使用另外一種方式完成轉換, 即使用XmbTextListToTextProperty()和 XwcTextPropertyToTextList() 聯合完成轉換.
+</span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l6 level2 lfo6;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN-US>Unicode </span></p>
+
+<p style='margin-left:72.0pt'>目前所使用的<span lang=EN-US>Unicode 是一種16位字寬的字符編碼, 它由非贏利的計算機
+組織Unicode研討會維護和改進. 它起源于Xerox和Apple之間的合作研究. 幾 個公司組成了一個非正式的論壇, 接著IBM, Microsoft等公司迅速加入.
+Unicode研討會在1990年發表了Unicode標準版本1, 同時國際標準化組織完成 了一種類似的編碼----ISO 10646. 因為沒有必要存在兩套標準,
+所以Unicode 研討會和國際標準化組織在1991到1992合二為一. 1994年, 中國和日本開始對 基于ISO10646上的國家標準進行工作. 現在,
+Unicode 開始用在許多產品中. </span></p>
+
+<p style='margin-left:72.0pt'><span lang=EN-US>Unicode包含了當今計算機領域中廣泛使用的所由字符, 如世界上大部分
+的書面語言, 印刷字符, 數字和技術符號, 地理圖形和標點符號. 由于Unicode 的一致性, 它在大多數情況下都可能簡化軟件的國際化過程. 它取消了處理 多種代碼頁的必要,
+并且由于是16位編碼, 因此由雙字節字符集所引起的額外 處理也不必要了. </span></p>
+
+<p style='margin-left:72.0pt'>但是<span lang=EN-US>, Unicode作為一種編碼也有它的缺陷, 比如編碼的位置與排序無關,
+所以使軟件支持Unicode僅僅是國際化的第一步, 實際情況中還需要與語言相關 的信息和規則. 所以Unicode一般作為程序的內部處理編碼, 必須提供與其它
+編碼的雙向轉換表. </span></p>
+
+<p style='margin-left:72.0pt'>最后需要說明的是<span lang=EN-US>, 雖然使用Unicode會使普通的英文文本大兩倍,
+但是 使用Unicode的整個系統卻不會增加太大, 因為系統存放的文件大部分是二進制 文件格式, 同時, 使用針對Unicode的壓縮方式, 可以把文件壓縮成和使用對應
+的8位正文一樣大小. </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l6 level2 lfo6;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>字體<span
+lang=EN-US>(Font)和字體集(FontSet) </span></p>
+
+<p style='margin-left:72.0pt'>在<span lang=EN-US>X窗口系統下使用的字體都必須在X服務器中注冊X邏輯字體描述(X
+Logical Font Description)名. 它包括了字體的許多信息, 例如以下為西文字體和中文 字體的兩個例子. </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:108.0pt;text-indent:-18.0pt;mso-list:l6 level3 lfo6;tab-stops:list 108.0pt'><![if !supportLists]><span
+lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>-adobe-times-medium-r-normal--14-140-75-75-p-74-iso8859-1
+</span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:108.0pt;text-indent:-18.0pt;mso-list:l6 level3 lfo6;tab-stops:list 108.0pt'><![if !supportLists]><span
+lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>-tlc-song-medium-r-normal--24-240-75-75-c-240-gbk-0
+</span></p>
+
+<p style='margin-left:72.0pt'>為了方便使用<span lang=EN-US>, 用戶還可以給每一個字體加一個或多個別名, 別名文件
+fonts.alias 放在字體目錄下, 可以手工編輯. 當字體目錄變更或別名變更 后, 必須使用命令 &quot;xset fp rehash&quot;或重新啟動X才起作用.
+</span></p>
+
+<p style='margin-left:72.0pt'><span lang=EN-US>X 字體也可以通過字體服務器(Font Server)加載. 這對于本地不放字體
+的系統或X終端特別有用. 加載的協議可以是TCP或DECNET. </span></p>
+
+<p style='margin-left:72.0pt'><span lang=EN-US>X 窗口系統的字體在X Server中之存在一份, 當所由軟件都不使用它時,
+字體的內存自動施放. </span></p>
+
+<p style='margin-left:72.0pt'>字體中包含了制造商名<span lang=EN-US>, 字體類型, 權重, 字體大小, 字符集等信息.
+它們也 可以縮寫, 省去的部分用星號代替, 比如對上面的中文字體, 可以縮寫為: </span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN-US>-*-song-*-24-*-gbk-0
+</span></p>
+
+<p style='margin-left:36.0pt'>在實際應用中<span lang=EN-US>, 字符串往往是中文和英文的混和字符串, 所以必須使用兩種
+字體來繪出該字符串, 這種指定兩種或兩種以上的字體的描述就是字體集. 字體 集一般的格式是把多種字體用逗號隔開, 比如, 指定下列字體集: </span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN-US>&quot;-adobe-helvetica-medium-r-normal--14-*-*-*-*-*-iso8859-*,\</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN-US>-tlc-song-medium-r-normal--14-*-*-*-*-*-gbk-0&quot;
+</span></p>
+
+<p style='margin-left:36.0pt'>令人遺憾的是<span lang=EN-US>, 中文的GB編碼和Big5編碼有重疊區域, 不能區分開來,
+所以 字體集并不能同時指定GB和Big5的字體. </span></p>
+
+<p style='margin-left:36.0pt'>字體集的具體載入受到<span lang=EN-US>Locale的影響. </span></p>
+
+<p style='margin-left:36.0pt'>在許多已經國際化的軟件和圖形庫中<span lang=EN-US>, 一般通過資源文件讓用戶指定字體集,
+比如gtk的簡體中文資源文件為/etc/gtk/gtkrc.zh_CN, qt-1.44(國際化的)的 資源文件是 ~/.qti18nrc 等等. </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:0cm;text-indent:-18.0pt;mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>信息的國際化 </p>
+
+<p>信息<span lang=EN-US>(Message)國際化是軟件國際化中比較重要的一環, 如果使軟件可以 支持多種語言, 在設計時就應當考慮到信息的國際化問題.
+現在的絕大多數 軟件使用GNU的gettext作為基本工具. 信息國際化的基本步驟是: </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l6 level2 lfo7;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>在軟件初始化時設置使用<span lang=EN-US>setlocale()設置Locale </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l6 level2 lfo7;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>使用<span lang=EN-US>gettext宏定義, 使程序看上去比較方便: </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l6 level2 lfo7;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>指定信息的位置<span lang=EN-US>:</span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l6 level2 lfo7;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>指定翻譯信息<span lang=EN-US>: _(&quot;Some Strings&quot;); </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l6 level2 lfo7;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>在軟件完成后<span lang=EN-US>,使用 xgettext 提取信息并翻譯 </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l6 level2 lfo7;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>使用<span lang=EN-US>msgfmt把信息文件轉換為.mo文件, 安裝到locale目錄下 </span></p>
+
+<pre><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+lang=EN-US><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>/* file this_app.c */</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>#include <locale.h></span></pre><pre><span
+lang=EN-US><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>#include <libintl.h></span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='mso-tab-count:1'> </span>#define _(String)<span style="mso-spacerun: yes">&nbsp; </span>gettext(String)</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-tab-count:1'> </span>#define N_(String)<span style="mso-spacerun: yes">&nbsp; </span>gettext(String)</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-tab-count:1'> </span>#define __(String) (String)</span></pre><pre><span
+lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+lang=EN-US><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>int main(){</span></pre><pre><span
+lang=EN-US><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>//由環境變量決定locale</span></pre><pre><span
+lang=EN-US><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>setlocale(LC_ALL, &quot;&quot;);<span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></pre><pre><span
+lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+lang=EN-US><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>//設置message的位置和文件名</span></pre><pre><span
+lang=EN-US><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>bindtextdomain(&quot;this_app&quot;, &quot;/usr/share/locale&quot;);</span></pre><pre><span
+lang=EN-US><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>textdomain(&quot;this_app&quot;);</span></pre><pre><span
+lang=EN-US><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></pre><pre><span
+lang=EN-US><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>printf(_(&quot;Some String&quot;));</span></pre><pre><span
+lang=EN-US><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}</span></pre><pre><span
+lang=EN-US><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></pre>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>至此<span
+lang=EN-US>, 本程序的國際化過程已完成. 編譯并聯接成可執行文件this_app.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN-US>gcc -o this_app
+this_app.c</span></p>
+
+<p style='margin-left:36.0pt'>下面是本地化的過程<span lang=EN-US>.</span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l6 level2 lfo7;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>提取要翻譯的信息<span lang=EN-US>: xgettext -a -o this_app.po
+this_app.c </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l6 level2 lfo7;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>翻譯信息</p>
+
+<p style='margin-left:72.0pt'>在文件<span lang=EN-US>this_app.po 中含有&quot;Some
+String&quot;:</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN-US>msgid &quot;Some
+String&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN-US>msgstr
+&quot;&quot;</span></p>
+
+<p style='margin-left:36.0pt'>翻譯成<span lang=EN-US>:</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN-US>msgid &quot;Some
+String&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN-US>msgstr &quot;一些字符串&quot;</span></p>
+
+<p style='margin-left:0cm;text-indent:-18.0pt;mso-list:l6 level2 lfo7;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>格式化信息文件<span lang=EN-US>: msgfmt -o this_app.mo
+this_app.po </span></p>
+
+<p style='margin-left:0cm;text-indent:-18.0pt;mso-list:l6 level2 lfo7;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>拷貝信息文件到<span lang=EN-US>locale的目錄下, 比如對于中文zh_CN, cp
+this_app.mo /usr/share/locale/zh_CN/LC_MESSAGES </span></p>
+
+<p style='margin-left:0cm;text-indent:-18.0pt;mso-list:l6 level2 lfo7;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>執行文件<span lang=EN-US>: LC_ALL=zh_CN ./this_app </span></p>
+
+<p style='text-indent:-18.0pt'>輸入的國際化 </p>
+
+<p>在<span lang=EN-US>X窗口系統下輸入主要有三種方式: </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l9 level1 lfo8;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>單此擊鍵輸入單字符 </p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l9 level1 lfo8;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>兩個或多個組合鍵輸入單字符 </p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l9 level1 lfo8;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>除鍵輸入外<span lang=EN-US>, 還需要轉換服務器 </span></p>
+
+<p>其中前兩種用于輸入西文字符<span lang=EN-US>, 比如對于歐洲語言的特殊字符的輸入, 通常采用重映射鍵盤的方法. 或者使用&quot;加速鍵&quot;的方法輸入,
+加速鍵是鍵盤 上的特殊鍵, 按下后不會使光標向后移動. </span></p>
+
+<p>在<span lang=EN-US>Linux下, 使用軟件xkeycaps可以把鍵盤重新映射并且保存整個鍵盤 在映射后的對照表, 使用命令xmodmap可以加載映射表.
+</span></p>
+
+<p>對于中文輸入<span lang=EN-US>, 主要使用第三種輸入方式. 針對各種語言的綜合考慮, X 窗口系統在輸入上定義了下列區域: </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo9;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>預編輯區域<span lang=EN-US>(Preedit Area), 用于顯示輸入的過程, 當用戶輸入 字符時,
+應立即顯示在該區域 </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo9;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>狀態區域<span lang=EN-US>(Status Area), 用于顯示輸入狀態, 對中文來說, 用于顯示輸入方法,
+全角/半角狀態, 中文/西文標點符號狀態. </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo9;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>輔助區域<span lang=EN-US>(Auxiliary Area), 顯示可供選擇的列表, 又稱選擇 區域,
+它由輸入服務器控制. </span></p>
+
+<p>根據預編輯區域和狀態區域的不同組合<span lang=EN-US>, X 窗口系統共定義了四種輸入 的風格(Input Style): </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l7 level1 lfo10;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>Root風格: 預編輯區域和選擇區域都在應用軟件之外, 它們都是 由輸入服務器完成的,
+輸入服務器所顯示的界面是根窗口的子 窗口. 如類似&quot;中文之星&quot;的獨立的輸入條模式. </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l7 level1 lfo10;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>OffTheSpot風格: 預編輯區域和選擇區域在應用軟件之內, 通常 是在窗口下方的某個固定區域內.
+如XEmacs的缺省輸入模式. </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l7 level1 lfo10;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>OverTheSpot風格: 預編輯區域在當前的輸入位置, 狀態區域 在應用程序的某一固定區域.
+它通常又稱為光標跟隨模式, 類似 于Windows下的智能ABC輸入方法 </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l7 level1 lfo10;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>OnTheSpot風格: 預編輯區域和選擇區域都在應用軟件之內, 內容是又輸入服務器發送的,
+應用程序負責顯示. </span></p>
+
+<p>對中文輸入來說<span lang=EN-US>, 最好的風格是(3),(4),(1). 對大部分中文輸入方法, 必須彈出輔助區域, 供用戶選擇, 只有少數的中文輸入方法,
+如五筆字型, 比較適合(4). 對于狀態區域, 中文輸入多數選用在Root風格的窗口的某個 位置或使用專用的控制條. 在MS Windows下比較常用的光標跟隨模式,
+可以 用(3),(4)來實現. 鑒于Linux下有的用戶把X Window設置成為虛屏模式, 選 擇上述的任何一種模式都不盡滿意. </span></p>
+
+<p>對應用軟件來說<span lang=EN-US>, 最簡單的輸入接口是Root風格, 它把顯示部分交給 輸入服務器去做. 編寫軟件時所用的代碼量少, 是對軟件初步使用國際化
+標準的最佳選擇. 從方便用戶的角度來看, 應用軟件, 特別是高層的庫函數 應該同時支持四種輸入風格. 令人遺憾的是, 一般軟件僅支持兩到三種輸入 風格. 所以在現在的輸入服務器(IM
+Server)也很少支持四種風格, 這似乎 成了雞和蛋的問題. </span></p>
+
+<p>下面列出幾種常用軟件和圖形庫的<span lang=EN-US>XIM支持情況: </span></p>
+
+<div align=center>
+
+<table border=1 cellpadding=0 style='mso-cellspacing:1.5pt'>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Netscape</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Root,OffTheSpot,OverTheSpot</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Java </span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Root,OnTheSpot</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Qt </span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Root,OverTheSpot</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>gtk+ </span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Root,OverTheSpot</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>rxvt </span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Root,OffTheSpot,OverTheSpot</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p>中文輸入需要客戶軟件和服務器軟件的的密切配合<span lang=EN-US>, 它們之間是通過 XIM(X Input Method)協議來通訊的. 輸入服務器首先起動,
+在X Server里 注冊自己, 服務器的名字也被注冊. 當客戶程序起動時, 到X Server里查尋 有沒有符合自己locale類型的輸入服務器(如果用XMODIFIERS指定服務器名,
+則同時用locale和名字區分). 找到后, 根據輸入服務器提供的風格種類 選擇一個最適合自己的風格. 然后客戶程序為每一個需要輸入的窗口都建立 一個自己的標示IC(Input
+Context), 里面含有客戶程序的信息, 以后的通訊 則一直使用該標示. </span></p>
+
+<p>下面是直接使用<span lang=EN-US>X Lib和服務器聯接的過程, 在高層函數庫中, 把這一 過程隱藏了起來: </span></p>
+
+<pre><span lang=EN-US><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>XIM im;</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>XIC ic;</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>...</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>if( (im = XOpenIM(display, NULL, NULL, NULL)) == NULL ) {</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>printf(&quot;Error : XOpenIM !\n&quot;);</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>exit(0);</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}</span></pre><pre><span
+lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>//指定預編輯的類型等...</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>if( (ic = XCreateIC(im, </span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>XNInputStyle,<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>XIMPreeditPosition | XIMStatusNothing,</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>XNClientWindow, window, </span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>NULL)) == NULL ) {</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>printf(&quot;Error : XCreateIC() ! \n&quot;);</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>XCloseIM(im);</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>exit(0);</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>...</span></pre><pre><span
+lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>for(;;) {</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>XNextEvent(display, &amp;event);</span></pre><pre><span
+lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>//如果輸入服務器接收并處理...繼續</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>if (XFilterEvent(&amp;event, None) == True)</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>continue;</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>switch(event.type) {</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>case Expose:</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>XmbDrawString(...);</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>case KeyPress:</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>count = XmbLookupString(ic, </span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>(XKeyPressedEvent *) &amp;event,</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>string, len, &amp;keysym, &amp;status);</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>...</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}</span></pre><pre><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}</span></pre><pre><span
+lang=EN-US><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></pre>
+
+<p>目前使用比較廣泛的<span lang=EN-US>XIM輸入服務器有Chinput(簡體中文, 同時支持繁體), xcin(繁體中文),
+kinput2(日文) 和 hanIM/ami(韓文). </span></p>
+
+<p>中文輸入服務器<span lang=EN-US>Chinput 選擇了OverTheSpot風格作為缺省的輸入模式, 它與標準的輸入風格略有不同, 即把預編輯區域偏離輸入位置,
+使輸入區 域同時作為狀態區域, 在很大程度滿足了用戶的輸入習慣. 同時它還使用 輔助工具條顯示和改變輸入狀態. Chinput還解決了同時使用GB和Big5編碼
+的問題, 被動輸入(Passive Input)問題等. 對于普通用戶, 除了使用鍵盤 輸入外, 還可以使用手寫識別輸入和語音識別輸入方式. 目前的輸入架構 基本能夠滿足它們的要求.
+筆者在手寫識別輸入方面做了一些嘗試, 發 現對絕大部分軟件是能夠適合被動輸入的. </span></p>
+
+<p style='text-indent:-18.0pt'>打印的國際化 </p>
+
+<p>在<span lang=EN-US>X窗口系統下的打印是一個很難解決的問題, 所以到目前為止沒有形成 一個統一的打印標準. 其原因之一就是X窗口系統在設計上把顯示和打印完全
+分開了. </span></p>
+
+<p>在<span lang=EN-US>Linux最常見的需要打印的文件格式是普通文本文件和PostScript文件. 對于中文的普通文本文件的打印一般需要先轉換為PostScript文件再打印.
+對于PostScript文件, 如果應用軟件在生成時含有中文字體信息, 則打印 比較容易實現, 反之, 則很難實現甚至不可能打印. </span></p>
+
+<p>目前中文文本文件常用的打印方法通常是<span lang=EN-US>,使用gb2ps/bg2ps/cnprint 等 軟件轉換成PS文件打印, 轉換過程使用了中文的點陣字體.
+對已經形成的PS 文件的打印, 如果不包含中文字體, 直接打印就會輸出亂碼, 通常使用的方法 是將這一類PS文件過濾一下, 改為使用中文字體, 然后再打印. 如陳向陽先生
+的過濾軟件ps2cps可以打印Netscape的存儲文件. 這種打印的缺點是有時輸出 的PS中漢字字符串和英文字符串對不齊. 最好的方法是在PostScript一級實現
+中文打印, 陳向陽先生對ghostscript進行了中文化, 可以直接使用TTF輕松打 印Netscape, Qt/KDE, lyx等軟件輸出的PS文件. 這種從底層實現打印的方法
+也是日文和韓文所采用的方法. </span></p>
+
+<p>使用<span lang=EN-US>CID(adobe)字體打印的方法也在嘗試之中. </span></p>
+
+<p>總之<span lang=EN-US>, 目前的中文打印缺乏統一標準, 應用軟件在輸出打印PS文件時多數 不考慮雙字節語言的問題, 使打印變得更加復雜化,
+所以當前的中文Linux發 布版本多數不支持中文打印, </span></p>
+
+<p style='text-indent:-18.0pt'>客戶程序間通訊的國際化 </p>
+
+<p>客戶程序間通訊<span lang=EN-US>(Interclient Communications Conventions, 簡稱ICCC)是 客戶程序之間共享資源的手段之一.
+最常見的應用是文本的拷貝和粘貼和與窗口 管理器通訊. 但是如果兩個應用程序之間所使用的字符集不同, 粘貼就會出現問 題, 甚至粘貼的內容會丟失. 所以客戶程序之間必須國際化了的通訊協議.
+</span></p>
+
+<p>應用程序和窗口管理器之間的通訊也屬于客戶程序間通訊<span lang=EN-US>. </span></p>
+
+<p>如果客戶程序之間使用的字符集相同<span lang=EN-US>, 但是編碼不同, 則不會丟失數據, 這時應該使用復合文本(COMPOUND
+TEXT)傳輸. X內部定義了COMPOUND_TEXT 的原子(Atom)用于傳輸中英文混和的字符串. 對7字節編碼, ASCII或者其它
+ISO8859-1字符集, 客戶程序通訊可以不用轉換而直接使用XA_STRING原子傳輸. </span></p>
+
+<h2>四 開發符合國際化標準的軟件</h2>
+
+<p>在<span lang=EN-US>X窗口系統下開發軟件, 應盡量符合國際化標準. 它包括, 設置合適 的locale(見前面講述的在X下使用locale),
+注意選擇字符集和字體集, 本地化文本的處理, 輸入方法等等. 這里推薦用戶盡量使用在國際化方面 已經比較完善的高層圖形庫, 如Qt, gtk+, Java等,
+這樣可以避免考慮以 上問題. 選擇Motif時需要考慮資源的國際化問題和FontList等. </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l5 level1 lfo11;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>開發國際化軟件 </p>
+
+<p style='margin-left:36.0pt'>使用已經支持國際化的高層圖形庫開發支持國際化的軟件基本上可以不用 考慮國際化問題<span
+lang=EN-US>. 特別是輸入問題, 在標準的輸入區內(單行輸入和多行輸入), 都可以自動輸入漢字. 在字體處理上, 注意使用字體集. 許多軟件需要在資源
+文件中指定字體和字體集, 所以開發的軟件應提供一個缺省支持字體集的資源 文件. </span></p>
+
+<p style='margin-left:36.0pt'>下面所介紹的開發國際化的軟件是基于<span lang=EN-US>libX11的開發方法. 除了前面所說的
+在軟件初始化時調用一些Locale的函數外, 在實際編程時, 還應注意以下問題: </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l5 level2 lfo11;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>字體載入<span lang=EN-US>: 在處理字符串時, 使用FontSet, 而不是Font: </span></p>
+
+<p style='margin-left:72.0pt'><span lang=EN-US>XCreateFontSet() - 建立字體集 <br>
+XFreeFontSet() - 釋放字體集內存 <br>
+XFontsOfFontSet() - 返回XFontStruct和字體名 <br>
+XBaseFontNameListOfFontSet() - 返回字體集的名稱 <br>
+XLocaleOfFontSet() - 返回XFontSet的locale名 <br>
+XExtentsOfFontSet() - 獲得FontSet的最大Extents</span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l5 level2 lfo11;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>計算字符串的屏幕尺寸并畫字符串<span
+lang=EN-US>: </span></p>
+
+<p style='margin-left:72.0pt'><span lang=EN-US>Xmb/XwcDrawString() - 只畫字型(glyphs)的前景
+<br>
+Xmb/XwcDrawImageString() - 畫前景和背景 <br>
+Xmb/XwcDrawText() - 復雜的間隔和字體集 <br>
+Xmb/XwcTextEscapement() - X 方向像素 <br>
+Xmb/XwcTextExtents() - 字符串輪廓 </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l5 level2 lfo11;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>客戶程序間通訊<span
+lang=EN-US>: </span></p>
+
+<p style='margin-left:72.0pt'><span lang=EN-US>Xmb/wcTextListToTextProperty() -
+根據locale的文本轉換<br>
+Xmb/wcTextPropertyToTextList() - 根據locale的文本轉換<br>
+XFreeStringList()<br>
+Xmb/wcFreeStringList() - 釋放StringList<br>
+XSetWMProperties() - 設置窗口管理器屬性<br>
+XSetWMName() - 設置窗口窗口名<br>
+XSetWMIconName() - 設置窗口圖標名</span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l5 level2 lfo11;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>輸入<span
+lang=EN-US>: </span></p>
+
+<p style='margin-left:72.0pt'><span lang=EN-US>XOpenIM()/XCloseIM() - 打開/關閉輸入服務器<br>
+XDisplayOfIM()/XLocaleOfIM() <br>
+XSetIMValues()/XGetIMValues() - 設置/獲取輸入服務器屬性<br>
+XCreateIC()/XDestroyIC() - 建立/釋放IC<br>
+XIMOfIC()<br>
+XSetICValues()/XGetICValues() - 設置/獲取IC的值<br>
+XSetICFocus()/XUnsetICFocus() - 聚焦/取消聚焦<br>
+XmbResetIC()/XwcResetIC() - 重設IC<br>
+XFilterEvent() - 過濾事件<br>
+Xmb/wcLookupString() - 查找字符串<br>
+XRegister/UnregisterIMInstantiateCallback() - 注冊/取消回調</span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l5 level1 lfo11;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>使非國際化軟件國際化 </p>
+
+<p style='margin-left:36.0pt'>修改已經存在的非國際化軟件<span lang=EN-US>, 應根據具體情況采用不同的補丁. 需要
+注意的是修改后的軟件應與原來的軟件兼容, 不會對軟件以前在西文和其它 語言的支持造成影響. Locale應該是軟件的語言切換中心點. 下面是筆者在 修改軟件的過程中一些經驗,
+僅供參考. </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l5 level2 lfo12;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>在軟件初始化時設置<span lang=EN-US>Locale. </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l5 level2 lfo12;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>定義<span lang=EN-US>gettext的宏, 并且把它與信息文件綁定. </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l5 level2 lfo12;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>對所有靜態信息使用<span lang=EN-US>gettext </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l5 level2 lfo12;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>對文本繪制使用字體集代替字體 </p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l5 level2 lfo12;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>繪制函數使用<span lang=EN-US>X下的多字節或寬字符函數 </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l5 level2 lfo12;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>初始化和<span lang=EN-US>XIM服務器的聯接 </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l5 level2 lfo12;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>在事件循環中用<span lang=EN-US>XFilterEvent()過濾事件到XIM服務器 </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:72.0pt;text-indent:-18.0pt;mso-list:l5 level2 lfo12;tab-stops:list 72.0pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>使用<span lang=EN-US>Xmb/wcLookupString()查找字符串 </span></p>
+
+<h2>五 目前中文化中存在的問題</h2>
+
+<p>現有的國際化標準中存在許多問題<span lang=EN-US>, 問題的原因主要出自目前的 國際化架構. 對于中文化來說, 這些問題顯得更加突出. </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo13;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>編碼動態切換的問題 </p>
+
+<p style='margin-left:36.0pt'>對中文軟件來說<span lang=EN-US>, 同時支持多內碼(GB和Big5)是比較完善的中文軟件,
+但是動態切換內碼, 特別是切換軟件界面(如菜單項)的內碼, 是受到信息 (Message)國際化中 gettext 的限制的. 一般來說, 一旦軟件載入, 所有
+文本信息便被初始化, 而且在整個過程中不會再重新裝載信息. 退一步說, 即使重新裝載了信息, 由于所裝載信息的長度發生了變化, 軟件界面調整 布局也是十分困難的.
+</span></p>
+
+<p style='margin-left:36.0pt'>所以現有軟件的動態編碼切換僅僅是在部分區域實現<span lang=EN-US>, 例如Netscape.
+遺憾的是, Netscape的編碼切換并不徹底, 它切換的僅僅是顯示部分, 輸入 部分仍然有問題. 比如在zh_CN.GBK的環境下啟動Netscape, 當切換到有
+輸入條的繁體中文頁面時, 如果采用輸入軟件自動識別Input Context的 編碼的方式, 仍然會認為Netscape是GB編碼, 輸入結果不正確. 如果輸入
+Big5編碼, 必須縮定輸出的編碼為Big5. Chinput在這方面做了一些嘗試, 結論是可以輸入Big5編碼, 但是在輸入條中的顯示不正確. </span></p>
+
+<p style='margin-left:36.0pt'>一般來說<span lang=EN-US>, 使用中文平臺來動態切換編碼更容易實現. 在中文Linux
+的發布版本中, 有幾個是可以使用中文平臺來實現動態切換編碼的, 其原理 十分簡單, 只要在應用程序或X服務器把某個窗口的編碼狀態記住就行了, 以后的文本顯示和輸入都以此編碼為標準.
+這種方法的缺點是, 應用程序 初始界面上的中文由于轉化了編碼變成了亂碼. </span></p>
+
+<p style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo13;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>中文編碼自動識別問題
+</p>
+
+<p style='margin-left:36.0pt'>在文本瀏覽<span lang=EN-US>,網頁瀏覽或網頁翻譯時, 通常需要自動識別漢字的內碼,
+但是中文的GB編碼和Big5編碼有重疊區域, 所以很難區分開. 目前公開 源代碼的識別軟件很少, 識別結果不能令人滿意, 遠沒有達到目前商業軟件 的識別水平.
+</span></p>
+
+<p style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo13;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN-US>Linux上的中文平臺到國際化的過渡 </span></p>
+
+<p style='margin-left:36.0pt'>但是從長遠的角度看<span lang=EN-US>, 因為中文在對中文顯示和輸入上與國際化標準 存在很大差異,
+所以亟需一種從中文平臺到國際化標準的過渡性方案. 在 過渡的過程中, 中文平臺可能會和國際化標準共同存在一段時間. </span></p>
+
+<p style='margin-left:36.0pt'>以<span lang=EN-US>CLE和TurboLinux為例, 它們在早期的版本中都采用了中文平臺來
+支持中文的顯示和輸入, 隨著支持國際化標準的軟件的增多, 逐步采用了 中文平臺和國際化標準共同存在的版本作為過渡性版本. 到目前為止, 已經 在缺省情況下放棄中文平臺的使用.
+中文平臺只是作為殘留物包含在發布 版本中. </span></p>
+
+<p style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo13;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN-US>Linux 文檔中文化 </span></p>
+
+<p style='margin-left:36.0pt'><span lang=EN-US>Linux文檔, 主要是指Linux上的一些命令幫助文檔(man文件),
+軟件 手冊和說明, 軟件本身的Message文件(po). 目前在這方面的工作還缺乏 統一的管理和廣大Linux愛好者的參與. </span></p>
+
+<p>參考資料 </p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo14;tab-stops:list 36.0pt'><span lang=EN-US>Unicode:
+     http://www.unicode.org/ </span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo14;tab-stops:list 36.0pt'>香港增補字符集<span lang=EN-US>:
+     http://www.digital21.gov.hk/chi/hkscs/introduction.html </span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo14;tab-stops:list 36.0pt'><span lang=EN-US>CJK 有關信息:
+     ftp://ftp.ora.com/pub/examples/nutshell/ujip/doc/cjk.inf </span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo14;tab-stops:list 36.0pt'><span lang=EN-US>Linux國際化資料:
+     http://i18n.linux.org.tw/ </span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo14;tab-stops:list 36.0pt'><span lang=EN-US>Linux國際化標準:
+     http://www.li18nux.org/. http:// </span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo14;tab-stops:list 36.0pt'><span lang=EN-US>MicroSoft
+     國際化: http://www.microsoft.com/globaldev/ </span></li>
+</ul>
+
+<h2>六 附錄</h2>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l4 level1 lfo15;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>寬字符處理函數函數與普通函數對照表 </p>
+
+<p style='margin-left:36.0pt'>字符分類<span lang=EN-US>: </span></p>
+
+<table border=1 cellpadding=0 style='mso-cellspacing:1.5pt;margin-left:36.0pt;
+ border:outset 1.5pt;mso-padding-alt:1.5pt 1.5pt 1.5pt 1.5pt'>
+ <tr>
+  <td width=100 valign=top style='width:75.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>寬字符函數<span lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+  <td width=100 valign=top style='width:75.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>普通<span lang=EN-US>C函數<o:p></o:p></span></b></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>描述<span lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>iswalnum()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>isalnum()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>測試字符是否為數字或字母</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>iswalpha()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>isalpha()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>測試字符是否是字母</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>iswcntrl()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>iscntrl()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>測試字符是否是控制符</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>iswdigit()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>isdigit()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>測試字符是否為數字</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>iswgraph()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>isgraph()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>測試字符是否是可見字符</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>iswlower()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>islower()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>測試字符是否是小寫字符</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>iswprint()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>isprint()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>測試字符是否是可打印字符</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>iswpunct()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>ispunct()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>測試字符是否是標點符號</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>iswspace()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>isspace()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>測試字符是否是空白符號</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>iswupper()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>isupper()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>測試字符是否是大寫字符</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>iswxdigit()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>isxdigit()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>測試字符是否是十六進制的數字</p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin-left:36.0pt'>大小寫轉換<span lang=EN-US>: </span></p>
+
+<table border=1 cellpadding=0 style='mso-cellspacing:1.5pt;margin-left:36.0pt;
+ border:outset 1.5pt;mso-padding-alt:1.5pt 1.5pt 1.5pt 1.5pt'>
+ <tr>
+  <td width=100 valign=top style='width:75.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>寬字符函數<span lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+  <td width=100 valign=top style='width:75.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>普通<span lang=EN-US>C函數<o:p></o:p></span></b></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>描述<span lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>towlower()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>tolower()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>把字符轉換為小寫</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>towupper()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>toupper()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>把字符轉換為大寫</p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin-left:36.0pt'>字符比較<span lang=EN-US>: </span></p>
+
+<table border=1 cellpadding=0 style='mso-cellspacing:1.5pt;margin-left:36.0pt;
+ border:outset 1.5pt;mso-padding-alt:1.5pt 1.5pt 1.5pt 1.5pt'>
+ <tr>
+  <td width=100 valign=top style='width:75.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>寬字符函數<span lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+  <td width=100 valign=top style='width:75.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>普通<span lang=EN-US>C函數<o:p></o:p></span></b></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>描述<span lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcscoll()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>strcoll()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>比較字符串</p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin-left:36.0pt'>日期和時間轉換<span lang=EN-US>: </span></p>
+
+<table border=1 cellpadding=0 style='mso-cellspacing:1.5pt;margin-left:36.0pt;
+ border:outset 1.5pt;mso-padding-alt:1.5pt 1.5pt 1.5pt 1.5pt'>
+ <tr>
+  <td width=200 valign=top style='width:150.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>寬字符函數<span lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>描述<span lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>strftime()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>根據指定的字符串格式和<span lang=EN-US>locale設置格式化日期和時間</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcsftime()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>根據指定的字符串格式和<span lang=EN-US>locale設置格式化日期和時間, 并返回寬字符串</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>strptime()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>根據指定格式把字符串轉換為時間值<span lang=EN-US>, 是strftime的反過程</span></p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin-left:36.0pt'>打印和掃描字符串<span lang=EN-US>: </span></p>
+
+<table border=1 cellpadding=0 style='mso-cellspacing:1.5pt;margin-left:36.0pt;
+ border:outset 1.5pt;mso-padding-alt:1.5pt 1.5pt 1.5pt 1.5pt'>
+ <tr>
+  <td width=200 valign=top style='width:150.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>寬字符函數<span lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>描述<span lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>fprintf()/fwprintf()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>使用<span lang=EN-US>vararg參量的格式化輸出</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>fscanf()/fwscanf()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>格式化讀入</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>printf()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>使用<span lang=EN-US>vararg參量的格式化輸出到標準輸出</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>scanf()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>從標準輸入的格式化讀入</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>sprintf()/swprintf()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>根據<span lang=EN-US>vararg參量表格式化成字符串</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>sscanf()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>以字符串作格式化讀入</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>vfprintf()/vfwprintf()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>使用<span lang=EN-US>stdarg參量表格式化輸出到文件</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>vprintf()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>使用<span lang=EN-US>stdarg參量表格式化輸出到標準輸出</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>vsprintf()/vswprintf()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>格式化<span lang=EN-US>stdarg參量表并寫到字符串</span></p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin-left:36.0pt'>數字轉換<span lang=EN-US>: </span></p>
+
+<table border=1 cellpadding=0 style='mso-cellspacing:1.5pt;margin-left:36.0pt;
+ border:outset 1.5pt;mso-padding-alt:1.5pt 1.5pt 1.5pt 1.5pt'>
+ <tr>
+  <td width=100 valign=top style='width:75.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>寬字符函數<span lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+  <td width=100 valign=top style='width:75.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>普通<span lang=EN-US>C函數<o:p></o:p></span></b></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>描述<span lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcstod()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>strtod()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>把寬字符的初始部分轉換為雙精度浮點數</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcstol()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>strtol()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>把寬字符的初始部分轉換為長整數</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcstoul()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>strtoul()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>把寬字符的初始部分轉換為無符號長整數</p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin-left:36.0pt'>多字節字符和寬字符轉換及操作<span lang=EN-US>: </span></p>
+
+<table border=1 cellpadding=0 style='mso-cellspacing:1.5pt;margin-left:36.0pt;
+ border:outset 1.5pt;mso-padding-alt:1.5pt 1.5pt 1.5pt 1.5pt'>
+ <tr>
+  <td width=200 valign=top style='width:150.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>寬字符函數<span lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>描述<span lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>mblen()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>根據<span lang=EN-US>locale的設置確定字符的字節數</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>mbstowcs()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>把多字節字符串轉換為寬字符串</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>mbtowc()/btowc()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>把多字節字符轉換為寬字符</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcstombs()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>把寬字符串轉換為多字節字符串</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wctomb()/wctob()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>把寬字符轉換為多字節字符</p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin-left:36.0pt'>輸入和輸出<span lang=EN-US>: </span></p>
+
+<table border=1 cellpadding=0 style='mso-cellspacing:1.5pt;margin-left:36.0pt;
+ border:outset 1.5pt;mso-padding-alt:1.5pt 1.5pt 1.5pt 1.5pt'>
+ <tr>
+  <td width=100 valign=top style='width:75.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>寬字符函數<span lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+  <td width=100 valign=top style='width:75.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>普通<span lang=EN-US>C函數<o:p></o:p></span></b></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>描述<span lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>fgetwc()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>fgetc()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>從流中讀入一個字符并轉換為寬字符</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>fgetws()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>fgets()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>從流中讀入一個字符串并轉換為寬字符串</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>fputwc()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>fputc()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>把寬字符轉換為多字節字符并且輸出到標準輸出</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>fputws()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>fputs()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>把寬字符串轉換為多字節字符并且輸出到標準輸出串</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>getwc()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>getc()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>從標準輸入中讀取字符<span lang=EN-US>, 并且轉換為寬字符</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>getwchar()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>getchar()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>從標準輸入中讀取字符<span lang=EN-US>, 并且轉換為寬字符</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>None</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>gets()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>使用<span lang=EN-US>fgetws()</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>putwc()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>putc()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>把寬字符轉換成多字節字符并且寫到標準輸出</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>putwchar()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>getchar()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>把寬字符轉換成多字節字符并且寫到標準輸出</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>None</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>puts()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>使用<span lang=EN-US>fputws()</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>ungetwc()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>ungetc()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>把一個寬字符放回到輸入流中</p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin-left:36.0pt'>字符串操作<span lang=EN-US>: </span></p>
+
+<table border=1 cellpadding=0 style='mso-cellspacing:1.5pt;margin-left:36.0pt;
+ border:outset 1.5pt;mso-padding-alt:1.5pt 1.5pt 1.5pt 1.5pt'>
+ <tr>
+  <td width=100 valign=top style='width:75.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>寬字符函數<span lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+  <td width=100 valign=top style='width:75.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>普通<span lang=EN-US>C函數<o:p></o:p></span></b></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>描述<span lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcscat()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>strcat()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>把一個字符串接到另一個字符串的尾部</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcsncat()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>strncat()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>類似于<span lang=EN-US>wcscat(), 而且指定粘接字符串的粘接長度.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcschr()</span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>strchr()</span></p>
+  </td>
+  <td width=300 style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>查找子字符串的第一個位置</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcsrchr()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>strrchr()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>從尾部開始查找子字符串出現的第一個位置</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcspbrk()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>strpbrk()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>從一字符字符串中查找另一字符串中任何一個字符第一次出現的位置</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcswcs()/wcsstr()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>strchr()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>在一字符串中查找另一字符串第一次出現的位置</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcscspn()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>strcspn()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>返回不包含第二個字符串的的初始數目</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcsspn()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>strspn()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>返回包含第二個字符串的初始數目</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcscpy()</span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>strcpy()</span></p>
+  </td>
+  <td width=300 style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>拷貝字符串</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcsncpy()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>strncpy()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>類似于<span lang=EN-US>wcscpy(), 同時指定拷貝的數目</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcscmp()</span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>strcmp()</span></p>
+  </td>
+  <td width=300 style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>比較兩個寬字符串</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcsncmp()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>strncmp()</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>類似于<span lang=EN-US>wcscmp(), 還要指定比較字符字符串的數目</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcslen()</span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>strlen()</span></p>
+  </td>
+  <td width=300 style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>獲得寬字符串的數目</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcstok()</span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>strtok()</span></p>
+  </td>
+  <td width=300 style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>根據標示符把寬字符串分解成一系列字符串</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcswidth()</span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>None</span></p>
+  </td>
+  <td width=300 style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>獲得寬字符串的寬度</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>wcwidth()</span></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>None</span></p>
+  </td>
+  <td width=300 valign=top style='width:225.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>獲得寬字符的寬度</p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin-left:36.0pt'>另外還有對應于<span lang=EN-US>memory操作的 wmemcpy(),
+wmemchr(), wmemcmp(), wmemmove(), wmemset(). </span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l4 level1 lfo15;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>X 窗口系統下支持中文的函數 </span></p>
+
+<table border=1 cellpadding=0 style='mso-cellspacing:1.5pt;margin-left:36.0pt;
+ border:outset 1.5pt'>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>支持西文的函數</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>支持中文的函數</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>描述</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>XLoadFont</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>XCreateFontSet</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>載入字體集</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>XTextExtents(16)</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Xmb/wcTextExtents<br>
+  Xmb/wcTextPerCharExtents</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>返回文本的限制框</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>XDrawString</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Xmb/wcDrawString</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>在窗口中畫字符串<span lang=EN-US>, 背景填充</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>XDrawImageString</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Xmb/wcDrawImageString</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>在窗口中畫字符串</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>XDrawText</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Xmb/wcDrawText</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>在窗口中畫字符串</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>XLookupString</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Xmb/wcLookupString</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>查找字符串</p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l4 level1 lfo15;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>支持國際化的高層庫
+</p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l4 level2 lfo15;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>OSF/Motif </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l4 level2 lfo15;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>Qt/kdelib </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l4 level2 lfo15;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>gtk+/gnome-lib </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l4 level2 lfo15;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>Perl </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l4 level2 lfo15;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>Java </span></p>
+
+<p style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l4 level1 lfo15;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>支持多語言的典型軟件
+</p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l4 level2 lfo15;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>瀏覽器<span lang=EN-US> Netscape </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l4 level2 lfo15;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>編輯器<span lang=EN-US> XEmacs </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l4 level2 lfo15;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>編輯器<span lang=EN-US> Mule </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l4 level2 lfo15;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>編輯器<span lang=EN-US> vim </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l4 level2 lfo15;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>終端<span lang=EN-US> rxvt </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l4 level2 lfo15;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>排版軟件<span lang=EN-US> LaTeX/lyx </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l4 level2 lfo15;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>PostScript/PDF: gs/acroread </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l4 level2 lfo15;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>圖像處理<span lang=EN-US>: gimp </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l4 level2 lfo15;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>幻燈片制作<span lang=EN-US> mgp </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l4 level2 lfo15;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>即將完成<span lang=EN-US>: StarOffice, KOffice </span></p>
+
+<p style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l4 level1 lfo15;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>支持<span
+lang=EN-US>Unicode的軟件 </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l4 level2 lfo15;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>高級圖形庫函數<span lang=EN-US> Qt 2.x </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l4 level2 lfo15;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>Java 語言開發工具 JDK </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l4 level2 lfo15;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>編輯器<span lang=EN-US> yudit </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l4 level2 lfo15;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>專用的支持<span lang=EN-US>Unicode的 X 終端 </span></p>
+
+<p style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l4 level2 lfo15;
+tab-stops:list 72.0pt'><![if !supportLists]><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>基于<span lang=EN-US>GTK+的文本處理器 GScript </span></p>
+
+<p><span lang=EN-US><script>
+ window.open=NS_ActualOpen; 
+</script></span><span lang=EN-US style='color:windowtext'><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,797 @@
+/*-------------------------------------------------------------------------------------------
+ *
+ * FUNCTION : Base element
+ *
+ *
+ *
+ *														Pin
+ *																2000 11 08
+ *
+ *-------------------------------------------------------------------------------------------*/
+
+#include "Element.h"
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+// 介面組成ELEMENT
+//
+//
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+typedef struct tagElmData
+{
+    char     Title[4]      ;
+	DWORD    RouteOffset   ;
+	DWORD    TableOffset   ;
+	DWORD    ImageOffset   ; 
+	int      ID            ;         //element id
+	int      GID           ;         //element group id
+    PCPOINT  Situs         ;         //出現時位於畫面的位置
+	int      DirectionCount;
+	int      MoveDistance  ;         //移動點數
+	int      colckcycle    ;         //動作的週期時間
+	bool     Visible       ;         //可見
+	bool     Dragable      ;         //可拖曳
+	bool     Enable        ;         //可作用
+	bool     MoveAbled     ;         //可移動
+}ElmData;
+
+
+
+ELEMENT::ELEMENT()
+{
+    m_DirectionCount = 1;
+	m_Count     = 0;
+    m_Distance  = 0;
+    m_Act       = 0;
+    m_NextAct   = 0;
+    m_Status    = 0;
+    m_Direction = 0;
+    m_ShowOffset(0, 0);
+    m_Zaxle     = -1;
+    m_Speed     = 2;
+	ActCount    = 1;
+    GID         = -1;
+    MoveAbled   = true;
+    Visible     = true;
+    Enable      = true;
+    Dragable    = false;
+
+    Clock.Setcycle(100);
+    Delay.Setcycle(200);
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+//
+//
+ELEMENT::~ELEMENT()
+{
+
+
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+//
+//
+int ELEMENT::Load(const char *elmpath)
+{
+	FILE    *f;
+	ElmData elmdata;
+
+
+	if((f=fopen(elmpath,"rb")) == NULL)//開檔如果-1則失敗，傳回-1
+	{
+		sprintf(Message,"Load file %s failure !!!", elmpath);
+		return -1;
+	}
+
+
+    long size = filelength(fileno(f));
+    BYTE* pic = new BYTE[size];
+    fseek(f,0,SEEK_SET);								//將檔案指標移至與檔案起始位置相距0的位置
+	fread(pic,size,1,f);                                //將檔案 (f) (一次) 讀入此(檔案長度) 到buffer (Pic)
+	BYTE* picptr = pic;
+
+
+	//檢查檔案格式====================================================================
+	char Title[4];               
+	Title[0] = *(char*)(picptr);
+	Title[1] = *(char*)(picptr + 1);
+	Title[2] = *(char*)(picptr + 2);
+	Title[3] = *(char*)(picptr + 2);
+
+	if((Title[0] != 'P') && (Title[1] != 'E') && (Title[1] != 'L') && (Title[1] != 'M'))
+	{
+		sprintf(Message,"Load file %s format error !!!", elmpath);
+		return -1;
+	}
+	//END 檢查檔案格式================================================================
+
+	//load data struct
+	fseek(f,0,SEEK_SET);								//將檔案指標移至與檔案起始位置相距0的位置
+	fread(&elmdata,sizeof(ElmData),1,f);    		    //檔案 (f) 讀入Data
+	ID               = elmdata.ID                  ;         //element id
+	GID              = elmdata.GID                 ;         //element group id
+	m_ShowOffset     = elmdata.Situs               ;         //出現時位於畫面的位置
+	Situs            = elmdata.Situs               ;         //出現時位於畫面的位置
+	m_DirectionCount = elmdata.DirectionCount;
+	m_Speed          = elmdata.MoveDistance        ;         //移動點數
+	Clock.Setcycle(elmdata.colckcycle)             ;         //動作的週期時間
+	Visible          = elmdata.Visible             ;         //可見
+	Dragable         = elmdata.Dragable            ;         //可拖曳
+	Enable           = elmdata.Enable              ;         //可作用
+	MoveAbled        = elmdata.MoveAbled           ;         //可移動
+
+	//load Route List
+	WORD PointCount;
+	fread(&PointCount, sizeof(WORD), 1, f);
+
+	for(int i = 0; i < PointCount; i++)
+	{
+		PCPOINT RoutePoint;
+		fread(&RoutePoint, sizeof(PCPOINT), 1, f);
+		RouteList.push_back(RoutePoint);
+	}
+
+
+	//load action table
+	BYTE ActCount;
+	fread(&ActCount, sizeof(BYTE), 1, f);
+
+	for(int ac = 0; ac < ActCount; ac++)
+	{
+			
+
+	}
+
+	//load image pep
+
+
+
+	
+
+
+	fclose(f);
+	
+    return 1;											     //傳回記憶體的指標
+
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+//
+//
+int ELEMENT::Save(const char *elmpath, int ActCount)
+
+{
+	return Save(elmpath,
+		        ActCount,
+		        this->ID,
+		        this->GID,
+		        this->m_ShowOffset,
+                this->m_DirectionCount,
+		        this->m_Speed,
+		        this->Clock.Getcycle(),
+		        this->Visible,
+		        this->Dragable,
+		        this->Enable ,
+		        this->MoveAbled
+		       );
+
+}
+
+
+int ELEMENT::Save(const char    *elmpath,
+				        int      ActCount,
+				        int      id,
+				        int      gid,
+						PCPOINT  situs,
+						int      direction_count,
+						int      move_distance,
+						int      colckcycle,
+						bool     visible,
+						bool     dragable,
+						bool     enable,
+						bool     moveAbled
+						)
+{
+    
+	//open write file
+	FILE    *f;
+	ElmData elmdata;
+	
+	if((f=fopen(elmpath,"wb")) == NULL)//開檔如果-1則失敗，傳回-1
+	{
+		sprintf(Message,"write file %s failure !!!", elmpath);
+		return -1;
+	}
+	
+	//wtire data
+	elmdata.Title[0]       = 'P' ; elmdata.Title[1]  = 'E' ; elmdata.Title[2]  = 'L' ; elmdata.Title[3]  = 'M' ;
+	//elmdata.RouteOffset    ;
+	elmdata.TableOffset    = sizeof(ElmData) ;
+	//elmdata.ImageOffset    ;      
+	elmdata.ID             = id ;                     //element id
+	elmdata.GID            = gid;                     //element group id
+	elmdata.Situs          = situs    ;               //出現時位於畫面的位置
+	elmdata.DirectionCount = direction_count;
+	elmdata.MoveDistance   = move_distance  ;         //移動點數
+	elmdata.colckcycle     = colckcycle     ;         //動作的週期時間
+	elmdata.Visible        = visible        ;         //可見
+	elmdata.Dragable       = dragable       ;         //可拖曳
+	elmdata.Enable         = enable         ;         //可作用
+	elmdata.MoveAbled      = moveAbled      ;         //可移動
+	fwrite(&elmdata, sizeof(elmdata), 1, f) ;
+
+	//write route List
+	int rs = RouteList.size();
+	fwrite(&rs, sizeof(unsigned int), 1, f);  //write point count
+	for(int pointcount = 0 ; pointcount < RouteList.size() ; pointcount++)
+	{
+		fwrite(&(RouteList[pointcount]), sizeof(PCPOINT), 1, f);
+	}
+
+	//write action table
+	WORD as = ActTable.size();
+	fwrite(&as, sizeof(WORD), 1, f);  //write act count
+	for(int Act = 0; Act < ActTable.size(); Act++)
+	{
+		WORD acts = ActTable[Act].size();
+		fwrite(&acts, sizeof(WORD), 1, f);  //write step count
+		for(int Step = 0; Step < ActTable[Act].size(); Step++)
+		{
+			int* ActStep = ActTable[Act][Step];
+			fwrite(ActStep, sizeof(DWORD), 1, f);
+		}
+	}
+
+	//write image
+
+
+
+
+
+	fclose(f);
+
+    return 1;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+//
+//
+int ELEMENT::CompareOrder(ELEMENT &element)
+{
+	if(Situs.y > element.Situs.y)
+	{
+		return ID;
+	}
+	else
+	{
+		return element.ID;
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+//
+//
+ELEMENT& ELEMENT::operator = (const ELEMENT &element)
+{
+	memcpy(this, &element, sizeof(ELEMENT));
+    return *this;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+// 撥放一元素的動畫
+//
+int ELEMENT::Play(void)
+{
+	if(Clock.Interval() == 0)
+	{
+		ActTable[(m_Act * m_DirectionCount) + m_Direction]++;
+		return ActTable[(m_Act * m_DirectionCount) + m_Direction].Index();
+	}
+	return -1;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+// 傳回目前所指向的圖形
+//
+HPINMAP* ELEMENT::IMAGE(void)
+{
+    int* i = ActTable[(m_Act * m_DirectionCount) + m_Direction]();
+	return m_ImageBox[*i];
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+// 撥放一元素的動畫
+//
+HPINMAP* ELEMENT::Image_Play(void)
+{
+	Play();
+	return IMAGE();
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+// 元素目前撥放的圖形號碼
+//
+unsigned int ELEMENT::ImageIndex(void)
+{
+	return ActTable[(m_Act * m_DirectionCount) + m_Direction].Index();
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// return object status
+//
+int ELEMENT::GetStatus(void)
+{
+	return m_Status;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// return object status
+//
+PCPOINT ELEMENT::Goal(void)
+{
+	return m_To;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// return object status   1:60  2:40  3:20  4:0
+//
+void ELEMENT::SpeedUp(int speed)
+{
+	switch(speed)
+	{
+	case 1:
+		m_Speed = 1;
+		Clock.Setcycle(60);
+		break;
+	case 2:
+		m_Speed = 2;
+		Clock.Setcycle(40);
+		break;
+	case 3:
+		m_Speed = 3;
+		Clock.Setcycle(20);
+		break;
+	case 4:
+		m_Speed = 4;
+		Clock.Setcycle(0);
+		break;
+	}
+
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//
+//
+void ELEMENT::ResetSpeed(int speed, int cycle)
+{
+	m_Speed = speed;
+	Clock.Setcycle(cycle);
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+// 判斷一點是否一在範圍內
+//
+bool ELEMENT::InArea(POINT point)
+{
+
+	if ((point.x < (Situs.x + m_RECT.right)) && (point.x > (Situs.x + m_RECT.left)) 
+		&& (point.y <  (Situs.y + m_RECT.bottom)) && (point.y > (Situs.y + m_RECT.top)) 
+		   && (Enable))
+	{
+
+		return true;
+	}
+	return false;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+// 拖曳一組成元素
+//
+bool ELEMENT::DragTo(POINT To)
+{
+    m_To.x = To.x - m_Relative.x;
+    m_To.y = To.y - m_Relative.y;
+
+    Situs.x = m_To.x;
+    Situs.y = m_To.y;
+	return true;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+// judgment event
+//
+int ELEMENT::pMsg(POINT point, UINT uMsg, UINT wParam)
+{
+	short LMouseAct = GetAsyncKeyState(VK_LBUTTON);
+
+	
+	if(uMsg == WM_LBUTTONDOWN)    //prepare to start drag
+	{
+		m_Relative.x = point.x - Situs.x;
+		m_Relative.y = point.y - Situs.y;
+	}
+	else if(uMsg == WM_LBUTTONUP) //prepare to end drag
+	{
+		m_Relative.x = 0;
+		m_Relative.y = 0;
+	}
+	
+
+	if((InArea(point)) && (Visible))
+	{
+		switch(uMsg)
+		{
+			case WM_MOUSEMOVE:
+				if(LMouseAct)
+				{
+					if(Dragable)
+					{
+						if((m_Relative.x != 0) && (m_Relative.y != 0)) //(m_Act != E_Normal)
+						{
+							DragTo(point);
+							return E_Drag; //Drag Act
+						}
+					}
+					else
+					{
+						m_Act = E_LDown;
+						return E_LDown; //Down Act
+					}
+				}
+				else
+				{
+					m_Act = E_Over;
+					return E_Over; //Move Act
+				}
+				return E_Move;
+																		
+    		case WM_LBUTTONDOWN:
+				m_Act = E_LDown;
+				return E_LDown;
+					
+			case WM_LBUTTONUP:
+				m_Act = E_Over;
+     			return E_LUp;
+
+			case WM_RBUTTONDOWN:
+
+				return E_RDown;
+
+			case WM_RBUTTONUP:
+
+				return E_RUp;
+		}
+		return E_Over;
+	}
+	else if((m_Act == E_LDown) && (uMsg == WM_MOUSEMOVE) && (Dragable))//outside area but still drag
+	{
+	   DragTo(point);
+	   return E_Drag;
+	}
+	else //outside area
+	{
+		m_Act = E_Normal;
+		return E_Normal;
+	}
+
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+// set element Act 
+//
+void ELEMENT::SetAct(int act)
+{
+	m_Act = act;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Set prepare act 
+//
+void ELEMENT::Do(int act)
+{
+	m_NextAct = act;
+
+	if(m_Status < 3)
+	{
+		m_Status ++;
+	}
+
+	if(m_Status == 2)
+	{
+		if(Situs == m_To)
+		{
+			m_Status  = 0;
+			return ;
+		}
+	}
+	return;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Set act object
+//
+void ELEMENT::To(POINT object)
+{
+	m_To     = object;
+
+	if(m_Status < 3)
+	{
+		m_Status ++;
+	}
+
+	if(m_Status == 2)
+	{
+		if(m_Act == m_NextAct)
+		{
+			m_Status  = 0;
+			return ;
+		}
+	}
+	return;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Set act and object
+//
+void ELEMENT::DoTo(int Act, POINT object, DWORD delay)
+{
+	Delay.Setcycle(delay);
+	Do(Act);
+	To(object);
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+// 接觸碰撞
+//
+bool ELEMENT::Collision(RECT rect)
+{
+    if ((((m_RECT.left - m_RECT.right) + (rect.left - rect.right)) > abs(rect.right - m_RECT.left))
+		|| (((m_RECT.bottom - m_RECT.top) + (rect.bottom - rect.top )) > abs(rect.bottom - m_RECT.top)))
+	{
+		return true;
+	}
+	return false;
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+// 元素移動至目的點
+//
+bool ELEMENT::MoveTo(POINT Dest)
+{
+	PCPOINT NextSitus(Situs);
+	m_To = Dest;
+	m_Distance = m_Speed;
+	bool ReturnValue = false;
+
+	//m_Distance  = (sqrt((pow((m_To.x - m_Form.x), 2)) + (pow((m_To.y - m_Form.y), 2))) / m_IMAGE[Act][m_Direction].size()) - 1;
+	
+	//確定向量的分量
+    int Dx = Dest.x - Situs.x;
+    int Dy = Dest.y - Situs.y;
+
+    //計算增量數
+    int steps = (int)(floor(max(abs(Dx), abs(Dy))) + 1);
+   
+    double dx_step = (floor(((double)Dx / (double)steps) + 0.5));
+    double dy_step = (floor(((double)Dy / (double)steps) + 0.5));
+
+    float x = Situs.x + (float)dx_step;
+    float y = Situs.y + (float)dy_step;
+
+	int result = Judg8Dir();
+
+	if((result == -1) && (m_Act == m_NextAct))     //watting status
+	{
+		m_Status      = 0;
+		ReturnValue   = true;
+	}
+
+		if((m_Status == 2) && (result == -1))      //act end
+		{
+			 m_IMAGE[m_Act].GoHeader();
+		     m_Act      = 0;
+		     m_NextAct  = m_Act;
+             m_To       = Situs;
+             m_From     = Situs;
+             m_Distance = m_Speed;
+             m_Count    = 0;
+		     m_Status   = 3;
+		}
+
+		 switch(result)
+		 {
+			  case 0: //↘
+			  {
+ 				   NextSitus(x + m_Speed, y + m_Speed);
+				   if((NextSitus.x > Dest.y) && (NextSitus.y > Dest.y))
+				   {
+					    Situs = Dest;
+				   }
+				   break;
+			  }
+			  case 1:
+			  {
+			  	   NextSitus(Situs.x, y + m_Speed);
+                   if( NextSitus.y > Dest.y )
+				   {
+					    Situs.y = Dest.y;
+				   }
+				   break;
+			  }
+			  case 2: //↙
+			  {
+				   NextSitus(x - m_Speed, y + m_Speed);
+   				   if((NextSitus.x < Dest.x) && (NextSitus.y > Dest.y))
+				   {
+					    Situs = Dest;
+				   }
+				   break;
+			  }
+			  case 3: //←
+			  {
+			       NextSitus(x - m_Speed, Situs.y);
+                   if( NextSitus.x < Dest.x)
+                   {
+                        Situs.x = Dest.x;
+				   }
+				   break;
+			  }
+			  case 4: //↖
+			  {
+                   NextSitus(x - m_Speed, y - m_Speed);
+                   if((NextSitus.x < Dest.x) && (NextSitus.y < Dest.y))
+                   {
+					    Situs = Dest;
+				   }
+				   break;
+			  }
+			  case 5: //↑
+			  {
+			  	   NextSitus(Situs.x, y - m_Speed);
+				   if( NextSitus.y < Dest.y)
+				   {
+					    Situs.y = Dest.y;
+				   }
+				   break;
+              }
+			  case 6: //↗
+			  {
+			  	   NextSitus(x + m_Speed, y - m_Speed);
+			       if((NextSitus.x > Dest.x) && (NextSitus.y < Dest.y))
+				   {
+					    Situs = Dest;
+				   }
+				   break;
+              }
+			  case 7: //→
+			  {
+			  	   NextSitus(x + m_Speed, Situs.y);
+				   if( NextSitus.x > Dest.x)
+				   {
+					    Situs.x = Dest.x;
+				   }
+				   break;
+			  }
+	     }
+
+	if(Clock.Interval() == 0)
+	{
+         Situs = NextSitus;
+         m_IMAGE[m_Act]++;
+	}
+	return ReturnValue;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+// judgment m_Direction
+//
+int ELEMENT::Judg8Dir(void)
+{
+    if((Situs.x == m_To.x) && (Situs.y == m_To.y))
+	{
+		return -1;
+	}
+	else if((m_To.x > Situs.x) && (m_To.y > Situs.y))  //↘
+	{
+        m_Direction = 0;
+		return 0;
+	}
+	else if((Situs.x == m_To.x) && (Situs.y < m_To.y)) //↓
+	{
+		m_Direction = 1;
+		return 1;
+	}
+	else if((m_To.x < Situs.x) && (m_To.y > Situs.y))  //↙
+	{
+		m_Direction = 2;
+		return 2;
+	}
+	else if((Situs.y == m_To.y) && (Situs.x > m_To.x))//←
+	{
+		m_Direction = 3;
+		return 3;
+	}
+	else if((m_To.x< Situs.x) && (m_To.y < Situs.y))  //↖
+	{
+		m_Direction = 4;
+		return 4;
+	}
+	else if((Situs.x == m_To.x) && (Situs.y > m_To.y)) //↑
+	{
+		m_Direction = 5;
+		return 5;
+	}
+	else if((m_To.x > Situs.x) && (m_To.y < Situs.y))  //↗
+	{
+		m_Direction = 6;
+		return 6;
+	}
+  	else if((Situs.y == m_To.y) && (Situs.x < m_To.x)) //→
+	{
+		m_Direction = 7;
+		return 7;
+	}
+	return -2;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+//
+//
+int ELEMENT::Dir4Act(int value)
+{
+	switch(value)
+	{
+	case AS_STANDBY:
+
+		break;
+	case AS_WALK:
+
+		break;
+	case AS_ATTACK:
+
+		break;
+	case AS_DEFENCE:
+
+		break;
+	}
+
+	return -1;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+//
+//
+int ELEMENT::Dir8Act(int value)
+{
+	return -1;
+}

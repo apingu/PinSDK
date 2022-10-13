@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{3f53edb3-1ed6-411f-81ec-3285a44ba33f}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{a3c726c5-f155-4864-a640-3c1618c48616}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{fcecb116-a407-4638-a712-aa441db55f4b}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{8db52150-80c2-4f6d-b5d7-fa8414c9002e}</UniqueIdentifier>
+      <Extensions>*.mak</Extensions>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{d0a27f6e-7f2d-4b2e-9e64-12f1f15bc7cc}</UniqueIdentifier>
+      <Extensions>*.vgdbsettings</Extensions>
+    </Filter>
+    <Filter Include="CRC">
+      <UniqueIdentifier>{332b16dd-bf6b-47f5-90e5-3e8c7c5f235e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PathFinding">
+      <UniqueIdentifier>{da902524-3669-4287-bfea-24c0210349ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cryptology">
+      <UniqueIdentifier>{81c274b6-a7d1-4824-a457-ef5d5ad3f654}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{529eb977-47fb-4f48-bf82-1925ab2dc1fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AES">
+      <UniqueIdentifier>{267c9483-0e8f-444d-99d4-3000113bd92f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="Algorithmic_vgdb_linux-Debug.vgdbsettings" />
+    <None Include="Algorithmic_vgdb_linux-Release.vgdbsettings" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\OBPathSearch.cpp">
+      <Filter>PathFinding</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Cryptology.cpp">
+      <Filter>Cryptology</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AES.cpp">
+      <Filter>AES</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Crc32.cpp">
+      <Filter>CRC</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Crc64.cpp">
+      <Filter>CRC</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Base64.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Base32.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\CrcCommon.h">
+      <Filter>CRC</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OBPathSearch.h">
+      <Filter>PathFinding</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PathSearch.h">
+      <Filter>PathFinding</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cryptology.h">
+      <Filter>Cryptology</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AES.h">
+      <Filter>AES</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crc32.h">
+      <Filter>CRC</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Crc64.h">
+      <Filter>CRC</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Base32.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Base64.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\CrcReadme.txt">
+      <Filter>CRC</Filter>
+    </Text>
+    <Text Include="src\aes_test.txt">
+      <Filter>AES</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

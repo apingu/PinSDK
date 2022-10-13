@@ -1,0 +1,30 @@
+      2元一次方程式(a,b,c可自定)
+
+        real a,b,c,d
+        write(*,*) '請輸入A,B,C'
+        read(*,*) a,b,c
+        d=b**2.0-4*a*c
+        if(a.eq.0.0) then
+            if(b.eq.0.0) then
+                if(c.eq.0.0) then
+                    write(*,*) '輸入值可計算'
+                else
+                    write(*,*) '輸入值無法計算'
+                endif
+            else
+                write(*,*) 'x=',-c/b
+            endif
+
+        else
+            if(d.ge.0.0) then
+                write(*,*) 'x=',(-b+d**0.5)/2.0/a
+                write(*,*) 'x=',(-b-d**0.5)/2.0/a
+            else
+                write(*,*) 'x=',(-b)/2.0/a,'+',(-d)**0.5/2.0/a,'i'
+                write(*,*) 'x=',(-b)/2.0/a,'-',(-d)**0.5/2.0/a,'i' 
+            endif
+        endif
+
+        stop
+        end
+

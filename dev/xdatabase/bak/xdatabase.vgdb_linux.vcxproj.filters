@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{c7693bb1-15b7-41fe-992f-ce115bb75802}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{e3675a39-8d8c-491b-b879-67c6bc75bf55}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{d80ce7e4-a1e5-474e-bae9-9f67098c4980}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{3bf76586-eb2c-4fe6-811c-63d389be48af}</UniqueIdentifier>
+      <Extensions>*.mak</Extensions>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{9176dc50-782a-438e-bb07-2c090277cc11}</UniqueIdentifier>
+      <Extensions>*.vgdbsettings</Extensions>
+    </Filter>
+    <Filter Include="Arbitration">
+      <UniqueIdentifier>{331e9aa6-eec2-4e04-97b5-f5d32ce44c8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database">
+      <UniqueIdentifier>{70b4ed31-0a2f-4a72-a840-aaff8db448dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Paper">
+      <UniqueIdentifier>{93768a0a-46bb-4ccb-8a7d-057a32dbd478}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server">
+      <UniqueIdentifier>{848517a3-8e2d-45fb-98cf-c391eedca6f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database\DB">
+      <UniqueIdentifier>{482903dc-b9a1-40fc-be05-373c18d40d7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{aea28a46-6bea-40d1-a506-8c3cded047da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{95d5fe50-fd92-4fc7-9091-5cc4d1c3e778}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Web">
+      <UniqueIdentifier>{6cb9176e-1751-4efe-860c-0bd919b822b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\SCS">
+      <UniqueIdentifier>{78ff4824-1b77-4f40-a38d-0f8b7908a5ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Packet">
+      <UniqueIdentifier>{38311679-d43b-4fd7-a3ed-9d65763c8c4c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="Cyberspace_Server_vgdb_Linux-Debug.vgdbsettings" />
+    <None Include="Cyberspace_Server_vgdb_Linux-Release.vgdbsettings" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\CsArbitrationDelegate.h">
+      <Filter>Arbitration</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsArbitrationServer.h">
+      <Filter>Arbitration</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsArbitrationClient.h">
+      <Filter>Arbitration</Filter>
+    </ClInclude>
+    <ClInclude Include="src\database\UnPromptQuery.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="src\database\XDatabase.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="src\database\XMySQLDB.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsPaperClient.h">
+      <Filter>Paper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsPaperServer.h">
+      <Filter>Paper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsPaperSystem.h">
+      <Filter>Paper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsServerInterface.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsCoreServer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsCoreUtility.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DBQueryFactory.h">
+      <Filter>Database\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsDBFunction.h">
+      <Filter>Database\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsSCSSectionClient.h">
+      <Filter>Server\SCS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsSCSSectionServer.h">
+      <Filter>Server\SCS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsSCSSessionSymbol.h">
+      <Filter>Server\SCS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsSCSSystem.h">
+      <Filter>Server\SCS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsSCSCommand.h">
+      <Filter>Server\SCS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MessageDispatcher.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsUpdateOperation.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsDatabaseServer.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsDef.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsErr.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CstCDataDef.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CstSDataDef.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsLogFileExporter.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsRecord.h">
+      <Filter>Paper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsUnitServer.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsWebClient.h">
+      <Filter>Web</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsWebDef.h">
+      <Filter>Web</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsWebServer.h">
+      <Filter>Web</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsObjDescriptor.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsSocketInterface.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsPaperCommand.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsArbitCommand.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsConnection.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsPacketClient.h">
+      <Filter>Core\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsPacketConnection.h">
+      <Filter>Core\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsPacketFactory.h">
+      <Filter>Core\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsProtocol.h">
+      <Filter>Core\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsPacketPeer.h">
+      <Filter>Core\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsBaseCommand.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsLogService.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CsArbitrationServer.cpp">
+      <Filter>Arbitration</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsArbitrationClient.cpp">
+      <Filter>Arbitration</Filter>
+    </ClCompile>
+    <ClCompile Include="src\database\XDatabase.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="src\database\XMySQLDB.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="src\database\UnPromptQuery.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsPaperServer.cpp">
+      <Filter>Paper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsPaperSystem.cpp">
+      <Filter>Paper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsPaperClient.cpp">
+      <Filter>Paper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsServerInterface.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsCoreServer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsSCSSystem.cpp">
+      <Filter>Server\SCS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MessageDispatcher.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsUpdateOperation.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsDatabaseServer.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsLogFileExporter.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsRecord.cpp">
+      <Filter>Paper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsUnitServer.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsWebServer.cpp">
+      <Filter>Web</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsWebClient.cpp">
+      <Filter>Web</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsObjDescriptor.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsConnection.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsPacketClient.cpp">
+      <Filter>Core\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsPacketConnection.cpp">
+      <Filter>Core\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsPacketFactory.cpp">
+      <Filter>Core\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsProtocol.cpp">
+      <Filter>Core\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsPacketPeer.cpp">
+      <Filter>Core\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CsLogService.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

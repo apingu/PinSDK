@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{c91357ba-56af-4a8a-a9a3-c8743438a21e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headle Files">
+      <UniqueIdentifier>{5a9206ac-311d-4045-ad8a-a97e49392e18}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\sdkbundle\src\sdkbundle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sdkapprun\src\smain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\sdkapprun\project.h" />
+    <ClInclude Include="..\..\..\sdkbundle\src\sdkbundle.h">
+      <Filter>Headle Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\sdkapprun\readme.txt" />
+  </ItemGroup>
+</Project>

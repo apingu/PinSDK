@@ -1,0 +1,93 @@
+物件Configure檔 keyword
+
+
+"DIALOG2D"
+    ==> LOADRES  + 資源路徑名稱
+    ==> ID       + 物件編號
+    ==> GID      + 物件群組編號
+    ==> POSITION + 物件位置
+    ==> AFONT    + Ascii文字檔名 + w + h + d + fmt + cache要不要打開文字的cache
+    ==> CFONT    + Big5文字檔名 + w + h + d + fmt + cache要不要打開文字的cache
+
+"2DBUTTON"
+"2DEDIT"
+"2DTEXTLIST"
+"2DAMIN"
+"2DRADIO"
+    ==> LOADRES  + 資源路徑名稱
+    ==> ID       + 物件編號
+    ==> GID      + 物件群組編號
+    ==> POSITION + 物件位置
+    ==> TEXT     + 顯示文字 + t + b + l + r
+
+"2DPROGRESS"
+    ==> LOADRES  + 資源路徑名稱
+    ==> ID       + 物件編號
+    ==> GID      + 物件群組編號
+    ==> POSITION + 物件位置
+    ==> TEXT     + 顯示文字 + t + b + l + r
+    ==> SETMAXPOS+ 最大位置
+    ==> SETcurPOS+ 位置
+    
+"2DMENU"
+    ==> LOADTITLE + title的檔名
+    ==> LOADEND   + end的檔名
+    ==> LOADIMAGE + Item的檔名
+    ==> LOADRES  + 資源路徑名稱
+    ==> ID       + 物件編號
+    ==> GID      + 物件群組編號
+    ==> POSITION + 物件位置
+    ==> TEXT     + 顯示文字 + t + b + l + r
+    
+"2DFREERECT"
+    ==> LOAD_LT  + LT
+    ==> LOAD_T   + T
+    ==> LOAD_RT  + RT
+    ==> LOAD_L   + L
+    ==> LOAD_R   + R
+    ==> LOAD_LB  + LB
+    ==> LOAD_B   + B
+    ==> LOAD_RB  + RB
+    ==> LOADRES  + 資源路徑名稱
+    ==> ID       + 物件編號
+    ==> GID      + 物件群組編號
+    ==> POSITION + 物件位置
+    ==> TEXT     + 顯示文字 + t + b + l + r    
+    
+    
+"2DMAP"
+    ==> LOADALPH + 遮罩檔名
+    ==> LOADRES  + 資源路徑名稱
+    ==> ID       + 物件編號
+    ==> GID      + 物件群組編號
+    ==> POSITION + 物件位置
+    ==> TEXT     + 顯示文字 + t + b + l + r
+    
+    
+"2DBTNARRAY"
+    ==> ARRAY    + X + Y
+    ==> LOADALLCELLRES + 組成物件要讀的資源檔案
+    ==> SPACE    + x的間隔 + y的間隔
+    ==> LOADRES  + 資源路徑名稱
+    ==> ID       + 物件編號
+    ==> GID      + 物件群組編號
+    ==> POSITION + 物件位置
+    ==> TEXT     + 顯示文字 + t + b + l + r
+ 
+"2DSCROLL"
+    ==> LOAD_TbUP    + 資源路徑名稱
+    ==> LOAD_UP      + 資源路徑名稱
+    ==> LOADIMAGE    + 資源路徑名稱
+    ==> LOAD_EDIT    + 資源路徑名稱
+    ==> LOAD_SHADOW  + 資源路徑名稱
+    ==> LOAD_DOWN    + 資源路徑名稱
+    ==> LOAD_TbDOWN  + 資源路徑名稱
+    ==> SCROLL_RECT + top + bottom + left + right
+    ==> POS_TbUP    + X + Y
+    ==> POS_UP      + X + Y
+    ==> POS_DOWN    + X + Y
+    ==> POS_TbDOWN  + X + Y
+    ==> POS_EDIT    + X + Y
+
+
+

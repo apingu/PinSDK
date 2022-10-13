@@ -1,0 +1,32 @@
+                      面積梯形積分          只會分割成你要的份數來積分       
+
+　
+
+                    REAL   RESULT,L,R,AREA,DX,X1,X2,F1,F2 
+                    INTEGER N 
+                    write(*,*)'作Y=5*(X**2)+3*(X)+10的積分,算面積' 
+                    write(*,*)'輸入左值及右值'
+                    READ(*,*) L,R 
+                    write(*,*)'輸入分割的分數'
+                    READ(*,*) N 
+                    DX=(R-L)/N 
+
+                    DO 1000 I=1,N        ----------------先讓程式跳到下方讀取Y值   在跳回來計算面積 
+                    X1=(I-1)*DX+L                     再連加
+                    CALL F(F1,X1) 
+                    X2=X1+DX 
+                    CALL F(F2,X2) 
+                    AREA=(F1+F2)*DX/2.0 
+                    RESULT=RESULT+AREA 
+1000             CONTINUE 
+                    WRITE(*,*) '答案是 ',RESULT 
+                    STOP 
+                    END 
+
+
+                    SUBROUTINE F(Y,X) ------------呼應上方的call的副程式
+                    REAL Y,X 
+                    Y=5*X**2+3*X+10 
+                    RETURN
+                    END
+

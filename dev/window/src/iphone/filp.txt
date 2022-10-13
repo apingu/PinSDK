@@ -1,0 +1,20 @@
+-(void)FlipViews:(UIViewController *)tComing going:(UIViewController *)tGoing dir:(UIViewAnimationTransition)tFlipType
+{
+[UIView beginAnimations:@"View Flip" context:nil];
+[UIView setAnimationDuration:1.25];
+[UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+UIViewAnimationTransition tTransition = tFlipType;
+
+[UIView setAnimationTransition: tTransition forView:self.view cache:YES];
+[tComing viewWillAppear:YES];
+[tGoing viewWillDisappear:YES];
+
+[tGoing.view removeFromSuperview];
+[self.view addSubview:tComing.view];
+[self.view setNeedsLayout];
+
+[tGoing viewDidDisappear:YES];
+[tComing viewDidAppear:YES];
+
+[UIView commitAnimations];
+}

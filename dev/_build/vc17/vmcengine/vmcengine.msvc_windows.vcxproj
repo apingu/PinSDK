@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>vmcengine</ProjectName>
+    <ProjectGuid>{75FF8328-E7A7-4669-A985-1A89CB702C29}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\include\;..\..\..\..\include\;..\..\..\vmcengine\src\graphic;..\..\..\vmcengine\src\font;..\..\..\vmcengine\src\file;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>$(IntDir)</BrowseInformationFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0404</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy /y     ..\..\..\vmcengine\src\file\hpin.h                   ..\..\..\include\game
+copy /y     ..\..\..\vmcengine\src\file\helem.h                  ..\..\..\include\game
+copy /y     ..\..\..\vmcengine\src\font\font.h                   ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\font\text.h                   ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\icon.h                ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\ivmc-device.h         ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\ivmc-device2d.h       ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\ivmc-device3d.h       ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\ivmc-draw2d.h         ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-def.h             ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-draw.h            ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-text.h            ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-dX.h              ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-gdi.h             ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-gl.h              ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-vl.h              ..\..\..\include\graphic</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\include\;..\..\..\..\include\;..\..\..\vmcengine\src\graphic;..\..\..\vmcengine\src\font;..\..\..\vmcengine\src\file;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_LIB;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>$(IntDir)</BrowseInformationFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0404</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy /y     ..\..\..\vmcengine\src\file\hpin.h                   ..\..\..\include\game
+copy /y     ..\..\..\vmcengine\src\file\helem.h                  ..\..\..\include\game
+copy /y     ..\..\..\vmcengine\src\font\font.h                   ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\font\text.h                   ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\icon.h                ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\ivmc-device.h         ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\ivmc-device2d.h       ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\ivmc-device3d.h       ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\ivmc-draw2d.h         ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-def.h             ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-draw.h            ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-text.h            ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-dX.h              ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-gdi.h             ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-gl.h              ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-vl.h              ..\..\..\include\graphic</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\include\;..\..\..\..\include\;..\..\..\vmcengine\src\graphic;..\..\..\vmcengine\src\font;..\..\..\vmcengine\src\file;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <BrowseInformationFile>$(IntDir)</BrowseInformationFile>
+      <AdditionalOptions> /utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0404</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy /y     ..\..\..\vmcengine\src\file\hpin.h                   ..\..\..\include\game
+copy /y     ..\..\..\vmcengine\src\file\helem.h                  ..\..\..\include\game
+copy /y     ..\..\..\vmcengine\src\font\font.h                   ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\font\text.h                   ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\icon.h                ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\ivmc-device.h         ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\ivmc-device2d.h       ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\ivmc-device3d.h       ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\ivmc-draw2d.h         ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-def.h             ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-draw.h            ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-text.h            ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-dX.h              ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-gdi.h             ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-gl.h              ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-vl.h              ..\..\..\include\graphic</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\include\;..\..\..\..\include\;..\..\..\vmcengine\src\graphic;..\..\..\vmcengine\src\font;..\..\..\vmcengine\src\file;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_LIB;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <BrowseInformationFile>$(IntDir)</BrowseInformationFile>
+      <AdditionalOptions> /utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0404</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy /y     ..\..\..\vmcengine\src\file\hpin.h                   ..\..\..\include\game
+copy /y     ..\..\..\vmcengine\src\file\helem.h                  ..\..\..\include\game
+copy /y     ..\..\..\vmcengine\src\font\font.h                   ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\font\text.h                   ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\icon.h                ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\ivmc-device.h         ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\ivmc-device2d.h       ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\ivmc-device3d.h       ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\ivmc-draw2d.h         ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-def.h             ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-draw.h            ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-text.h            ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-dX.h              ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-gdi.h             ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-gl.h              ..\..\..\include\graphic
+copy /y     ..\..\..\vmcengine\src\graphic\vmc-vl.h              ..\..\..\include\graphic</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\vmcengine\src\file\helem.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\file\hpin.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\font\font.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\font\text.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\fs-window.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\icon.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\ivmc-device.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\ivmc-device2d.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\ivmc-device3d.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\ivmc-draw2d.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-blend_func.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-blend_mmx_func.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-blend_sse_func.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-clipper.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-def.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-draw.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-dx.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-gdi.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-gl.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-global.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-matrix.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-text.h" />
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-vl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\vmcengine\src\font\font.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vmcengine\src\font\text.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\fs-window.cpp" />
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\icon.cpp" />
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\ivmc-device.cpp" />
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\ivmc-draw2d.cpp" />
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\vmc-alpha.cpp" />
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\vmc-blit.cpp" />
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\vmc-colorkey.cpp" />
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\vmc-draw.cpp" />
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\vmc-dx.cpp" />
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\vmc-gdi.cpp" />
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\vmc-gl.cpp" />
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\vmc-graphic.cpp" />
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\vmc-text.cpp" />
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\vmc-vl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\vmcengine\readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

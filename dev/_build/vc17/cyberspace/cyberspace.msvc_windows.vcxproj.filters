@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{f7d60b95-2696-434d-8190-3e98f6a03dfb}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{26a3a4d0-8735-4cd4-a2b7-75403a870aa5}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="server">
+      <UniqueIdentifier>{837c9d55-6afd-4fa2-a709-b9d3ab4179a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scs">
+      <UniqueIdentifier>{104d5f0b-479c-4d4f-84df-5c569cf17460}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arbitration">
+      <UniqueIdentifier>{c382d5fb-dd72-43dc-97d5-2cb91e0cfcd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{e9066533-899a-4f78-a66d-3ad845df623e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper">
+      <UniqueIdentifier>{857a10e6-1c86-4629-8e02-315471e460c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server\http">
+      <UniqueIdentifier>{92832c20-0d93-4036-8cfd-17c96773e5ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server\paper">
+      <UniqueIdentifier>{fe2257b2-2f49-407f-b655-87cebf58077f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service">
+      <UniqueIdentifier>{66391110-55df-4a3d-b1d1-1e69c396e7dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{57ba8a7b-9402-4df6-9b1b-2447f8497ddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="database">
+      <UniqueIdentifier>{8ebda4a0-006e-4732-b770-691e3bc8a315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server\http\HttpSession">
+      <UniqueIdentifier>{df2ce90d-c864-4beb-81c9-295fb4c72c5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server\abtp">
+      <UniqueIdentifier>{83c48f24-a50e-4bb6-a624-50f381769d46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server\mqtt">
+      <UniqueIdentifier>{ac518154-7cc5-4dfc-b048-7e8714ce9c58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server\abtp\abtpsession">
+      <UniqueIdentifier>{53ac6d66-342b-41e3-9f71-33bacc6cf1ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server\abtp\abtpsession\Packet">
+      <UniqueIdentifier>{86f936c9-29a0-4eab-88bf-5d3cf19038f6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-log_file_exporter.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-obj_descriptor.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-database_service.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-paper_client.cpp">
+      <Filter>server\paper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-paper_server.cpp">
+      <Filter>server\paper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-paper_system.cpp">
+      <Filter>server\paper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-record.cpp">
+      <Filter>server\paper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-http_client.cpp">
+      <Filter>server\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-http_server.cpp">
+      <Filter>server\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-scs-system.cpp">
+      <Filter>scs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-helper.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-protocol.cpp">
+      <Filter>server\abtp\abtpsession\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-packet_factory.cpp">
+      <Filter>server\abtp\abtpsession\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-arbitration_client.cpp">
+      <Filter>arbitration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-arbitration_server.cpp">
+      <Filter>arbitration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-log_file_service.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-json.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-core_server.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-abtp_cn_socket.cpp">
+      <Filter>server\abtp\abtpsession</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-abtp_pr_socket.cpp">
+      <Filter>server\abtp\abtpsession</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-abtp_server.cpp">
+      <Filter>server\abtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-arbitration_delegate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-db_cfg_reader.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-log_file_exporter.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-database_service.h">
+      <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-paper_client.h">
+      <Filter>server\paper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-paper_server.h">
+      <Filter>server\paper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-paper_system.h">
+      <Filter>server\paper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-record.h">
+      <Filter>server\paper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-http_client.h">
+      <Filter>server\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-http_server.h">
+      <Filter>server\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-scs-system_delegate.h">
+      <Filter>scs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-scs-system.h">
+      <Filter>scs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-helper.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-utility.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-paper_command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-base_command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-arbit_command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-if_session.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-err.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-protocol.h">
+      <Filter>server\abtp\abtpsession\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-packet_factory.h">
+      <Filter>server\abtp\abtpsession\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-arbitration_client.h">
+      <Filter>arbitration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-arbitration_delegate.h">
+      <Filter>arbitration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-arbitration_server.h">
+      <Filter>arbitration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-pri_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-obj_descriptor.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-entity_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-scs_command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-db_function_game.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-db_function_game_model.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-log_file_service.h">
+      <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-db_query_game.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-db_query_game_model.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-json.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-uid_generator.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-core_server.h">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-if_socket.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-http_cn_session.h">
+      <Filter>server\http\HttpSession</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-abtp_cn_socket.h">
+      <Filter>server\abtp\abtpsession</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-abtp_pr_socket.h">
+      <Filter>server\abtp\abtpsession</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-abtp_server.h">
+      <Filter>server\abtp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\project.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-db_query_def.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-db_query_base.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\cs-db_function_base.h">
+      <Filter>database</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\cyberspace\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\..\cyberspace\src\cfg\config.xml" />
+  </ItemGroup>
+</Project>

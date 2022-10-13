@@ -1,0 +1,47 @@
+
+
+
+2001 / 
+
+    宣告DirectDraw物件指標
+
+    宣告Surface物件指標
+
+    DirectDrawCreate(NULL,&pDD,NULL) 建立一個DirectDraw物件
+
+    pDD2->CreateSurface(&Desc,&pPri,NULL)) 建立Primary Surface and Backbuffer
+
+    pDD2->AddRef(); 建立Primary and Back的關聯
+
+    一點一點寫入Backbuffer;
+
+    flips到Primary
+
+
+
+
+2002 / 4 / 27
+
+    want to add explosion function it will break one image
+	it will achieve 1. rect explosion
+	                2. Triangle explosion 
+					3. alpha explosion
+	so first to finish 3 func
+                	1. int Blt   ( const HPINMAP *Src, PCRect Rect,    PCPoint point, HPINMAP *Dest );	                  //貼圖
+		            2. int Blt   ( const HPINMAP *Src, PCTriangle Tri, PCPoint point, HPINMAP *Dest );	                  //貼圖
+                    3. int Alpha ( const HPINMAP *Src, PCTriangle Tri, PCPoint point, HPINMAP *Dest );	                  //貼圖
+
+
+2002 / 5 / 2
+
+    ClipperBlt ( const HPINMAP *Src, PCTriangle Tri, PCPoint point, HPINMAP *Dest ); with no screen clip
+
+2002 / 5 / 13
+
+    MMX if input array length less than 8 in begin
+
+2002 / 5 / 24
+
+    1. Add member m_Depth for pixel depth
+    2. ScaleBlt clipper image not finish
+

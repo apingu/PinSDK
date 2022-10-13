@@ -1,0 +1,171 @@
+/* ===========================================================================================
+ * Function : ELEMENT.h
+ *
+ *                           Element Class
+ *
+ *
+ *             
+ *
+ *
+ * =========================================================================================*/
+
+#ifndef _ELEMENT_H_
+#define _ELEMENT_H_
+
+#include <windows.h>
+#include <math.h>
+#include <iostream>
+#include <vector>
+#include "D:\My Documents\Programs\C\CClass\Container\PLIST.H"
+#include "D:\My Documents\Programs\C\CClass\Define\PEP.h"
+#include "D:\My Documents\Programs\C\CClass\Timer\PTimer.h"
+
+#define MAX_Act 12
+
+//passiveness status
+const int E_Normal   = 0;
+const int E_Over     = 1;
+const int E_LDown    = 2;
+const int E_RDown    = 3;
+const int E_LUp      = 4;
+const int E_RUp      = 5;
+const int E_Drag     = 6;
+const int E_DragDrop = 7;
+const int E_Move     = 8;
+
+//Active status
+const int STATUS_WATTING      = 0;
+const int STATUS_PREPARE      = 1;
+const int STATUS_STARTRUNNGIN = 2;
+const int STATUS_RUNNING      = 3;
+const int STATUS_ARRIVE       = 4;
+
+
+const int AS_STANDBY =  0;
+const int AS_WALK    =  1;
+const int AS_ATTACK  =  2;
+const int AS_DEFENCE =  3;
+const int AS_HITBACK =  4;
+const int AS_DEFENCE_ATTACK = 5;
+const int AS_ATTACK_STANDBY_DEFENCE = 6;
+
+//畫面上所有組成元素
+class ELEMENT
+{
+	virtual int ActPlay  (void){return -1;};
+	virtual int Dir4Move (int Direction){return -1;};
+	virtual int Dir8Move (int Direction){return -1;};
+
+	int         m_DirectionCount;
+	char        Message[30];
+
+protected:
+
+	int      Judg8Dir(void);
+
+	int      m_Count      ;
+	int      m_Distance   ;
+	int      m_Status     ;         //目前動作狀態(0 - 等待, 1 - 準備, 2 - 開始動作, 3 - 動作進行中, 4 - 完成動作);
+	int      m_Act		  ;         //設定目前的動作(走, 攻擊, ..........)
+	int      m_NextAct    ;         //設定預備的動作(走, 攻擊, ..........)
+	int      m_Direction  ;         //目前動作的方向
+	PCPOINT  m_Relative   ;         //暫存拖曳位移
+    PCPOINT  m_From       ;         //來源位置
+	PCPOINT  m_To         ;         //目地位置
+
+	PCPOINT  m_ShowOffset ;         //出現時位於畫面的位置
+	
+public:
+
+	int      m_Speed      ;         //移動點數
+	int      m_Zaxle      ;         //Z軸位置
+	PCPOINT  Situs        ;         //所在位置
+
+	PTIMER   Clock        ;
+	PTIMER   Delay        ;
+
+	bool     Visible      ;         //可見
+	bool     Dragable     ;         //可拖曳
+	bool     Enable       ;         //可作用
+	bool     MoveAbled    ;         //可移動
+	
+	ELEMENT();
+	~ELEMENT();
+
+	int             ID          ;   //element id
+	int             GID         ;   //element group id
+	int             ActCount    ;   //設定動作的次數
+
+	PCRECT          m_RECT      ;   //範圍
+
+	void            SpeedUp(int speed);
+	void            ResetSpeed(int speed, int cycle);
+	
+
+	PCC::RList<HPINMAP*> m_IMAGE[MAX_Act];                           //act -> direciton -> step
+
+	//==============================================================================
+	std::vector<PCPOINT>     RouteList;                              //行走路徑
+
+	//typedef PCC::RList<int*> ActList;                                //store action
+	//std::vector<ActList*>    ActTable;
+	PCC::RList<int*>          *ActTable;
+
+	std::vector<HPINMAP*>    m_ImageBox;                             //store image
+	//===============================================================================
+	
+	int             Play               (void);
+	HPINMAP*        IMAGE              (void);                       //singled image
+	HPINMAP*        Image_Play         (void);                       //playing image
+	unsigned int    ImageIndex         (void);                       //return image number
+
+
+	PCPOINT         Goal               (void);                       //return where will move to
+	int             GetStatus          (void);
+	int             CompareOrder       (ELEMENT &element);
+	ELEMENT&        operator=          (const ELEMENT &element);
+
+	//檔案
+	int             Load               (const char *elmpath);        //open pelm
+	int             Save               (const char *elmpath, int ActCount);
+	int             Save               (const char *elmpath,
+		                                int         ActCount,
+		                                int         ID ,
+										int         GID,
+										PCPOINT     Situs,
+										int         DirectionCount = 1,
+										int         MoveDistance   = 2,
+										int         colckcycle     = 100,
+										bool        Visible        = true,
+										bool        Dragable       = false,
+										bool        Enable         = true,
+										bool        MoveAbled      = true
+										);
+
+
+	//動作
+	virtual bool    DragTo             (POINT to);
+	bool            MoveTo             (POINT to);
+    void            SetAct             (int act);
+	void            Do                 (int status);                 //set act
+	void            To                 (POINT object);               //set object 
+	int             Dir4Act            (int value);                  //4 direction act
+	int             Dir8Act            (int value);                  //8 direction act
+	void            DoTo               (int status, POINT to, DWORD delay);//set act and object
+
+	//判斷
+	bool            InArea             (POINT point);
+	bool            Collision          (RECT rect);                  //碰撞
+	int             pMsg               (POINT point, UINT uMsg, UINT wParam);
+
+	//事件
+	virtual void    Drag               (POINT MouseSite){};
+	virtual void    MouseMove          (POINT MouseSite){};
+	virtual void    MouseOver          (POINT MouseSite){};
+	virtual void    LMouseDown         (POINT MouseSite){};
+	virtual void    LMouseUp           (POINT MouseSite){};
+	virtual void    DragDrop           (POINT MouseSite){};
+    
+};
+
+#endif

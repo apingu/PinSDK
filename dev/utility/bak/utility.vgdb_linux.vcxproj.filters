@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{1686db9b-a739-4622-8949-a70cd42fa5fc}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{6023653a-cf71-4f42-911b-85e939258ce4}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{0521c65c-f99b-475d-b6d4-5ba0c313cec4}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{76d740ac-f6d6-4b00-9207-e37d1852f325}</UniqueIdentifier>
+      <Extensions>*.mak</Extensions>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{43ce5a29-3b64-4b1b-8932-47f02db1ca63}</UniqueIdentifier>
+      <Extensions>*.vgdbsettings</Extensions>
+    </Filter>
+    <Filter Include="Graphic">
+      <UniqueIdentifier>{2d318bb0-0e69-41ba-9304-42bb4be49fc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{3cc98be5-a03e-4e02-87f3-a334c5943879}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="src\aMath.inl">
+      <Filter>Header files</Filter>
+    </None>
+    <None Include="src\memio.inl">
+      <Filter>Header files</Filter>
+    </None>
+    <None Include="Utility_vgdb_linux-Debug.vgdbsettings" />
+    <None Include="Utility_vgdb_linux-Release.vgdbsettings" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Color.h">
+      <Filter>Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphic2d.h">
+      <Filter>Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphic3d.h">
+      <Filter>Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\T_Lock.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tString.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Unicode.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BufferStorage.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Debug.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PfFile.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PfsFile.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PfString.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PfSysinfo.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PfThread.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PfTime.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PfTimer.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PfDLibrary.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PfStdlib.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PfDef.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PfBinBuf.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\tString.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Unicode.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BufferStorage.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Debug.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PfFile.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PfsFile.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PfString.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PfSysinfo.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PfThread.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PfTime.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PfTimer.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PfDLibrary.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\T_Lock.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PfStdlib.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PfBinBuf.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{dfad0e86-d00d-42f9-9d40-dbb05cbf096c}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{d001fb32-9b0b-4adf-8cef-be04d72ae60e}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{8ed613da-41bb-47b1-8fc5-7d2663a26951}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{b79d6ae3-dc7a-4f6d-89ad-5fd5c262c60d}</UniqueIdentifier>
+      <Extensions>*.mak</Extensions>
+    </Filter>
+    <Filter Include="ConfigReader">
+      <UniqueIdentifier>{5f918a56-7430-46b7-8da0-7281dcf06350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTML">
+      <UniqueIdentifier>{818dc5c7-58da-425d-9015-d6e725de4100}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTTP">
+      <UniqueIdentifier>{4f0a69d1-b803-44db-a8f9-e69cbbb317bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JSON">
+      <UniqueIdentifier>{85097f40-98f2-4c17-8278-a376349c241d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PGSP">
+      <UniqueIdentifier>{97d2b995-f6c9-4ee2-a1a9-ca1175ebb39f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StringParser">
+      <UniqueIdentifier>{9913a8f7-1e28-42d1-babb-b782bccd09e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XML">
+      <UniqueIdentifier>{38a7e79e-b09f-40ae-b45f-002ab2377319}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ConfigReader\ConfigReader.cpp">
+      <Filter>ConfigReader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GSP\PGSPFile.cpp">
+      <Filter>PGSP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HTML\HTMLParser.cpp">
+      <Filter>HTML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HTTP\HttpParser.cpp">
+      <Filter>HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HTTP\MPFDParser.cpp">
+      <Filter>HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HTTP\Exception.cpp">
+      <Filter>HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HTTP\Field.cpp">
+      <Filter>HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\JSON\JSONValue.cpp">
+      <Filter>JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="src\JSON\JSON.cpp">
+      <Filter>JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StringParser\StringParser.cpp">
+      <Filter>StringParser</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XML\xmlschema.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XML\xmlnode.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ConfigReader\ConfigReader.h">
+      <Filter>ConfigReader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GSP\PGSPFile.h">
+      <Filter>PGSP</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTML\HTMLParser.h">
+      <Filter>HTML</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTML\HTMLEntities.h">
+      <Filter>HTML</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTTP\HttpParser.h">
+      <Filter>HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTTP\MPFDParser.h">
+      <Filter>HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTTP\Exception.h">
+      <Filter>HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTTP\Field.h">
+      <Filter>HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="src\JSON\JSON.h">
+      <Filter>JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="src\JSON\JSONValue.h">
+      <Filter>JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="src\StringParser\StringParser.h">
+      <Filter>StringParser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\XML\xmlschema.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="src\XML\xmlnode.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="Parser_vgdb_linux-Debug.vgdbsettings" />
+    <None Include="Parser_vgdb_linux-Release.vgdbsettings" />
+  </ItemGroup>
+</Project>

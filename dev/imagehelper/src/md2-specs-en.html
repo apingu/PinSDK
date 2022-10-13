@@ -1,0 +1,511 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+
+  
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-style-type" content="text/css">
+    <meta http-equiv="Content-language" content="en"><title>MD2 file format specifications (Quake 2's models)</title>
+    
+    <meta name="author" content="David Henry">
+    <meta name="keywords" content="OpenGL, MD2, MD2 format, Quake II, Specifications">
+    <meta name="description" content="MD2 file format specifications (Quake 2's models) -
+    reading, rendering and animating">
+
+    <style type="text/css">
+        body {
+            font-family: sans-serif;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 0em;
+        }
+
+        p#headline {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        li {
+            padding-right: 2em;
+        }
+
+        pre {
+            margin-left: 2em;
+            margin-right: 2em;
+        }
+    </style><!-- Last modifications : thursday, 15th december of 2005 --></head><body>
+    <h1>MD2 file format<br>(Quake 2's models)</h1>
+    <p id="headline">Written by David Henry, 19<sup>th</sup> December of 2004</p>
+
+    <h2>Introduction</h2>
+    <p>The MD2 model file format was introduced by <em>id Software</em> when releasing
+    Quake 2 in November 1997. It's a file format quite simple to use and understand.
+    MD2 models' characteristics are these:</p>
+
+    <ul>
+      <li>Model's geometric data (triangles);</li>
+      <li>Frame-by-frame animations;</li>
+      <li>Structured data for drawing the model using <code>GL_TRIANGLE_FAN</code>
+      and <code>GL_TRIANGLE_STRIP</code> primitives (called ?penGL commands??.</li>
+    </ul>
+
+    <p>Model's texture is in a separate file. One MD2 model can have only one texture
+    at the same time.</p>
+
+    <p>MD2 model file's extension is ?d2?? A MD2 file is a binary file divided in
+    two part: the header dans the data. The header contains all information needed
+    to use and manipulate the data.</p>
+
+    <div style="border: 1px solid black; width: 10em; margin-right: auto; margin-left: auto; text-align: center; padding-top: 0.5em; padding-bottom: 0.5em;">
+      Header
+    </div>
+    <div style="border-style: none solid solid; border-color: -moz-use-text-color black black; border-width: medium 1px 1px; width: 10em; margin-right: auto; margin-left: auto; text-align: center; padding-top: 3em; padding-bottom: 3em;">
+      Data
+    </div>
+
+    <p>Variable types used in this document have those sizes:</p>
+
+    <ul>
+      <li><strong>char</strong>: 1 byte</li>
+      <li><strong>short</strong>: 2 bytes</li>
+      <li><strong>int</strong>: 4 bytes</li>
+      <li><strong>float</strong>: 4 bytes</li>
+    </ul>
+
+    <h2>The header</h2>
+
+    <p>The header is a structure which comes at the beginning of the file:</p>
+
+<pre>/* md2 header */
+typedef struct
+{
+  int ident;          /* magic number: "IDP2" */
+  int version;        /* version: must be 8 */
+
+  int skinwidth;      /* texture width */
+  int skinheight;     /* texture height */
+
+  int framesize;      /* size in bytes of a frame */
+
+  int num_skins;      /* number of skins */
+  int num_vertices;   /* number of vertices per frame */
+  int num_st;         /* number of texture coordinates */
+  int num_tris;       /* number of triangles */
+  int num_glcmds;     /* number of opengl commands */
+  int num_frames;     /* number of frames */
+
+  int offset_skins;   /* offset skin data */
+  int offset_st;      /* offset texture coordinate data */
+  int offset_tris;    /* offset triangle data */
+  int offset_frames;  /* offset frame data */
+  int offset_glcmds;  /* offset OpenGL command data */
+  int offset_end;     /* offset end of file */
+
+} md2_header_t;</pre>
+
+    <p><code>ident</code> is the magic number of the file. It is used to identify the
+    file type. <code>ident</code> must be equal to 844121161 or to the string ?DP2??
+    We can obtain this number with the expression <code>(('2'&lt;&lt;24) +
+    ('P'&lt;&lt;16) + ('D'&lt;&lt;8) + 'I')</code>.</p>
+
+    <p><code>version</code> is the version number of the file format and must be equal to 8.</p>
+
+    <p><code>skinwidth</code> and <code>skinheight</code> are respectively the texture
+    width and the texture height of the model.</p>
+
+    <p><code>framesize</code> is the size in bytes of a frame and all its data.</p>
+
+    <p><code>num_skins</code> is the number of associated textures to the model.<br>
+    <code>num_vertices</code> is the number of vertices for one frame.<br>
+    <code>num_st</code> is the number of texture coordinates.<br>
+    <code>num_tris</code> is the number of triangles.<br>
+    <code>num_glcmds</code> is the number of OpenGL commands.<br>
+    <code>num_frames</code> is the number of frame the model has.</p>
+
+    <p><code>offset_skins</code> indicates the position in bytes from the beginning of
+    the file to the texture data.<br>
+    <code>offset_st</code> indicates the position of texture coordinate data.<br>
+    <code>offset_tris</code> indicates the position of triangle data.<br>
+    <code>offset_frames</code> indicates the position of frame data.<br>
+    <code>offset_glcmds</code> indicates the position of OpenGL commands.<br>
+    <code>offset_end</code> indicates the position of the end of the file.</p>
+
+    <h2>Data types</h2>
+
+    <h3>Vector</h3>
+    <p>The vector, composed of three floating coordinates (x, y, z):</p>
+
+<pre>/* vector */
+typedef float vec3_t[3];</pre>
+
+    <h3>Texture information</h3>
+    <p>Texture informations are the list of texture names associated to the model:</p>
+
+<pre>/* texture name */
+typedef struct
+{
+  char name[64];   /* texture file name */
+
+} md2_skin_t;</pre>
+
+    <h3>Texture coordinates</h3>
+    <p>Texture coordinates are stored in a structure as <em>short</em> integers. To get
+    the true texture coordinates, you have to divide <code>s</code> by
+    <code>skinwidth</code> and <code>t</code> by <code>skinheight</code>:</p>
+
+<pre>/* texture coords */
+typedef struct
+{
+  short s;
+  short t;
+
+} md2_texCoord_t;</pre>
+
+    <h3>Triangles</h3>
+    <p>Each triangle has an array of vertex indices and an array of texture coordinate
+    indices.</p>
+
+<pre>/* triangle data */
+typedef struct
+{
+  unsigned short vertex[3];   /* vertex indices of the triangle */
+  unsigned short st[3];       /* tex. coord. indices */
+
+} md2_triangle_t;</pre>
+
+    <h3>Vertices</h3>
+    <p>Vertices are composed of ?ompressed??3D coordinates, which are stored in one byte
+    for each coordinate, and of a normal vector index. The normal vector array is stored
+    in the <a href="http://tfc.duke.free.fr/coding/src/anorms.h">anorms.h</a> file of Quake 2 and hold 162 vectors in
+    floating point (3 <em>float</em>).</p>
+
+<pre>/* vertex data */
+typedef struct
+{
+  unsigned char v[3];         /* position */
+  unsigned char normalIndex;  /* normal vector index */
+
+} md2_vertex_t;</pre>
+
+    <h3>Frames</h3>
+    <p>Frames have specific informations for itself and the vertex list of the frame.
+    Informations are used to uncompress vertices and obtain the real coordinates.</p>
+
+<pre>/* frame data */
+typedef struct
+{
+  vec3_t          scale;      /* scale factor */
+  vec3_t          translate;  /* translation vector */
+  char            name[16];   /* frame name */
+  md2_vertex_t    *verts;     /* list of frame's vertices */
+
+} md2_frame_t;</pre>
+
+    <p>To uncompress vertex coordinates, you need to multiply each component by
+    the scale factor and then add the respective translation component:</p>
+
+<pre>vec3_t v;           /* real vertex coords. */
+md2_vertex_t vtx;   /* compressed vertex */
+md2_frame_t frame;  /* a model frame */
+
+v[i] = (vtx.v[i] * frame.scale[i]) + frame.translate[i];</pre>
+
+    <h3>OpenGL Commands</h3>
+    <p>OpenGL commands are stored in an array of integer (<em>int</em>). They are discussed
+    at the end of this document.</p>
+
+    <h2>Reading a MD2 file</h2>
+    <p>Assuming that <code>md2_model_t</code> is a structure holding all your model's data
+    and <code>*mdl</code> a pointer on a <code>md2_model_t</code> object, this code show
+    how to load a MD2 model file:</p>
+
+<pre>int
+ReadMD2Model (const char *filename, md2_model_t *mdl)
+{
+  FILE *fp;
+  int i;
+
+  fp = fopen (filename, "rb");
+  if (!fp)
+    {
+      fprintf (stderr, "error: couldn't open \"%s\"!", filename);
+      return 0;
+    }
+
+  /* read header */
+  fread (&amp;mdl-&gt;header, 1, sizeof (md2_header_t), fp);
+
+  if ((mdl-&gt;header.ident != 844121161) ||
+      (mdl-&gt;header.version != 8))
+    {
+      /* error! */
+      fprintf (stderr, "error: bad version!");
+      fclose (fp);
+      return 0;
+    }
+
+  /* memory allocation */
+  mdl-&gt;skins = (md2_skin_t *)malloc (sizeof (md2_skin_t) * mdl-&gt;header.num_skins);
+  mdl-&gt;texcoords = (md2_texCoord_t *)malloc (sizeof (md2_texCoord_t) * mdl-&gt;header.num_st);
+  mdl-&gt;triangles = (md2_triangle_t *)malloc (sizeof (md2_triangle_t) * mdl-&gt;header.num_tris);
+  mdl-&gt;frames = (md2_frame_t *)malloc (sizeof(md2_frame_t) * mdl-&gt;header.num_frames);
+  mdl-&gt;glcmds = (int *)malloc (sizeof (int) * mdl-&gt;header.num_glcmds);
+
+  /* read model data */
+  fseek (fp, mdl-&gt;header.offset_skins, SEEK_SET);
+  fread (mdl-&gt;skins, sizeof (md2_skin_t), mdl-&gt;header.num_skins, fp);
+
+  fseek (fp, mdl-&gt;header.offset_st, SEEK_SET);
+  fread (mdl-&gt;texcoords, sizeof (md2_texCoord_t), mdl-&gt;header.num_st, fp);
+
+  fseek (fp, mdl-&gt;header.offset_tris, SEEK_SET);
+  fread (mdl-&gt;triangles, sizeof (md2_triangle_t), mdl-&gt;header.num_tris, fp);
+
+  fseek (fp, mdl-&gt;header.offset_glcmds, SEEK_SET);
+  fread (mdl-&gt;glcmds, sizeof (int), mdl-&gt;header.num_glcmds, fp);
+
+  /* read frames */
+  fseek (fp, mdl-&gt;header.offset_frames, SEEK_SET);
+  for (i = 0; i &lt; mdl-&gt;header.num_frames; ++i)
+    {
+      /* memory allocation for vertices of this frame */
+      mdl-&gt;frames[i].verts = (md2_vertex_t *)
+	malloc (sizeof (md2_vertex_t) * mdl-&gt;header.num_vertices);
+
+      /* read frame data */
+      fread (mdl-&gt;frames[i].scale, sizeof (vec3_t), 1, fp);
+      fread (mdl-&gt;frames[i].translate, sizeof (vec3_t), 1, fp);
+      fread (mdl-&gt;frames[i].name, sizeof (char), 16, fp);
+      fread (mdl-&gt;frames[i].verts, sizeof (md2_vertex_t), mdl-&gt;header.num_vertices, fp);
+    }
+
+  fclose (fp);
+  return 1;
+}</pre>
+
+    <h2>Rendering the model</h2>
+    <p>Here is an exemple of how to draw a frame <code>n</code> of a model <code>mdl</code>:</p>
+
+<pre>void
+RenderFrame (int n, md2_model_t *mdl)
+{
+  int i, j;
+  GLfloat s, t;
+  vec3_t v;
+  md2_frame_t *pframe;
+  md2_vertex_t *pvert;
+
+  /* check if n is in a valid range */
+  if ((n &lt; 0) || (n &gt; mdl-&gt;header.num_frames - 1))
+    return;
+
+  /* enable model's texture */
+  glBindTexture (GL_TEXTURE_2D, mdl-&gt;tex_id);
+
+  /* draw the model */
+  glBegin (GL_TRIANGLES);
+    /* draw each triangle */
+    for (i = 0; i &lt; mdl-&gt;header.num_tris; ++i)
+      {
+        /* draw each vertex */
+        for (j = 0; j &lt; 3; ++j)
+          {
+            pframe = &amp;mdl-&gt;frames[n];
+            pvert = &amp;pframe-&gt;verts[mdl-&gt;triangles[i].vertex[j]];
+
+            /* compute texture coordinates */
+            s = (GLfloat)mdl-&gt;texcoords[mdl-&gt;triangles[i].st[j]].s / mdl-&gt;header.skinwidth;
+            t = (GLfloat)mdl-&gt;texcoords[mdl-&gt;triangles[i].st[j]].t / mdl-&gt;header.skinheight;
+
+            /* pass texture coordinates to OpenGL */
+            glTexCoord2f (s, t);
+
+            /* normal vector */
+            glNormal3fv (anorms_table[pvert-&gt;normalIndex]);
+
+            /* calculate vertex real position */
+            v[0] = (pframe-&gt;scale[0] * pvert-&gt;v[0]) + pframe-&gt;translate[0];
+            v[1] = (pframe-&gt;scale[1] * pvert-&gt;v[1]) + pframe-&gt;translate[1];
+            v[2] = (pframe-&gt;scale[2] * pvert-&gt;v[2]) + pframe-&gt;translate[2];
+
+            glVertex3fv (v);
+          }
+      }
+  glEnd ();
+}</pre>
+
+    <h2>Animation</h2>
+    <p>MD2 models are frame-by-frame animated. A frame is a screenshot of an animation. To
+    avoid jerked and ugly animations, we use linear interpolation between vertex coordinates
+    of two consecutive frames (the current frame we are drawing and the next frame). We do
+    the same for the normal vector:</p>
+
+<pre>md2_frame_t *pframe1, *pframe2;
+md2_vertex_t *pvert1, *pvert2;
+vec3_t v_curr, v_next, v;
+
+for (/* ... */)
+  {
+    pframe1 = &amp;mdl-&gt;frames[current];
+    pframe2 = &amp;mdl-&gt;frames[current + 1];
+    pvert1 = &amp;pframe1-&gt;verts[mdl-&gt;triangles[i].vertex[j]];
+    pvert2 = &amp;pframe2-&gt;verts[mdl-&gt;triangles[i].vertex[j]];
+
+    /* ... */
+
+    v_curr[0] = (pframe1-&gt;scale[0] * pvert1-&gt;v[0]) + pframe1-&gt;translate[0];
+    v_curr[1] = (pframe1-&gt;scale[1] * pvert1-&gt;v[1]) + pframe1-&gt;translate[1];
+    v_curr[2] = (pframe1-&gt;scale[2] * pvert1-&gt;v[2]) + pframe1-&gt;translate[2];
+
+    v_next[0] = (pframe2-&gt;scale[0] * pvert2-&gt;v[0]) + pframe2-&gt;translate[0];
+    v_next[1] = (pframe2-&gt;scale[1] * pvert2-&gt;v[1]) + pframe2-&gt;translate[1];
+    v_next[2] = (pframe2-&gt;scale[2] * pvert2-&gt;v[2]) + pframe2-&gt;translate[2];
+
+    v[0] = v_curr[0] + interp * (v_next[0] - v_curr[0]);
+    v[1] = v_curr[1] + interp * (v_next[1] - v_curr[1]);
+    v[2] = v_curr[2] + interp * (v_next[2] - v_curr[2]);
+
+    /* ... */
+  }</pre>
+
+    <p><code>v</code> is the final vertex to draw. <code>interp</code> is the interpolation
+    percent between the two frames. It's a <em>float</em> which ranges from 0.0 to 1.0. When
+    it is equal to 1.0, <code>current</code> is incremented by 1 and <code>interp</code> is
+    reinitialized at 0.0. It is useless to interpolate texture coordinates because they are
+    the same for all the model frames. It is preferable that <code>interp</code> is related
+    to the program's number of rendering frame per second (fps).</p>
+
+<pre>void
+Animate (int start, int end, int *frame, float *interp)
+{
+  if ((*frame &lt; start) || (*frame &gt; end))
+    *frame = start;
+
+  if (*interp &gt;= 1.0f)
+    {
+      /* move to next frame */
+      *interp = 0.0f;
+      (*frame)++;
+
+      if (*frame &gt;= end)
+	*frame = start;
+    }
+}</pre>
+
+    <h2>Using OpenGL commands</h2>
+    <p>OpenGL commands are structured data for drawing the model using only
+    <code>GL_TRIANGLE_FAN</code> and <code>GL_TRIANGLE_STRIP</code> primitives. It's an array of
+    integers (<em>int</em>) which can be read in packets:</p>
+
+    <ul>
+      <li>The first integer is the number of vertices to draw for a new primitive. If it's a
+      positive  value, the primitive is <code>GL_TRIANGLE_STRIP</code>, otherwise it's a
+      <code>GL_TRIANGLE_FAN</code>.</li>
+      <li>The next integers can be taken by packet of 3 for as many vertices as there is to
+      draw. The two first are the texture coordinates in floating point and the third is the
+      vertex index to draw.</li>
+      <li>When the number of vertices to draw is 0, then we have finished rendering the model.</li>
+    </ul>
+
+    <p>We can create a structure for those data packets:</p>
+
+<pre>typedef struct
+{
+  float   s;          /* s texture coord. */
+  float   t;          /* t texture coord. */
+  int     index;      /* vertex index */
+
+} md2_glcmd_t;</pre>
+
+    <p>Using this rendering algorithm implies a better frame rate than the classical method
+    because we don't use <code>GL_TRIANGLES</code> primitives but <code>GL_TRIANGLE_FAN</code>
+    and <code>GL_TRIANGLE_STRIP</code> primitives (which use less GPU time) and texture
+    coordinates are no longer calculated (no need do divide by skinwidth and skinheight). Here
+    is an exemple of how to use them:</p>
+
+<pre>void
+RenderFrameWithGLCmds (int n, md2_model_t *mdl)
+{
+  int i, *pglcmds;
+  vec3_t v;
+  md2_frame_t *pframe;
+  md2_vertex_t *pvert;
+  md2_glcmd_t *packet;
+
+  /* check if n is in a valid range */
+  if ((n &lt; 0) || (n &gt; mdl-&gt;header.num_frames - 1))
+    return;
+
+  /* enable model's texture */
+  glBindTexture (GL_TEXTURE_2D, mdl-&gt;tex_id);
+
+  /* pglcmds points at the start of the command list */
+  pglcmds = mdl-&gt;glcmds;
+
+  /* draw the model */
+  while ((i = *(pglcmds++)) != 0)
+    {
+      if (i &lt; 0)
+        {
+          glBegin (GL_TRIANGLE_FAN);
+          i = -i;
+        }
+      else
+        {
+          glBegin (GL_TRIANGLE_STRIP);
+        }
+
+      /* draw each vertex of this group */
+      for (/* nothing */; i &gt; 0; --i, pglcmds += 3)
+        {
+          packet = (md2_glcmd_t *)pglcmds;
+          pframe = &amp;mdl-&gt;frames[n];
+          pvert = &amp;pframe-&gt;verts[packet-&gt;index];
+
+          /* pass texture coordinates to OpenGL */
+          glTexCoord2f (packet-&gt;s, packet-&gt;t);
+
+          /* normal vector */
+          glNormal3fv (anorms_table[pvert-&gt;normalIndex]);
+
+          /* calculate vertex real position */
+          v[0] = (pframe-&gt;scale[0] * pvert-&gt;v[0]) + pframe-&gt;translate[0];
+          v[1] = (pframe-&gt;scale[1] * pvert-&gt;v[1]) + pframe-&gt;translate[1];
+          v[2] = (pframe-&gt;scale[2] * pvert-&gt;v[2]) + pframe-&gt;translate[2];
+
+          glVertex3fv (v);
+        }
+
+      glEnd ();
+    }
+}</pre>
+
+    <h2>Constants</h2>
+    <p>Here are some constant values defining maximal dimensions:</p>
+
+    <ul>
+      <li>Maximum number of triangles: 4096</li>
+      <li>Maximum number of vertices: 2048</li>
+      <li>Maximum number of texture coordinates: 2048</li>
+      <li>Maximum number of frames: 512</li>
+      <li>Maximum number of skins: 32</li>
+      <li>Number of precalculated normal vectors: 162</li>
+    </ul>
+
+    <p style="border: 1px solid black; padding: 0.5em; background-color: rgb(222, 222, 222);">
+    <strong>Sample code:</strong> <a href="http://tfc.duke.free.fr/coding/src/md2.c">md2.c</a> (14.3 KB), <a href="http://tfc.duke.free.fr/coding/src/anorms.h">anorms.h</a>
+    (6.7 KB). No texture mapping.</p>
+
+    <p style="border: 1px solid black; text-align: center; margin-top: 2em;">This document is
+    available under the terms of the <a href="http://www.gnu.org/copyleft/fdl.html">GNU
+    Free Documentation License</a> (GFDL)<br>穢 David Henry ??contact : tfc_duke (AT)
+    club-internet (DOT) fr</p>
+  
+</body></html>

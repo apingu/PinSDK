@@ -1,0 +1,9 @@
+
+OBfont.LoadFont(FONT_SET_SBCS, "D:\\My Documents\\Programs\\C\\PinClass\\Font\\OBFonts\\Em0612.fnt",  6, 12, FONT_FMT_0, 1);
+OBfont.LoadFont(FONT_SET_DBCS, "D:\\My Documents\\Programs\\C\\PinClass\\Font\\OBFonts\\Cm1212.fnt", 12, 12, FONT_FMT_0, 1);
+
+OBfont.SetColor(0XF7B2, 0X01);
+// Adjust fonts setting
+OBfont.SetDropShadow(0, 1);
+OBfont.SetSpace(0, 0);
+OBfont.SetCanvas(VMCanvas);

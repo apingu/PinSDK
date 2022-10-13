@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\..\..\helper\src\OpenOffice\OOoHelper.h">
+      <Filter>open office</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\Dictionary\Dictionary.h">
+      <Filter>net\dictionary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\Dictionary\stdafx.h">
+      <Filter>net\dictionary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\Office\ExcelFormat\ExcelFormat.h">
+      <Filter>office\ExcelFormat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\Office\ExcelFormat\BasicExcel.hpp">
+      <Filter>office\ExcelFormat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\dictionary\bing_translate.h">
+      <Filter>net\dictionary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\dictionary\excite_translater.h">
+      <Filter>net\dictionary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\office\xldb-query.h">
+      <Filter>office</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\office\xldb-sheet.h">
+      <Filter>office</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\office\xl_file.h">
+      <Filter>office</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\mswin\win32_utility.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\dictionary\web_bing_client.h">
+      <Filter>net\dictionary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-input.h">
+      <Filter>mfc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-listgrid.h">
+      <Filter>mfc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-sxbutton.h">
+      <Filter>mfc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-treectrl.h">
+      <Filter>mfc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-txbutton.h">
+      <Filter>mfc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-txdialog.h">
+      <Filter>mfc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-txformview.h">
+      <Filter>mfc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-txhelper.h">
+      <Filter>mfc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-txmarquee.h">
+      <Filter>mfc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-txsliderctrl.h">
+      <Filter>mfc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-txstatic.h">
+      <Filter>mfc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-utility.h">
+      <Filter>mfc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\Net\csbrowser.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\FtpClient.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\Net\nh-toolkit.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\project.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\Clients.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\Heap.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\LinkedList.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\Log.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\Messages.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTAsync.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTClient.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTClientPersistence.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTPacket.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTPacketOut.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTPersistence.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTPersistenceDefault.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTProperties.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTProtocol.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTProtocolClient.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTProtocolOut.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTReasonCodes.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTSubscribeOpts.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\mutex_type.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\OsWrapper.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\SHA1.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\Socket.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\SocketBuffer.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\SSLSocket.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\StackTrace.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\Thread.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\Tree.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\utf-8.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\VersionInfo.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\WebSocket.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\Base64.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\libhttp\include\libhttp.h">
+      <Filter>net\libhttp\header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\libhttp\src\httplib_main.h">
+      <Filter>net\libhttp\source files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread.h">
+      <Filter>net\libhttp\source files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\libhttp\src\httplib_ssl.h">
+      <Filter>net\libhttp\source files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\net\libhttp\src\httplib_utils.h">
+      <Filter>net\libhttp\source files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\helper\src\office\excel_xml.h">
+      <Filter>office</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\helper\src\OpenOffice\build openoffice sdk .txt">
+      <Filter>open office</Filter>
+    </Text>
+    <Text Include="..\..\..\helper\readme.txt" />
+    <Text Include="..\..\..\helper\src\mswin\readme.txt">
+      <Filter>mfc</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="net">
+      <UniqueIdentifier>{f3ac2c09-f59a-45e6-b0e9-18d3db857365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mfc">
+      <UniqueIdentifier>{e76cda70-26eb-421d-bdc2-2f72f6200db2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{0d51ecf2-1ab5-4afc-98ee-f936c9346f24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="office">
+      <UniqueIdentifier>{e4bfb64d-49b3-4827-98e0-2d13dad5d6ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="office\ExcelFormat">
+      <UniqueIdentifier>{650b9fbd-e2bd-4016-97e7-6003b1a8d4f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="open office">
+      <UniqueIdentifier>{f445a2ca-e0db-4dc7-aed3-742495e78c1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\libhttp">
+      <UniqueIdentifier>{bfd56bdc-d73b-4621-bfe5-7cfa700dc58a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\libhttp\source files">
+      <UniqueIdentifier>{b89c9102-8b9c-43df-bcd4-ff7ffab4094b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\libhttp\header files">
+      <UniqueIdentifier>{21ea968e-4d5e-44c2-8a80-8c6eff0d1b2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\paho.mqtt.c">
+      <UniqueIdentifier>{3f854caa-6a9a-464b-9000-b2e3f3fdb368}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\dictionary">
+      <UniqueIdentifier>{55781d1c-d471-4840-9076-b52b07c604de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\libcurl">
+      <UniqueIdentifier>{0981835a-199d-42a3-a249-310fe02cef91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\libcurl\include">
+      <UniqueIdentifier>{c8252f26-eb54-463a-8264-34693408196c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\libcurl\lib">
+      <UniqueIdentifier>{af5db948-b518-4bbd-9d04-64153cac82b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="office\sample">
+      <UniqueIdentifier>{7f3142a7-f854-4e9a-b274-641c6f61803d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\helper\src\OpenOffice\OOoHelper.cpp">
+      <Filter>open office</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\Dictionary\Dictionary.cpp">
+      <Filter>net\dictionary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\Office\ExcelFormat\BasicExcel.cpp">
+      <Filter>office\ExcelFormat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\Office\ExcelFormat\ExcelFormat.cpp">
+      <Filter>office\ExcelFormat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\dictionary\bing_translate.cpp">
+      <Filter>net\dictionary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\dictionary\excite_translater.cpp">
+      <Filter>net\dictionary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\office\xldb-query.cpp">
+      <Filter>office</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\office\xldb-sheet.cpp">
+      <Filter>office</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\office\xl_file.cpp">
+      <Filter>office</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\mswin\win32_utility.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-input.cpp">
+      <Filter>mfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-listgrid.cpp">
+      <Filter>mfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-sxbutton.cpp">
+      <Filter>mfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-treectrl.cpp">
+      <Filter>mfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-txbutton.cpp">
+      <Filter>mfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-txdialog.cpp">
+      <Filter>mfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-txformview.cpp">
+      <Filter>mfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-txhelper.cpp">
+      <Filter>mfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-txmarquee.cpp">
+      <Filter>mfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-txsliderctrl.cpp">
+      <Filter>mfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-txstatic.cpp">
+      <Filter>mfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-utility.cpp">
+      <Filter>mfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\Net\csbrowser.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\FtpClient.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\Net\nh-toolkit.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\Clients.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\Heap.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\LinkedList.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\Log.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\Messages.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTAsync.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTClient.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTPacket.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTPacketOut.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTPersistence.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTPersistenceDefault.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTProperties.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTProtocolClient.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTProtocolOut.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTReasonCodes.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTVersion.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\OsWrapper.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\SHA1.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\Socket.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\SocketBuffer.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\SSLSocket.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\StackTrace.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\Thread.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\Tree.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\utf-8.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\WebSocket.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\Base64.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\extern_md5.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\extern_sha1.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\extern_ssl_lut.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_abort_start.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_accept_new_connection.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_addenv.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_atomic_dec.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_atomic_inc.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_authorize.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_base64_encode.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_check_acl.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_check_authorization.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_check_feature.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_check_password.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_closedir.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_close_all_listening_sockets.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_close_connection.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_close_socket_gracefully.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_compare_dir_entries.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_connect_client.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_connect_socket.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_connect_websocket_client.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_construct_etag.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_consume_socket.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_create_client_context.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_cry.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_delete_file.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_destroy_client_context.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_difftimespec.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_dir_scan_callback.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_discard_unread_request_data.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_download.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_error_string.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_event_queue.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_fclose.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_fclose_on_exec.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_fgets.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_fopen.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_forward_body_data.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_free_config_options.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_free_context.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_getreq.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_builtin_mime_type.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_cookie.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_debug_level.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_first_ssl_listener_index.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_header.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_mime_type.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_option.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_random.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_rel_url_at_current_server.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_remote_ip.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_request_handler.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_request_info.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_request_len.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_response.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_response_code_text.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_server_ports.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_system_name.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_uri_type.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_user_connection_data.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_user_data.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_var.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_global_data.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_gmtime_r.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_gmt_time_string.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_handle_cgi_request.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_handle_directory_request.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_handle_file_based_request.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_handle_form_request.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_handle_not_modified_static_file_request.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_handle_propfind.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_handle_request.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_handle_static_file_request.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_handle_websocket_request.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_header_has_option.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_inet_pton.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_initialize_ssl.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_init_options.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_interpret_uri.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_is_authorized_for_put.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_is_file_in_memory.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_is_file_opened.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_is_not_modified.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_is_put_or_delete_method.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_is_valid_http_method.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_is_valid_port.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_is_websocket_protocol.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_kill.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_load_dll.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_localtime_r.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_lock_unlock_connection.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_lock_unlock_context.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_log_access.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_lowercase.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_malloc.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_master_thread.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_match_prefix.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_md5.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_mkcol.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_mkdir.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_modify_passwords_file.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_must_hide_file.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_next_option.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_opendir.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_open_auth_file.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_option_value_to_bool.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_option_value_to_int.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_parse_auth_header.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_parse_date_string.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_parse_http_headers.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_parse_http_message.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_parse_net.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_parse_range_header.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_path_to_unicode.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_poll.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_prepare_cgi_environment.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_printf.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_print_dir_entry.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_process_new_connection.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_process_options.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_produce_socket.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_cond_broadcast.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_cond_destroy.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_cond_init.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_cond_signal.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_cond_timedwait.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_cond_wait.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_getspecific.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_join.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_key_create.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_key_delete.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_mutex_destroy.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_mutex_init.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_mutex_lock.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_mutex_trylock.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_mutex_unlock.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_self.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_setspecific.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pull.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pull_all.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_push_all.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_put_dir.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_put_file.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_read.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_readdir.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_read_auth_file.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_read_request.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_read_websocket.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_redirect_to_https_port.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_refresh_trust.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_remove.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_remove_bad_file.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_remove_directory.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_remove_double_dots.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_reset_per_request_attributes.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_scan_directory.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_send_authorization_request.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_send_file.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_send_file_data.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_send_http_error.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_send_no_cache_header.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_send_options.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_send_static_cache_header.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_send_websocket_handshake.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_acl_option.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_auth_handler.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_close_on_exec.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_debug_level.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_gpass_option.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_handler_type.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_non_blocking_mode.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_ports_option.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_request_handler.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_sock_timeout.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_ssl_option.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_tcp_nodelay.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_thread_name.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_throttle.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_uid_option.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_user_connection_data.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_websocket_handler.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_should_decode_url.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_should_keep_alive.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_skip.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_skip_quoted.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_snprintf.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_sockaddr_to_string.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_spawn_process.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_ssi.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_sslize.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_ssl_error.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_ssl_get_client_cert_info.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_ssl_get_protocol.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_ssl_id_callback.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_ssl_locking_callback.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_ssl_use_pem_file.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_start.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_start_thread.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_start_thread_with_id.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_stat.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_stop.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_store_body.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_strcasecmp.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_strcasestr.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_strdup.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_strlcpy.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_strncasecmp.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_strndup.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_substitute_index_file.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_suggest_connection_header.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_system_exit.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_system_init.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_timer.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_tls_dtor.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_uninitialize_ssl.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_url_decode.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_url_encode.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_version.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_vprintf.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_vsnprintf.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_websocket_client_thread.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_websocket_client_write.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_websocket_write.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_websocket_write_exec.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_worker_thread.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_write.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\lh_ipt_to_ip.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\lh_ipt_to_ip4.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\lh_ipt_to_ip6.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\lh_ip_to_ipt.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\osx_clock_gettime.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\win32_clock_gettime.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\wince_rename.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\wince_stat.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\wince_strftime.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\wince_time.c">
+      <Filter>net\libhttp\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\helper\src\office\excel_xml.cpp">
+      <Filter>office</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\helper\src\net\paho.mqtt.c\src\VersionInfo.h.in">
+      <Filter>net\paho.mqtt.c</Filter>
+    </None>
+    <None Include="..\..\..\helper\src\office\xlutility.inl">
+      <Filter>office</Filter>
+    </None>
+    <None Include="..\..\..\helper\src\office\xldb-query_sample.xlsx">
+      <Filter>office\sample</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,283 @@
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//                                               Copyright    (C)    2003    Pin
+//
+#include "tShape.h"
+
+
+namespace LG
+{
+    //=============================================================================
+    //  Name : 
+    //  Desc : 
+    //=============================================================================
+    Shape::Shape()
+    {
+        m_type = _P_SHAPELESS_;
+        memset( m_buf, 0, _MAX_SHAPE_BUF );
+    }
+
+
+    //=============================================================================
+    //  Name : 
+    //  Desc : 
+    //=============================================================================
+    Shape::~Shape()
+    {
+        //SAFE_DELETE( m_pData );
+        memset( m_buf, 0, _MAX_SHAPE_BUF );
+    }
+
+
+    //=============================================================================
+    //  Name : 
+    //  Desc : 
+    //=============================================================================
+    size_t Shape::BeNull( void )
+    {
+        m_type = _P_SHAPELESS_;
+        //SAFE_DELETE( m_pData );
+        memset( m_buf, 0, _MAX_SHAPE_BUF );
+        return 0;
+    }
+
+    //=============================================================================
+    //  Name : 
+    //  Desc : 
+    //=============================================================================
+    size_t Shape::BeVertex3l( long X, long Y, long Z )
+    {
+        //SAFE_DELETE( m_pData );
+        memset( m_buf, 0, _MAX_SHAPE_BUF );
+        m_type = _P_VERTEX3L_;
+        //m_pData = new LG::Vertex3l;
+        ( ( LG::Vertex3l * ) ( &m_buf ) )->x = X;
+        ( ( LG::Vertex3l * ) ( &m_buf ) )->y = Y;
+        ( ( LG::Vertex3l * ) ( &m_buf ) )->z = Z;
+        return sizeof( LG::Vertex3l );
+    }
+
+
+    LG::Vertex3l* Shape::Vertex3l( void )
+    {
+        if( m_type == _P_VERTEX3L_ )
+            return ( LG::Vertex3l * ) ( &m_buf );
+        return NULL;
+    }
+
+
+    //=============================================================================
+    //  Name : 
+    //  Desc : 
+    //=============================================================================
+    size_t Shape::BeVertex2f( float X, float Y )
+    {
+        //SAFE_DELETE( m_pData );
+        memset( m_buf, 0, _MAX_SHAPE_BUF );
+        m_type = _P_VERTEX2F_;
+        //m_pData = new LG::Vertex2f;
+        ( ( LG::Vertex2f * ) ( &m_buf ) )->x = X;
+        ( ( LG::Vertex2f * ) ( &m_buf ) )->y = Y;
+        return sizeof( LG::Vertex2f );
+    }
+
+
+    LG::Vertex2f* Shape::Vertex2f( void )
+    {
+        if( m_type == _P_VERTEX2F_ )
+            return ( LG::Vertex2f * ) ( &m_buf );
+        return NULL;
+    }
+
+
+    //=============================================================================
+    //  Name : 
+    //  Desc : 
+    //=============================================================================
+    size_t Shape::BeVertex3f( float X, float Y, float Z )
+    {
+        //SAFE_DELETE( m_pData );
+        memset( m_buf, 0, _MAX_SHAPE_BUF );
+        m_type = _P_VERTEX3F_;
+        //m_pData = new LG::Vertex3f;
+        ( ( LG::Vertex3f * ) ( &m_buf ) )->x = X;
+        ( ( LG::Vertex3f * ) ( &m_buf ) )->y = Y;
+        ( ( LG::Vertex3f * ) ( &m_buf ) )->z = Z;
+        return sizeof( LG::Vertex3f );
+    }
+
+
+    LG::Vertex3f* Shape::Vertex3f( void )
+    {
+        if( m_type == _P_VERTEX3F_ )
+            return ( LG::Vertex3f * ) ( &m_buf );
+        return NULL;
+    }
+
+
+    //=============================================================================
+    //  Name : 
+    //  Desc : 
+    //=============================================================================
+    size_t Shape::BeLinev3f( float X1,
+                             float Y1,
+                             float Z1,
+                             float X2,
+                             float Y2,
+                             float Z2 )
+    {
+        //SAFE_DELETE( m_pData );
+        memset( m_buf, 0, _MAX_SHAPE_BUF );
+        m_type = _P_LINEV3F_;
+        //m_pData = new CPLinevf;
+        ( ( LG::Line3df * ) ( &m_buf ) )->vertex[ 0 ].x = X1;
+        ( ( LG::Line3df * ) ( &m_buf ) )->vertex[ 0 ].y = Y1;
+        ( ( LG::Line3df * ) ( &m_buf ) )->vertex[ 0 ].z = Z1;
+        ( ( LG::Line3df * ) ( &m_buf ) )->vertex[ 1 ].x = X2;
+        ( ( LG::Line3df * ) ( &m_buf ) )->vertex[ 1 ].y = Y2;
+        ( ( LG::Line3df * ) ( &m_buf ) )->vertex[ 1 ].z = Z2;
+        return sizeof( LG::Line3df );
+    }
+
+    LG::Line3df* Shape::Linev3f( void )
+    {
+        if( m_type == _P_LINEV3F_ )
+            return ( LG::Line3df * ) ( &m_buf );
+        return NULL;
+    }
+
+
+    //=============================================================================
+    //  Name : 
+    //  Desc : 
+    //=============================================================================
+    size_t Shape::BeSpheref( float cX, float cY, float cZ, float radius )
+    {
+        //SAFE_DELETE( m_pData );
+        memset( m_buf, 0, _MAX_SHAPE_BUF );
+        m_type = _P_SPHEREF_;
+        //m_pData = new LG::Spheref;
+        ( ( LG::Spheref * ) ( &m_buf ) )->center.x = cX;
+        ( ( LG::Spheref * ) ( &m_buf ) )->center.y = cY;
+        ( ( LG::Spheref * ) ( &m_buf ) )->center.z = cZ;
+        ( ( LG::Spheref * ) ( &m_buf ) )->radius = radius;
+        return sizeof( LG::Spheref );
+    }
+
+    LG::Spheref* Shape::Spheref( void )
+    {
+        if( m_type == _P_SPHEREF_ )
+            return ( LG::Spheref * ) ( &m_buf );
+        return NULL;
+    }
+
+
+    //=============================================================================
+    //  Name : 
+    //  Desc : 
+    //=============================================================================
+    size_t Shape::BeCubef( float X1,
+                           float Y1,
+                           float Z1,
+                           float X2,
+                           float Y2,
+                           float Z2 )
+    {
+        //SAFE_DELETE( m_pData );
+        memset( m_buf, 0, _MAX_SHAPE_BUF );
+        m_type = _P_CUBE_;
+        //m_pData = new LG::BBoxf;
+        ( ( LG::BBoxf * ) ( &m_buf ) )->vertex[ 0 ].x = X1;
+        ( ( LG::BBoxf * ) ( &m_buf ) )->vertex[ 0 ].y = Y1;
+        ( ( LG::BBoxf * ) ( &m_buf ) )->vertex[ 0 ].z = Z1;
+        ( ( LG::BBoxf * ) ( &m_buf ) )->vertex[ 1 ].x = X2;
+        ( ( LG::BBoxf * ) ( &m_buf ) )->vertex[ 1 ].y = Y2;
+        ( ( LG::BBoxf * ) ( &m_buf ) )->vertex[ 1 ].z = Z2;
+        return sizeof( LG::BBoxf );
+    }
+
+
+    LG::BBoxf* Shape::Cubef( void )
+    {
+        if( m_type == _P_CUBE_ )
+            return ( LG::BBoxf * ) ( &m_buf );
+        return NULL;
+    }
+
+
+    //=============================================================================
+    //  Name : 
+    //  Desc : 
+    //=============================================================================
+    size_t Shape::BePlane3df( float nX, float nY, float nZ, float c )
+    {
+        memset( m_buf, 0, _MAX_SHAPE_BUF );
+        m_type = _P_PLANE3DF_;
+        //m_pData = new CPLinevf;
+        ( ( LG::Plane3df * ) ( &m_buf ) )->normal.x = nX;
+        ( ( LG::Plane3df * ) ( &m_buf ) )->normal.y = nY;
+        ( ( LG::Plane3df * ) ( &m_buf ) )->normal.z = nZ;
+        ( ( LG::Plane3df * ) ( &m_buf ) )->cnst = c;
+        return sizeof( LG::Plane3df );
+    }
+
+
+    LG::Plane3df* Shape::Plane3df( void )
+    {
+        if( m_type == _P_PLANE3DF_ )
+            return ( LG::Plane3df * ) ( &m_buf );
+        return NULL;
+    }
+
+    /*
+    //=============================================================================
+    //  Name : 
+    //  Desc : 
+    //=============================================================================
+    size_t Shape::sizeofshapeclass( void )
+    {
+        switch( m_pEventVec.getType() )
+        {
+        case _P_SHAPELESS_:
+            return sizeof( Pdword );
+        case _P_VERTEX2F_:
+            return sizeof( Pdword ) + sizeof( LG::Vertex2f );
+        case _P_VERTEX3L_:
+            return sizeof( Pdword ) + sizeof( LG::Vertex3l );
+        case _P_VERTEX3F_:
+            return sizeof( Pdword ) + sizeof( LG::Vertex3f );
+        case _P_SPHERE_:
+            return sizeof( Pdword ) + sizeof( LG::Spheref );
+        case _P_CUBE_:
+            return sizeof( Pdword ) + sizeof( LG::BBoxf );
+        }
+        return 0;
+    }
+    void* Shape::getBuffer( size_t &size )
+    {
+        size = sizeofshapeclass();
+        Pbyte* buf = new Pbyte[ size ];
+        memcpy( buf, &m_type, sizeof( shape_t ) );
+        if( size > sizeof( shape_t ) )
+            memcpy( buf+sizeof( shape_t ), &m_pData, size - sizeof( shape_t ) );
+        return buf;
+    }
+    void Shape::setBuffer( void* buf )
+    {
+        memcpy( &m_type, buf, sizeof( shape_t ) );
+        
+        memcpy( &m_type, buf, sizeof( shape_t ) );
+    }
+    */
+};//namespace LG

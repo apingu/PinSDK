@@ -1,0 +1,37 @@
+
+
+
+CP3DSprite   CID = SPRI
+CP3DFigure 
+CP3DAction
+CP3DElement  CID = ELEM
+CP3DRole     CID = ROLE
+
+CP3DWorld
+CP3DSector
+
+
+
+/////////////////////////////////////////////////////////////////
+CPChessboard
+[ PKGS package file format... ]
+[ buffer data ... ]
+
+
+
+/////////////////////////////////////////////////////////////////
+CPGSpace
+[ PKGS package file format... ]
+[ buffer data ... ]
+
+
+/////////////////////////////////////////////////////////////////
+CPGEvent
+CPGTriggerSys
+
+[DWORD TRIG][UINT evnet count][ event........ ]
+
+
+
+
+

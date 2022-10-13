@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\parser\src\JSON\JSON.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\src\XML\xmlnode.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\src\XML\xmlschema.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\src\gsp\pgsp_file.cpp">
+      <Filter>pgsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\src\json\json_value.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\src\html\html-parser.cpp">
+      <Filter>html</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\src\configreader\config_reader.cpp">
+      <Filter>config reader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\src\http\mpfd-parser.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\src\Http\mpfd-field.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\src\http\http-parser.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\src\stringparser\string_parser.cpp">
+      <Filter>string parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\src\http\mpfd-exception.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\src\json\json_type.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\src\mqtt\mqtt-protocol-c\src\errors.c">
+      <Filter>mqtt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\src\mqtt\mqtt-protocol-c\src\message.c">
+      <Filter>mqtt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\src\mqtt\mqtt-protocol-c\src\parser.c">
+      <Filter>mqtt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\src\mqtt\mqtt-protocol-c\src\serialiser.c">
+      <Filter>mqtt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\src\mqtt\mqtt-protocol-c\src\test.c">
+      <Filter>mqtt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\src\mqtt\mqtt-protocol-c\src\buffer.c">
+      <Filter>mqtt</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\parser\src\JSON\JSON.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\src\XML\xmlnode.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\src\XML\xmlschema.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\src\gsp\pgsp_file.h">
+      <Filter>pgsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\src\json\json_value.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\src\html\html-parser.h">
+      <Filter>html</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\src\html\html-entities.h">
+      <Filter>html</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\src\configreader\config_reader.h">
+      <Filter>config reader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\src\http\mpfd-parser.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\src\Http\mpfd-field.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\src\http\http-parser.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\src\stringparser\string_parser.h">
+      <Filter>string parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\src\http\mpfd-exception.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\src\json\json_type.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\project.h" />
+    <ClInclude Include="..\..\..\parser\src\mqtt\mqtt-protocol-c\src\errors.h">
+      <Filter>mqtt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\src\mqtt\mqtt-protocol-c\src\message.h">
+      <Filter>mqtt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\src\mqtt\mqtt-protocol-c\src\parser.h">
+      <Filter>mqtt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\src\mqtt\mqtt-protocol-c\src\serialiser.h">
+      <Filter>mqtt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\src\mqtt\mqtt-protocol-c\src\buffer.h">
+      <Filter>mqtt</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="html">
+      <UniqueIdentifier>{d23ea35b-396e-4f50-8c39-d2e9448161b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{eb61865f-9428-4c4b-8475-0999ccb67dc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{7d100531-000a-40ec-9aae-c113647f643a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pgsp">
+      <UniqueIdentifier>{3228529a-37db-48f9-85e4-341c9082ba8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xml">
+      <UniqueIdentifier>{37846ca9-5c1a-4779-9ab7-2c09cad4a8b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config reader">
+      <UniqueIdentifier>{6845269e-2f68-4e13-a0ca-388696064f58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="string parser">
+      <UniqueIdentifier>{a2a10b9c-da4b-4bd6-ab90-41401def56d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mqtt">
+      <UniqueIdentifier>{5a8d728a-8408-4c23-93eb-452ef218e0ab}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\parser\readme.txt" />
+  </ItemGroup>
+</Project>

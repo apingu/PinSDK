@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{388302F0-306E-4F0F-A55E-EC9096F372D0}</ProjectGuid>
+    <RootNamespace>Cyberspace_Server</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <ProjectName>cyberspace</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;$(MYSQL_HOME)\$(PlatformShortName)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>false</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0404</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(MYSQL_HOME)\$(PlatformShortName)\lib</AdditionalLibraryDirectories>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy ..\..\..\cyberspace\src\cs-def.h                         ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-err.h                         ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-obj_descriptor.h              ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-database_service.h            ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-core_server.h                  ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-http_server.h                  ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-abtp_server.h                  ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-helper.h                      ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-json.h                      ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-entity_def.h                  ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-If_socket.h                   ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-protocol.h                    ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-uid_generator.h                ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-db_query.h                    ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-db_function.h                 ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-arbitration_server.h          ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-record.h                      ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-paper_server.h                ..\..\..\include\net\
+</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;$(MYSQL_HOME)\$(PlatformShortName)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_WIN64;_DEBUG;_WINDOWS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>false</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0404</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(MYSQL_HOME)\$(PlatformShortName)\lib</AdditionalLibraryDirectories>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy ..\..\..\cyberspace\src\cs-def.h                         ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-err.h                         ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-obj_descriptor.h              ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-database_service.h            ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-core_server.h                  ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-http_server.h                  ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-abtp_server.h                  ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-helper.h                      ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-json.h                      ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-entity_def.h                  ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-If_socket.h                   ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-protocol.h                    ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-uid_generator.h                ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-arbitration_server.h          ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-record.h                      ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-paper_server.h                ..\..\..\include\net\
+</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;$(MYSQL_HOME)\$(PlatformShortName)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0404</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(MYSQL_HOME)\$(PlatformShortName)\lib</AdditionalLibraryDirectories>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy ..\..\..\cyberspace\src\cs-def.h                         ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-err.h                         ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-obj_descriptor.h              ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-database_service.h            ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-core_server.h                  ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-http_server.h                  ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-abtp_server.h                  ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-helper.h                      ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-json.h                      ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-entity_def.h                  ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-If_socket.h                   ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-protocol.h                    ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-uid_generator.h                ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-db_query.h                    ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-db_function.h                 ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-arbitration_server.h          ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-record.h                      ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-paper_server.h                ..\..\..\include\net\
+</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;$(MYSQL_HOME)\$(PlatformShortName)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_WIN64;NDEBUG;_WINDOWS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0404</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(MYSQL_HOME)\$(PlatformShortName)\lib</AdditionalLibraryDirectories>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy ..\..\..\cyberspace\src\cs-def.h                         ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-err.h                         ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-obj_descriptor.h              ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-database_service.h            ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-core_server.h                  ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-http_server.h                  ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-abtp_server.h                  ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-helper.h                      ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-json.h                      ..\..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-entity_def.h                  ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-If_socket.h                   ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-protocol.h                    ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-uid_generator.h                ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-db_query.h                    ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-db_function.h                 ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-arbitration_server.h          ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-record.h                      ..\..\..\include\net\
+copy ..\..\..\cyberspace\src\cs-paper_server.h                ..\..\..\include\net\
+</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\cyberspace\src\cs-abtp_cn_socket.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-abtp_pr_socket.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-abtp_server.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-arbitration_delegate.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-database_service.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-core_server.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-http_client.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-http_server.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-helper.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-json.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-obj_descriptor.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-paper_system.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-paper_client.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-paper_server.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-record.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-arbitration_client.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-arbitration_server.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-packet_factory.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-protocol.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-scs-system.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-log_file_service.cpp" />
+    <ClCompile Include="..\..\..\cyberspace\src\cs-log_file_exporter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\cyberspace\project.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-abtp_cn_socket.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-abtp_pr_socket.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-abtp_server.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-arbit_command.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-arbitration_delegate.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-base_command.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-database_service.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-db_cfg_reader.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-db_function_game.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-db_function_game_model.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-db_query_base.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-db_query_def.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-err.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-core_server.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-json.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-utility.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-http_client.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-http_cn_session.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-http_server.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-uid_generator.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-if_session.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-if_socket.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-helper.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-obj_descriptor.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-paper_command.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-record.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-paper_system.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-paper_client.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-paper_server.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-scs_command.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-scs-system_delegate.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-log_file_service.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-pri_def.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-entity_def.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-db_query_game_model.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-db_query_game.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-arbitration_client.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-arbitration_server.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-db_function_base.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-def.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-packet_factory.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-protocol.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-scs-system.h" />
+    <ClInclude Include="..\..\..\cyberspace\src\cs-log_file_exporter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="NetSocket.vcxproj">
+      <Project>{c63716f5-2bab-49ee-87f9-92d15bac8b97}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\cyberspace\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\..\cyberspace\src\cfg\config.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

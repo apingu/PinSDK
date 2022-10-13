@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ee4d25ca-f64c-43c0-91b3-617992a04745}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{22516783-f427-4f9c-9a05-2f83ccfaec9c}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="helper">
+      <UniqueIdentifier>{8816ead6-a68f-424d-9ede-8eb1915b7e7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="urdp">
+      <UniqueIdentifier>{9e58cba3-7039-4497-852f-005012378856}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kcp">
+      <UniqueIdentifier>{00a6cfe1-26cb-457b-b2b5-c3624d124e79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="msquic">
+      <UniqueIdentifier>{830cb461-40c3-4a70-be77-a89f5c49852d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="msquic\inc">
+      <UniqueIdentifier>{9dd091a7-9b0e-4a0e-b28d-b9fb927269dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="msquic\core">
+      <UniqueIdentifier>{3eff3201-0500-473f-b1a2-af20bda88562}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\netsocket\src\unp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\epoll-def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\iocp-def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\net-client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\net-peer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\net-server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\net-socket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\net-helper.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\net-rudp_socket.h">
+      <Filter>urdp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\project.h" />
+    <ClInclude Include="..\..\..\netsocket\src\kcp\ikcp.h">
+      <Filter>kcp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\msquic.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\msquic.hpp">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\msquichelper.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\msquicp.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\msquic_fuzz.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\msquic_posix.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\msquic_winkernel.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\msquic_winuser.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_cert.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_crypt.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_datapath.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_driver_helpers.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_hashtable.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_pcp.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_platform.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_platform_posix.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_platform_winkernel.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_platform_winuser.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_sal_stub.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_storage.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_tls.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_toeplitz.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_trace.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_trace_manifested_etw.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_var_int.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_versions.h">
+      <Filter>msquic\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\ack_tracker.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\api.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\binding.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\cid.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\configuration.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\congestion_control.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\connection.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\crypto.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\cubic.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\datagram.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\frame.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\library.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\listener.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\lookup.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\loss_detection.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\mtu_discovery.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\operation.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\packet.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\packet_builder.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\packet_space.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\path.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\precomp.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\quicdef.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\range.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\recv_buffer.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\registration.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\send.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\send_buffer.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\sent_packet_metadata.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\settings.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\stream.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\stream_set.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\timer_wheel.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\transport_params.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\version_neg.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\worker.h">
+      <Filter>msquic\core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\netsocket\src\net-helper.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\net-client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\net-peer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\net-server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\net-socket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\net-rudp_socket.cpp">
+      <Filter>urdp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\kcp\ikcp.c">
+      <Filter>kcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\ack_tracker.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\api.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\binding.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\configuration.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\congestion_control.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\connection.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\crypto.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\crypto_tls.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\cubic.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\datagram.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\frame.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\injection.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\inline.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\library.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\listener.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\lookup.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\loss_detection.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\mtu_discovery.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\operation.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\packet.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\packet_builder.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\packet_space.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\path.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\range.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\recv_buffer.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\registration.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\send.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\send_buffer.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\sent_packet_metadata.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\settings.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\stream.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\stream_recv.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\stream_send.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\stream_set.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\timer_wheel.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\version_neg.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\worker.c">
+      <Filter>msquic\core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\netsocket\readme.txt" />
+    <Text Include="..\..\..\netsocket\src\msquic\readme.txt">
+      <Filter>msquic</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

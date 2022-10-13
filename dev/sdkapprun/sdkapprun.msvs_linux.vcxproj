@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="project.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build_linux.sh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\smain.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2d8f6764-2747-474a-bd0a-be057f15f661}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{D51BCBC9-82E9-4017-911E-C93873C4EA2B}</LinuxProjectType>
+    <ProjectName>sdkapprun</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(ProjectDir)..\bin</OutDir>
+    <TargetExt>.out</TargetExt>
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <OutDir>$(ProjectDir)..\bin</OutDir>
+    <TargetExt>.out</TargetExt>
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)..\bin</OutDir>
+    <TargetExt>.out</TargetExt>
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)..\bin</OutDir>
+    <TargetExt>.out</TargetExt>
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <OutDir>$(ProjectDir)..\bin</OutDir>
+    <TargetExt>.out</TargetExt>
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <OutDir>$(ProjectDir)..\bin</OutDir>
+    <TargetExt>.out</TargetExt>
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../include/net/;../../include;/usr/include/mysql;../helper/src/net/paho.mqtt.c/src;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_LINUX;</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>/usr/lib64/;/root/projects/Engine/PinSDK/c/dev/lib/$(Platform)/$(Configuration)</AdditionalLibraryDirectories>
+      <LibraryDependencies>cyberspace_server;xdatabase;parser;gadget;helper;algorithmic;mariadbclient;ziplib;netsocket;template;utility;xl;crypto;ssl;dl;pthread</LibraryDependencies>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>-lz %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) linux_$(PlatformTarget)/$(Configuration)/ $(TargetName);</Command>
+    </RemotePostBuildEvent>
+    <RemotePreBuildEvent>
+      <Command>
+      </Command>
+    </RemotePreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../include/net/;../../include;/usr/include/mysql;../helper/src/net/paho.mqtt.c/src;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_LINUX;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>/usr/lib64/;/root/projects/Engine/PinSDK/c/dev/lib/$(Platform)/$(Configuration)</AdditionalLibraryDirectories>
+      <LibraryDependencies>cyberspace_server;xdatabase;parser;gadget;helper;algorithmic;mariadbclient;ziplib;netsocket;template;utility;xl;crypto;ssl;dl;pthread</LibraryDependencies>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>-lz %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) linux_$(PlatformTarget)/$(Configuration)/ $(TargetName);</Command>
+    </RemotePostBuildEvent>
+    <RemotePreBuildEvent>
+      <Command>
+      </Command>
+    </RemotePreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../include/net/;../../include;/usr/include/mysql;../helper/src/net/paho.mqtt.c/src;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_LINUX;</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>/usr/lib64/;/root/projects/Engine/PinSDK/c/dev/lib/$(Platform)/$(Configuration)</AdditionalLibraryDirectories>
+      <LibraryDependencies>cyberspace_server;xdatabase;parser;gadget;helper;algorithmic;mariadbclient;ziplib;netsocket;template;utility;xl;crypto;ssl;dl;pthread</LibraryDependencies>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>-lz %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) linux_$(PlatformTarget)/$(Configuration)/ $(TargetName);</Command>
+    </RemotePostBuildEvent>
+    <RemotePreBuildEvent>
+      <Command>
+      </Command>
+    </RemotePreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../include/net/;../../include;/usr/include/mysql;../helper/src/net/paho.mqtt.c/src;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_LINUX;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>/usr/lib64/;/root/projects/Engine/PinSDK/c/dev/lib/$(Platform)/$(Configuration)</AdditionalLibraryDirectories>
+      <LibraryDependencies>cyberspace_server;xdatabase;parser;gadget;helper;algorithmic;mariadbclient;ziplib;netsocket;template;utility;xl;crypto;ssl;dl;pthread</LibraryDependencies>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>-lz %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) linux_$(PlatformTarget)/$(Configuration)/ $(TargetName);</Command>
+    </RemotePostBuildEvent>
+    <RemotePreBuildEvent>
+      <Command>
+      </Command>
+    </RemotePreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../include/net/;../../include;/usr/include/mysql;../helper/src/net/paho.mqtt.c/src;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_LINUX;</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>/usr/lib64/;/root/projects/Engine/PinSDK/c/dev/lib/$(Platform)/$(Configuration)</AdditionalLibraryDirectories>
+      <LibraryDependencies>cyberspace_server;xdatabase;parser;gadget;helper;algorithmic;mariadbclient;ziplib;netsocket;template;utility;xl;crypto;ssl;dl;pthread</LibraryDependencies>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>-lz %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) linux_$(PlatformTarget)/$(Configuration)/ $(TargetName);</Command>
+    </RemotePostBuildEvent>
+    <RemotePreBuildEvent>
+      <Command>
+      </Command>
+    </RemotePreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../include/net/;../../include;/usr/include/mysql;../helper/src/net/paho.mqtt.c/src;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_LINUX;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>/usr/lib64/;/root/projects/Engine/PinSDK/c/dev/lib/$(Platform)/$(Configuration)</AdditionalLibraryDirectories>
+      <LibraryDependencies>cyberspace_server;xdatabase;parser;gadget;helper;algorithmic;mariadbclient;ziplib;netsocket;template;utility;xl;crypto;ssl;dl;pthread</LibraryDependencies>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>-lz %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) linux_$(PlatformTarget)/$(Configuration)/ $(TargetName);</Command>
+    </RemotePostBuildEvent>
+    <RemotePreBuildEvent>
+      <Command>
+      </Command>
+    </RemotePreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

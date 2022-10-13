@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8F2CC570-72B5-41AA-83AF-FFF3192E4045}</ProjectGuid>
+    <ProjectName>Parser</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0001\4.8.5;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0001\4.8.5\x86_64-redhat-linux;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0001\4.8.5\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0002\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0003\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0000\include;..\include;..\..\include;..\..\include\template;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)Parser_vgdb_linux-Debug.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0001\4.8.5;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0001\4.8.5\x86_64-redhat-linux;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0001\4.8.5\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0002\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0003\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0000\include;..\include;..\..\include;..\..\include\template;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)Parser_vgdb_linux-Release.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="src\configreader\configreader.cpp" />
+    <ClCompile Include="src\gsp\pgspfile.cpp" />
+    <ClCompile Include="src\html\htmlparser.cpp" />
+    <ClCompile Include="src\http\exception.cpp" />
+    <ClCompile Include="src\http\field.cpp" />
+    <ClCompile Include="src\http\httpparser.cpp" />
+    <ClCompile Include="src\http\mpfdparser.cpp" />
+    <ClCompile Include="src\json\json.cpp" />
+    <ClCompile Include="src\json\jsonvalue.cpp" />
+    <ClCompile Include="src\stringparser\stringparser.cpp" />
+    <ClCompile Include="src\xml\xmlnode.cpp" />
+    <ClCompile Include="src\xml\xmlschema.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="src\configreader\configreader.h" />
+    <ClInclude Include="src\gsp\pgspfile.h" />
+    <ClInclude Include="src\html\HTMLEntities.h" />
+    <ClInclude Include="src\html\htmlparser.h" />
+    <ClInclude Include="src\http\exception.h" />
+    <ClInclude Include="src\http\field.h" />
+    <ClInclude Include="src\http\httpparser.h" />
+    <ClInclude Include="src\http\mpfdparser.h" />
+    <ClInclude Include="src\json\json.h" />
+    <ClInclude Include="src\json\jsonvalue.h" />
+    <ClInclude Include="src\stringparser\stringparser.h" />
+    <ClInclude Include="src\xml\xmlnode.h" />
+    <ClInclude Include="src\xml\xmlschema.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="debug.mak" />
+    <None Include="Makefile" />
+    <None Include="Parser_vgdb_linux-Debug.vgdbsettings" />
+    <None Include="Parser_vgdb_linux-Release.vgdbsettings" />
+    <None Include="release.mak" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

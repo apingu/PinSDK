@@ -1,0 +1,5 @@
+PEP
+
+[PEP 4bytes][picture counts (2bytes)][status counts (2bytes)]
+[status1 counts (2bytes)| status2 counts (2bytes)........................] ->PS.( S1 counts + S2 counts + S3...... = picture counts)
+[Offset1        (4bytes)| Offset2        (4bytes)........................]

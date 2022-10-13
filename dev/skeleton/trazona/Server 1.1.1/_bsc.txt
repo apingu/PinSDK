@@ -1,0 +1,4 @@
+"/nologo"
+"/oNPDebug/TeraZonaApp_ServerPlugIn.bsc"
+".\NPDebug\TeraZonaEntityMgr.sbr"
+".\NPDebug\ZonaGSValidate.sbr"

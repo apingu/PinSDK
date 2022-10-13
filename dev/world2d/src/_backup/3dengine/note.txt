@@ -1,0 +1,56 @@
+@ Scale
+
+      | x 0 0 |
+    * | 0 y 0 |
+      | 0 0 z |
+
+
+
+@ Translations
+
+    . use +
+        P' = P + T
+        | x + tx |
+        | y + ty |
+        | y + tz |
+    . use *
+
+
+
+
+@ Rotations
+
+    .2D
+        x = sin(0)
+        y = cos(0)
+
+    .3D
+        x:
+            | 1    0       0    |
+            | 0  cos(a) -sin(a) |
+            | 0  sin(a)  cos(a) |
+
+        y:
+            | cos(a)  0  sin(a) |
+            |   0     1    0    |
+            | -sin(a) 0 cos(a)  |
+
+        z:
+            | cos(a) -sin(a)  0 |
+            | sin(a)  cos(a)  0 |
+            |   0       0     1 |
+
+
+
+@
+    Modelview  ->  Projection  -> Perspective division
+
+
+OpenGL
+
+    glTranslatef( x, y, z )
+    glRotatef   ( angle,x , y, z )
+    glScalef    ( x, y, z )
+
+
+

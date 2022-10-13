@@ -1,0 +1,29 @@
+
+2002 / 05 / 23
+    Map :
+        @ grid select can't in right point when map scorll
+    Role :
+        @ role walk direction
+
+2002 / 06 / 26
+    Role :
+        1. rount search
+        2. judge direction
+
+2002 / 7 / 2
+
+    @ UI button bug when do press button and then move, it will be change to button down 
+      status, because i didn't write break in switch;
+
+2002 / 7 / 3
+
+    @ Element :
+        1. situs record screen situs will change to record map situs 
+    @ Map :
+        2. delete mapobject board
+
+2002 / 7 / 9
+
+    @ Element :
+        1. Add name field: want to write file name in name field but PZFile still can't find fname by offset
+                           still?

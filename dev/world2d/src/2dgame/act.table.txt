@@ -1,0 +1,31 @@
+8 * 0 + 0   standby D1
+8 * 0 + 1   standby D2
+8 * 0 + 2   standby D3
+8 * 0 + 4   standby D4
+8 * 0 + 5   standby D5
+8 * 0 + 6   standby D6
+8 * 0 + 7   standby D7
+
+8 * 1 + 0   walk    D1
+8 * 1 + 1   walk    D2
+8 * 1 + 2   walk    D3
+8 * 1 + 4   walk    D4
+8 * 1 + 5   walk    D5
+8 * 1 + 6   walk    D6
+8 * 1 + 7   walk    D7
+
+8 * 2 + 0   attack  D1
+8 * 2 + 1   attack  D2
+8 * 2 + 2   attack  D3
+8 * 2 + 4   attack  D4
+8 * 2 + 5   attack  D5
+8 * 2 + 6   attack  D6
+8 * 2 + 7   attack  D7
+
+8 * 3 + 0   defend  D1
+8 * 3 + 1   defend  D2
+8 * 3 + 2   defend  D3
+8 * 3 + 4   defend  D4
+8 * 3 + 5   defend  D5
+8 * 3 + 6   defend  D6
+8 * 3 + 7   defend  D7

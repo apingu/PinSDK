@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="aes">
+      <UniqueIdentifier>{2305dfda-8e55-46fa-b219-b72d7bdc85dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{76ac405f-dbac-4ab6-85d9-bf238f5ddfa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crc">
+      <UniqueIdentifier>{5b63ed30-bd13-435b-9ae4-45b86231fbdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cryptology">
+      <UniqueIdentifier>{5f29c83a-37f9-450c-9892-31342f84fd91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="md5">
+      <UniqueIdentifier>{0d7ec4dc-7711-4656-a398-df246e9fe77a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="uri">
+      <UniqueIdentifier>{6bff77eb-9480-4fcb-9f86-94cb5ec919ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="path finding">
+      <UniqueIdentifier>{73ff91c6-fccf-4b29-8a3a-7d0fba8d8b2f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\algorithmic\src\example.txt" />
+    <Text Include="..\..\..\algorithmic\src\crypt-crc_readme.txt">
+      <Filter>crc</Filter>
+    </Text>
+    <Text Include="..\..\..\algorithmic\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\algorithmic\src\Cryptology.h">
+      <Filter>cryptology</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\algorithmic\src\uri.h">
+      <Filter>uri</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\algorithmic\src\ob_path_search.h">
+      <Filter>path finding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\algorithmic\src\path_search.h">
+      <Filter>path finding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\algorithmic\src\crypt-aes.h">
+      <Filter>aes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\algorithmic\src\crypt-base32.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\algorithmic\src\crypt-base64.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\algorithmic\src\crypt-crc_common.h">
+      <Filter>crc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\algorithmic\src\crypt-crc32.h">
+      <Filter>crc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\algorithmic\src\crypt-crc64.h">
+      <Filter>crc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\algorithmic\src\crypt-md5.h">
+      <Filter>md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\algorithmic\project.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\algorithmic\src\Cryptology.cpp">
+      <Filter>cryptology</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\algorithmic\src\uri.cpp">
+      <Filter>uri</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\algorithmic\src\ob_path_search.cpp">
+      <Filter>path finding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\algorithmic\src\crypt-aes.cpp">
+      <Filter>aes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\algorithmic\src\crypt-base32.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\algorithmic\src\crypt-base64.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\algorithmic\src\crypt-crc32.cpp">
+      <Filter>crc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\algorithmic\src\crypt-crc64.cpp">
+      <Filter>crc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\algorithmic\src\crypt-md5.cpp">
+      <Filter>md5</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,44 @@
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+#ifndef TSTRINGARRAY_H
+#define TSTRINGARRAY_H
+
+#include "tString.h"
+#include "vector"
+
+namespace Util
+{
+	class StringArray_t
+	{
+		std::vector<String_t> m_Strings;
+
+	public:
+		StringArray_t( unsigned int size=10 );
+		StringArray_t( const StringArray_t& sa );
+		~StringArray_t();
+
+		void SetSize( int size );
+		int  GetSize( int size );
+
+		void       operator = ( const StringArray_t& sa );
+		String_t&  operator[] ( unsigned int index );
+		bool       SetString  ( const char* str, unsigned int index );
+		String_t&  GetString  ( unsigned int index );
+	};
+};
+
+
+#endif

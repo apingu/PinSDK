@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="config reader">
+      <UniqueIdentifier>{b851ff83-1400-477d-9025-54e4f72e1600}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="html">
+      <UniqueIdentifier>{a2ad11e7-9ab4-4018-b13d-c9ae3d58d75a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{97830f94-0ba7-414c-94b3-af616b698b09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{5d50bf2e-4167-401f-9059-97341bd00e0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pgsp">
+      <UniqueIdentifier>{f443b974-ab9c-46ea-9427-4b361ed35115}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="string parser">
+      <UniqueIdentifier>{1e64584a-f53a-43a9-80f6-53d1b4f6459a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xml">
+      <UniqueIdentifier>{df33b9cf-39b9-4966-a2e6-e4e9f62e954c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00%29 configure">
+      <UniqueIdentifier>{a55f02b7-64f7-4816-94cd-95575bc29f80}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\configreader\config_reader.cpp">
+      <Filter>config reader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\json\json.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="src\json\json_value.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gsp\pgsp_file.cpp">
+      <Filter>pgsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stringparser\string_parser.cpp">
+      <Filter>string parser</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xml\xmlnode.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xml\xmlschema.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\mpfd-field.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\mpfd-parser.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="src\html\html-parser.cpp">
+      <Filter>html</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\mpfd-exception.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\http-parser.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="src\json\json_type.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\configreader\config_reader.h">
+      <Filter>config reader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\json\json.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\json\json_value.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gsp\pgsp_file.h">
+      <Filter>pgsp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stringparser\string_parser.h">
+      <Filter>string parser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xml\xmlnode.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xml\xmlschema.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\http-parser.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\mpfd-field.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\mpfd-parser.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="src\html\html-entities.h">
+      <Filter>html</Filter>
+    </ClInclude>
+    <ClInclude Include="src\html\html-parser.h">
+      <Filter>html</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\mpfd-exception.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="src\json\json_type.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="project.h">
+      <Filter>00%29 configure</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build_linux.sh">
+      <Filter>00%29 configure</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt">
+      <Filter>00%29 configure</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

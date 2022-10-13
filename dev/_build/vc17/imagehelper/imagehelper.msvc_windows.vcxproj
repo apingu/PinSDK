@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1508262E-2992-4A95-9347-6494F9E7971B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>imagehelper</RootNamespace>
+    <ProjectName>imagehelper</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y ..\..\..\imagehelper\src\image_helper.h          ..\..\..\..\include\helper
+copy /y ..\..\..\imagehelper\src\save_elem.h                 ..\..\..\..\include\helper
+copy /y ..\..\..\imagehelper\src\batch_convert.h           ..\..\..\..\include\helper
+</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y ..\..\..\imagehelper\src\image_helper.h          ..\..\..\..\include\helper
+copy /y ..\..\..\imagehelper\src\save_elem.h                 ..\..\..\..\include\helper
+copy /y ..\..\..\imagehelper\src\batch_convert.h           ..\..\..\..\include\helper
+</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions> /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y ..\..\..\imagehelper\src\image_helper.h          ..\..\..\..\include\helper
+copy /y ..\..\..\imagehelper\src\save_elem.h                 ..\..\..\..\include\helper
+copy /y ..\..\..\imagehelper\src\batch_convert.h           ..\..\..\..\include\helper
+</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions> /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y ..\..\..\imagehelper\src\image_helper.h          ..\..\..\..\include\helper
+copy /y ..\..\..\imagehelper\src\save_elem.h                 ..\..\..\..\include\helper
+copy /y ..\..\..\imagehelper\src\batch_convert.h           ..\..\..\..\include\helper
+</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\imagehelper\src\batch_convert.cpp" />
+    <ClCompile Include="..\..\..\imagehelper\src\convert_pelm.cpp" />
+    <ClCompile Include="..\..\..\imagehelper\src\convert_pin_2_elem.cpp" />
+    <ClCompile Include="..\..\..\imagehelper\src\convert_pin_2_pinz.cpp" />
+    <ClCompile Include="..\..\..\imagehelper\src\convert_func.cpp" />
+    <ClCompile Include="..\..\..\imagehelper\src\convert_tga_2_pin.cpp" />
+    <ClCompile Include="..\..\..\imagehelper\src\covnert_bmp_2_pin.cpp" />
+    <ClCompile Include="..\..\..\imagehelper\src\covnert_psd_2_form.cpp" />
+    <ClCompile Include="..\..\..\imagehelper\src\image_helper.cpp" />
+    <ClCompile Include="..\..\..\imagehelper\src\image_processer.cpp" />
+    <ClCompile Include="..\..\..\imagehelper\src\load_bmp.cpp" />
+    <ClCompile Include="..\..\..\imagehelper\src\load_psd.cpp" />
+    <ClCompile Include="..\..\..\imagehelper\src\load_tga.cpp" />
+    <ClCompile Include="..\..\..\imagehelper\src\lode_png.cpp" />
+    <ClCompile Include="..\..\..\imagehelper\src\save_anim.cpp" />
+    <ClCompile Include="..\..\..\imagehelper\src\save_bmp.cpp" />
+    <ClCompile Include="..\..\..\imagehelper\src\save_elem.cpp" />
+    <ClCompile Include="..\..\..\imagehelper\src\save_pin.cpp" />
+    <ClCompile Include="..\..\..\imagehelper\src\write_pin_extra_data.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\imagehelper\src\batch_convert.h" />
+    <ClInclude Include="..\..\..\imagehelper\src\convert_func.h" />
+    <ClInclude Include="..\..\..\imagehelper\src\convert_image.h" />
+    <ClInclude Include="..\..\..\imagehelper\src\image_helper.h" />
+    <ClInclude Include="..\..\..\imagehelper\src\image_processer.h" />
+    <ClInclude Include="..\..\..\imagehelper\src\jpeglib.h" />
+    <ClInclude Include="..\..\..\imagehelper\src\load_bmp.h" />
+    <ClInclude Include="..\..\..\imagehelper\src\load_psd.h" />
+    <ClInclude Include="..\..\..\imagehelper\src\load_tga.h" />
+    <ClInclude Include="..\..\..\imagehelper\src\lode_png.h" />
+    <ClInclude Include="..\..\..\imagehelper\src\save_anim.h" />
+    <ClInclude Include="..\..\..\imagehelper\src\save_bmp.h" />
+    <ClInclude Include="..\..\..\imagehelper\src\save_elem.h" />
+    <ClInclude Include="..\..\..\imagehelper\src\save_pin.h" />
+    <ClInclude Include="..\..\..\imagehelper\src\write_pin_extra_data.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\imagehelper\src\jpeg.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\imagehelper\readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

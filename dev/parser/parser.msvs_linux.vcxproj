@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{d64d4200-d6ca-4972-be8c-5acfe44fc525}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>parser</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{2238F9CD-F817-4ECC-BD14-2524D2669B35}</LinuxProjectType>
+    <ProjectName>parser</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="src\configreader\config_reader.cpp" />
+    <ClCompile Include="src\gsp\pgsp_file.cpp" />
+    <ClCompile Include="src\html\html-parser.cpp" />
+    <ClCompile Include="src\http\http-parser.cpp" />
+    <ClCompile Include="src\http\mpfd-exception.cpp" />
+    <ClCompile Include="src\http\mpfd-field.cpp" />
+    <ClCompile Include="src\http\mpfd-parser.cpp" />
+    <ClCompile Include="src\json\json.cpp" />
+    <ClCompile Include="src\json\json_type.cpp" />
+    <ClCompile Include="src\json\json_value.cpp" />
+    <ClCompile Include="src\stringparser\string_parser.cpp" />
+    <ClCompile Include="src\xml\xmlnode.cpp" />
+    <ClCompile Include="src\xml\xmlschema.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="project.h" />
+    <ClInclude Include="src\configreader\config_reader.h" />
+    <ClInclude Include="src\gsp\pgsp_file.h" />
+    <ClInclude Include="src\html\html-entities.h" />
+    <ClInclude Include="src\html\html-parser.h" />
+    <ClInclude Include="src\http\mpfd-exception.h" />
+    <ClInclude Include="src\http\mpfd-field.h" />
+    <ClInclude Include="src\http\http-parser.h" />
+    <ClInclude Include="src\http\mpfd-parser.h" />
+    <ClInclude Include="src\json\json.h" />
+    <ClInclude Include="src\json\json_type.h" />
+    <ClInclude Include="src\json\json_value.h" />
+    <ClInclude Include="src\stringparser\string_parser.h" />
+    <ClInclude Include="src\xml\xmlnode.h" />
+    <ClInclude Include="src\xml\xmlschema.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build_linux.sh" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>_LINUX;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_LINUX;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <PreprocessorDefinitions>_LINUX;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>_LINUX;_LIB;_DEBUG;</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_LINUX;_LIB;_DEBUG;</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <PreprocessorDefinitions>_LINUX;_LIB;_DEBUG;</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

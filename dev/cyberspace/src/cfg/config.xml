@@ -1,0 +1,112 @@
+<CyberSpaceServer>
+
+    <!-- database used by csserver -->
+  
+    <ArbitServer>
+        <Hostname>127.0.0.1</Hostname>
+        <Port>2001</Port>
+        <MaxNodes>2</MaxNodes>
+        <Timeout>10</Timeout>
+    </ArbitServer>
+
+    <PaperGroup>
+        <PaperServer index="CsPaperServer">
+            <Hostname>127.0.0.1</Hostname>
+            <CtptPort>2101</CtptPort>
+            <HttpPort>8080</HttpPort>
+            <MaxNodes>1</MaxNodes>
+            <Alias>Paper</Alias>                         
+            <Service>Paper</Service>                      <!--  SCS group -->
+            <Timeout>10</Timeout>
+            <MaxKeyStorage>100000</MaxKeyStorage>         <!--  max size for vmap   -->
+            <PaperDB>
+                <Database name="0" type="mysql">
+                    <MaxConnect>5</MaxConnect>
+                    <Hostname>35.201.220.98</Hostname>
+                    <Port>0</Port>                            <!-- 0 or no this node will connet to 3306 -->
+                    <DBName>csdb</DBName>
+                    <Username>hermes</Username>
+                    <Password>P@ssword8888</Password>
+                    <CharSet>utf8mb4_bin</CharSet>                   <!-- this node utf8mb4_binwill connet to befine -->
+                </Database>
+            </PaperDB>            
+        </PaperServer>
+    </PaperGroup>
+
+    <ServerGroup>
+      <SystemServer>
+            <MaxNodes>50</MaxNodes>
+            <Port>8080</Port>
+            <Alias>App</Alias>                         
+            <Service>App</Service>                        <!--  SCS group -->            
+            <Plugin>CsAppServerPlugIn.sl</Plugin>
+            <SyncMsg>0</SyncMsg>                          <!-- [1] clinet message will send to all same objectname(GameServer) server on group -->
+            <RiskMSTime>0</RiskMSTime>                    <!-- check connect risk time ms, 0 for close-->
+            <RemotePort>0</RemotePort>                    <!-- only can remote connect from port, had muti  0, 1000, 10001-->            
+            <Argument>0</Argument>
+            <CommonDB>
+                <Database index="0" type="mysql">             <!-- database pool 0 -->
+                    <MaxConnect>5</MaxConnect> 
+                    <Hostname>35.201.220.98</Hostname>
+                    <Port>0</Port>                            <!-- 0 or no this node will connet to 3306 -->
+                    <DBName>csdb</DBName>
+                    <Username>hermes</Username>
+                    <Password>P@ssword8888</Password>
+                    <CharSet>utf8mb4_bin</CharSet>            <!-- this node will connet to befine -->
+                </Database>
+                <Database index="1" type="mysql">
+                    <MaxConnect>5</MaxConnect>
+                    <Hostname>35.201.220.98</Hostname>
+                    <Port>0</Port>                            <!-- 0 or no this node will connet to 3306 -->
+                    <DBName>csdb</DBName>
+                    <Username>hermes</Username>
+                    <Password>P@ssword8888</Password>
+                    <CharSet>utf8mb4_bin</CharSet>            <!-- this node will connet to befine -->
+                </Database>                
+            </CommonDB>            
+            <ExpandDB>
+                <Database index="0" type="mysql">
+                    <MaxConnect>5</MaxConnect>
+                    <Hostname>35.201.220.98</Hostname>
+                    <Port>0</Port>                            <!-- 0 or no this node will connet to 3306 -->
+                    <DBName>csdb</DBName>
+                    <Username>hermes</Username>
+                    <Password>P@ssword8888</Password>
+                    <CharSet>utf8mb4_bin</CharSet>             <!-- this node will connet to befine -->
+                </Database>
+                <Database index="1" type="mysql">
+                    <MaxConnect>5</MaxConnect>
+                    <Hostname>35.201.220.98</Hostname>
+                    <Port>0</Port>                            <!-- 0 or no this node will connet to 3306 -->
+                    <DBName>csdb</DBName>
+                    <Username>hermes</Username>
+                    <Password>P@ssword8888</Password>
+                    <CharSet>utf8mb4_bin</CharSet>            <!-- this node will connet to befine -->
+                </Database>   
+            </ExpandDB>
+             <ExternDB>
+                <Database index="0" type="mysql">
+                    <MaxConnect>5</MaxConnect>
+                    <Hostname>35.201.220.98</Hostname>
+                    <Port>0</Port>                            <!-- 0 or no this node will connet to 3306 -->
+                    <DBName>csdb</DBName>
+                    <Username>hermes</Username>
+                    <Password>P@ssword8888</Password>
+                    <CharSet>utf8mb4_bin</CharSet>            <!-- this node will connet to befine -->
+                </Database>
+                <Database index="1" type="mysql">
+                    <MaxConnect>5</MaxConnect>
+                    <Hostname>35.201.220.98</Hostname>
+                    <Port>0</Port>                            <!-- 0 or no this node will connet to 3306 -->
+                    <DBName>csdb</DBName>
+                    <Username>hermes</Username>
+                    <Password>P@ssword8888</Password>
+                    <CharSet>utf8mb4_bin</CharSet>            <!-- this node will connet to befine -->
+                </Database>   
+            </ExternDB>
+            <SCS>
+                <Port>2300</Port>
+            </SCS>
+        </SystemServer>   
+    </ServerGroup>
+</CyberSpaceServer>

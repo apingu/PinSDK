@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6dc75a93-f3a0-4ab9-826a-cb71b1be62cd}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0f70598a-6021-4be2-9197-505b0e029973}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File">
+      <UniqueIdentifier>{064d0f51-ecce-4d36-8844-d11b96766954}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="device">
+      <UniqueIdentifier>{10adf83b-4b9b-4344-b179-d3cf70ce8d58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="draw">
+      <UniqueIdentifier>{7637874a-b9e0-45d8-994d-983a1dfccf9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{d978e9ed-5c58-41db-8ae7-565739cd358e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\2d">
+      <UniqueIdentifier>{31cf2c57-d994-449a-8fe1-21d7c9fc085c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\3d">
+      <UniqueIdentifier>{317a12ac-6caf-4fbc-8d59-6628a1801524}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="font">
+      <UniqueIdentifier>{3e738ed4-3b28-4530-bf15-6cf2cd10d0b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fswindow">
+      <UniqueIdentifier>{d1b7b08e-8a77-4840-aef7-dc30edd377e8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\Icon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\File\HELEM.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\File\HPIN.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\font\font.h">
+      <Filter>font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\font\text.h">
+      <Filter>font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\ivmc-device.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\ivmc-device2d.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\ivmc-device3d.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-text.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-blend_func.h">
+      <Filter>draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-blend_mmx_func.h">
+      <Filter>draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-blend_sse_func.h">
+      <Filter>draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-clipper.h">
+      <Filter>draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-def.h">
+      <Filter>draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-global.h">
+      <Filter>draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-matrix.h">
+      <Filter>draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-draw.h">
+      <Filter>engine\2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-dx.h">
+      <Filter>engine\2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-gdi.h">
+      <Filter>engine\2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-vl.h">
+      <Filter>engine\2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\vmc-gl.h">
+      <Filter>engine\3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\fs-window.h">
+      <Filter>fswindow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vmcengine\src\graphic\ivmc-draw2d.h">
+      <Filter>draw</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\icon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vmcengine\src\font\font.cpp">
+      <Filter>font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vmcengine\src\font\text.cpp">
+      <Filter>font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\ivmc-device.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\vmc-text.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\vmc-alpha.cpp">
+      <Filter>draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\vmc-blit.cpp">
+      <Filter>draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\vmc-colorkey.cpp">
+      <Filter>draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\vmc-graphic.cpp">
+      <Filter>draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\vmc-draw.cpp">
+      <Filter>engine\2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\vmc-dx.cpp">
+      <Filter>engine\2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\vmc-gdi.cpp">
+      <Filter>engine\2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\vmc-vl.cpp">
+      <Filter>engine\2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\vmc-gl.cpp">
+      <Filter>engine\3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\fs-window.cpp">
+      <Filter>fswindow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vmcengine\src\graphic\ivmc-draw2d.cpp">
+      <Filter>draw</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\vmcengine\readme.txt" />
+  </ItemGroup>
+</Project>

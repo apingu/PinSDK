@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{b6e960ae-f503-4e76-8317-6a54bee839b2}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>netsocket</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{2238F9CD-F817-4ECC-BD14-2524D2669B35}</LinuxProjectType>
+    <ProjectName>netsocket</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="src\kcp\ikcp.c" />
+    <ClCompile Include="src\net-client.cpp" />
+    <ClCompile Include="src\net-helper.cpp" />
+    <ClCompile Include="src\net-peer.cpp" />
+    <ClCompile Include="src\net-rudp_socket.cpp" />
+    <ClCompile Include="src\net-server.cpp" />
+    <ClCompile Include="src\net-socket.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="project.h" />
+    <ClInclude Include="src\epoll-def.h" />
+    <ClInclude Include="src\iocp-def.h" />
+    <ClInclude Include="src\kcp\ikcp.h" />
+    <ClInclude Include="src\net-client.h" />
+    <ClInclude Include="src\net-helper.h" />
+    <ClInclude Include="src\net-peer.h" />
+    <ClInclude Include="src\net-rudp_socket.h" />
+    <ClInclude Include="src\net-server.h" />
+    <ClInclude Include="src\net-socket.h" />
+    <ClInclude Include="src\unp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build_linux.sh" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../include;../../include;./src/msquic/inc;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>CX_PLATFORM_LINUX;QUIC_EVENTS_MANIFEST_TSBU;QUIC_LOGS_MANIFEST_TSUB;QUIC_TELEMETRY_ASSERTS=1;SECURITY_KERNEL;SECURITY_WIN32;QUIC_EVENTS_STUB;QUIC_LOGS_STUB;_LINUX;_LIB;_DEBUG;</PreprocessorDefinitions>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <CLanguageStandard>c11</CLanguageStandard>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../include;../../include;./src/msquic/inc;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>CX_PLATFORM_LINUX;QUIC_EVENTS_MANIFEST_TSBU;QUIC_LOGS_MANIFEST_TSUB;QUIC_TELEMETRY_ASSERTS=1;SECURITY_KERNEL;SECURITY_WIN32;QUIC_EVENTS_STUB;QUIC_LOGS_STUB;_LINUX;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <CLanguageStandard>c11</CLanguageStandard>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../include;../../include;./src/msquic/inc;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>CX_PLATFORM_LINUX;QUIC_EVENTS_MANIFEST_TSBU;QUIC_LOGS_MANIFEST_TSUB;QUIC_TELEMETRY_ASSERTS=1;SECURITY_KERNEL;SECURITY_WIN32;QUIC_EVENTS_STUB;QUIC_LOGS_STUB;_LINUX;_LIB;_DEBUG;</PreprocessorDefinitions>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <CLanguageStandard>c11</CLanguageStandard>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../include;../../include;./src/msquic/inc;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>CX_PLATFORM_LINUX;QUIC_EVENTS_MANIFEST_TSBU;QUIC_LOGS_MANIFEST_TSUB;QUIC_TELEMETRY_ASSERTS=1;SECURITY_KERNEL;SECURITY_WIN32;QUIC_EVENTS_STUB;QUIC_LOGS_STUB;_LINUX;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <CLanguageStandard>c11</CLanguageStandard>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../include;../../include;./src/msquic/inc;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>CX_PLATFORM_LINUX;QUIC_EVENTS_MANIFEST_TSBU;QUIC_LOGS_MANIFEST_TSUB;QUIC_TELEMETRY_ASSERTS=1;SECURITY_KERNEL;SECURITY_WIN32;QUIC_EVENTS_STUB;QUIC_LOGS_STUB;_LINUX;_LIB;_DEBUG;</PreprocessorDefinitions>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <CLanguageStandard>c11</CLanguageStandard>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../include;../../include;./src/msquic/inc;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>CX_PLATFORM_LINUX;QUIC_EVENTS_MANIFEST_TSBU;QUIC_LOGS_MANIFEST_TSUB;QUIC_TELEMETRY_ASSERTS=1;SECURITY_KERNEL;SECURITY_WIN32;QUIC_EVENTS_STUB;QUIC_LOGS_STUB;_LINUX;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <CLanguageStandard>c11</CLanguageStandard>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

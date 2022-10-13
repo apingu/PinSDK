@@ -1,0 +1,49 @@
+#pragma pack (push,1)
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+/////   定義BMP檔 pixel
+#define Point256 unsigned char
+typedef struct tagPoint24{
+	BYTE B;
+	BYTE G;
+	BYTE R;
+}Point24;
+
+typedef struct tagPoint32{
+	BYTE B;
+	BYTE G;
+	BYTE R;
+	BYTE Alpha;
+}Point32;
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  定義BMP header
+//
+#ifdef _wingdi_h_
+
+typedef struct tagBITMAPINFOHEADER{
+	DWORD biSize;
+	DWORD biWidth;
+	DWORD biHeight;
+	WORD  biPlanes;
+	WORD  biBitCount;
+	DWORD biCompression;
+	DWORD biSizeImage;
+	DWORD biXPelsPerMeter;
+	DWORD biYPelsPerMeter;
+	DWORD biClrUsed;
+	DWORD biClrImportang;
+}BITMAPINFOHEADER;
+
+typedef struct tagBITMAPFILEHEADER{
+	WORD  bfType;
+	DWORD bfSize;
+	WORD  bfReserved1;
+	WORD  bfReserved2;
+	DWORD bfOffBits;
+}BITMAPFILEHEADER;
+
+#pragma pack (pop)

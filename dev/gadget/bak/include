@@ -1,0 +1,110 @@
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+#pragma once
+
+#pragma warning(disable:4786)
+
+#include <map>
+#include <vector>
+#include <PfDef.h>
+
+typedef unsigned short         funcchannelid_t;
+
+namespace PfGet  // Pf gadget
+{
+#define _MESSAGE_CHANNEL_NOT_FIND -99
+
+    const unsigned int _MAX_MESSAGE_CHANNEL = 0XFFFF;
+    const unsigned int _MAX_CHANNEL_DIVIDE  = 1000;
+    
+    typedef __SLAPI int( *const ChannelFunction )( const void* argu, const ubyte_t* combin, unsigned int comlen );
+    //typedef __SLAPI void* ChannelFunction;
+    
+    
+    class MessageDispatcher
+    {
+        typedef std::map<funcchannelid_t, ChannelFunction> ChannelMap;
+        
+        unsigned int m_MaxChannels;
+        ChannelMap   m_Channels[_MAX_CHANNEL_DIVIDE];
+        
+    public:
+    
+        MessageDispatcher();
+        virtual ~MessageDispatcher();
+        
+        void           SetMaxChannel( _IN unsigned int size );
+        unsigned int   GetMaxChannel( void );
+        
+        /**
+         註冊一個callback函式。
+         @param cid 使用的channel號碼。最大值為65535。
+         @param func 要註冊的函式指標。
+         */
+        bool            RegisterChannel( _IN funcchannelid_t chid, _IN ChannelFunction func );
+        bool            UnRegisterChannel( _IN funcchannelid_t chid );
+        
+        ChannelFunction GetFunction( _IN funcchannelid_t chid );
+        int             DispatchMessage( _IN const void* argu, _IN funcchannelid_t chid, _IN const ubyte_t* combin, _IN unsigned int comlen );
+        
+        void            GetAllChannelId( _OUT std::vector<funcchannelid_t>& channellist );
+    };
+    
+};//
+// �p���� Record dictionary
+//
+//
+//
+//
+//
+//
+//
+//
+#pragma once
+
+#include <PfDef.h>
+#include <template\vmapl.inl>
+
+namespace PfGet
+{
+    class Recdit
+    {
+
+        PfStl::vmapl<std::map<_tstring, _tstring>>    m_RecordPool;    // �Ҧ�key value �Ȫ��e��
+
+    public:
+
+        Recdit();
+        ~Recdit();
+
+        void                Init( int max_vec = 100 );
+
+        // �����[�J �s�b �N�إ߷s�� �i�H�s��������-1 �û��s��
+        void                Set( _IN _tstring key, _IN _tstring val, stimen_t timeout = -1 );
+        // ���s�b�~�[�J �æ^�Ǡtrue �s�b �N���[�J �æ^�Ǡfalse �i�H�s��������-1 �û��s��
+        bool                Setnx( _IN _tstring key, _IN _tstring val, stimen_t timeout = -1 );
+        _tstring            Get( _IN _tstring key );
+        void                Del( _IN _tstring key );
+
+        void                HSet( _IN _tstring key, _IN _tstring fld, _IN _tstring val );
+        bool                HSetnx( _IN _tstring key, _IN _tstring fld, _IN _tstring val );
+        _tstring            HGet( _IN _tstring key, _IN _tstring fld );
+        void                HDel( _IN _tstring key, _IN _tstring fld );
+
+    private:
+        static void         DoUpdate( void* data );
+    };
+}

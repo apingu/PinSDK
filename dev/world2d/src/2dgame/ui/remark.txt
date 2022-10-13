@@ -1,0 +1,101 @@
+{
+	char buf[ 1024 ];
+	CPFile pz( path, "rb" );
+	//pz.Lock_On( offset );
+
+	while( 1 )
+	{
+		CPString str = pz.readword( buf, 1024 ); 
+
+		if( str == "<FORM>" )
+		{
+			while( 1 )
+			{
+				str = pz.readword( buf, 1024 ); 
+			    if( str == "LOAD")
+				{
+			        str = pz.readword( buf, 1024 );
+			        if( str == "=" )
+					{
+				        str = pz.readbetween( buf, 1024, '"', '"' );
+						int ret = Load( (Pstr)str );
+						if( ret < 0 )
+							return ret;
+					}
+			        continue;
+				}
+				else if( str == "AFONT" )
+				{
+					str = pz.readword( buf, 1024 );
+					if( str == "=" )
+					{
+						CPString path = pz.readbetween( buf, 1024, '"', '"' );
+						CPString w    = pz.readword( buf, 1024 );
+						CPString h    = pz.readword( buf, 1024 );
+						CPString d    = pz.readword( buf, 1024 );
+						text.LoadFont( FONT_SET_SBCS, (Pstr)path, w.toint(), h.toint(), d.toint(), FONT_FMT_0, 1);
+					}
+				}
+    			else if( str == "CFONT" )
+				{
+					str = pz.readword( buf, 1024 );
+					if( str == "=" )
+					{
+						CPString path = pz.readbetween( buf, 1024, '"', '"' );
+						CPString w    = pz.readword( buf, 1024 );
+						CPString h    = pz.readword( buf, 1024 );
+						CPString d    = pz.readword( buf, 1024 );
+						text.LoadFont( FONT_SET_DBCS, (Pstr)path, w.toint(), h.toint(), d.toint(), FONT_FMT_0, 1);
+					}
+				}
+				else if( str == "COLOR" )
+				{
+					str = pz.readword( buf, 1024 );
+					if( str == "=" )
+					{
+						str = pz.readword( buf, 1024 );
+					    text.SetColor( str.toint(), 0X00 );
+					}
+				}
+
+		        else if( str.ncmp( "<BUTTON:n>", 7 ) == 0 )
+				{
+			        char nobuf[20];
+			        CP2DButton* btn = (CP2DButton*)Entity( atoi( str.partcpy( nobuf, 20, ':', '>') ) );
+					if( btn == 0 )	continue;
+					while( 1 )
+					{
+						str = pz.readword( buf, 1024 );
+						if( str == "TEXT" )
+						{
+							str = pz.readword( buf, 1024 );
+							if( str == "=" )
+							{
+				                //str = pz.readbetween( buf, 1024, '"', '"' );
+								btn->m_Caption.m_text  = pz.readbetween( buf, 1024, '"', '"' );
+								btn->m_Caption.m_pos.x = ( btn->Image()->width  - text.GetTextWidth( (Pstr)str ) )/2;
+								btn->m_Caption.m_pos.y = ( btn->Image()->height - text.GetTextHeight( (Pstr)str ) )/2;
+							}
+						}
+						else if( str == "</BUTTON>" )
+							break;
+					}
+			        continue;
+				}
+				else if( str == "</FORM>" )
+				{
+					break;
+				}
+				else 
+				{
+					break;
+				}
+			}
+			return 1;
+		}
+		else
+		{
+			continue;
+		}
+	}
+	return 1;

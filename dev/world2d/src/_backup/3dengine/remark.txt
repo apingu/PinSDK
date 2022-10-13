@@ -1,0 +1,64 @@
+
+
+@. light
+   camera
+   texture
+   
+
+@. windows.h must define before gl.h
+
+
+
+@. proc
+
+	switch (uMsg)								// Check For Windows Messages
+	{
+		case WM_ACTIVATE:						// Watch For Window Activate Message
+		{
+			/*
+			if (!HIWORD(wParam))				// Check Minimization State
+			{
+				m_active=TRUE;					// Program Is Active
+			}
+			else
+			{
+				m_active=FALSE;					// Program Is No Longer Active
+			}
+			*/
+
+			return 0;					    	// Return To The Message Loop
+		}
+		case WM_SYSCOMMAND:						// Intercept System Commands
+		{
+			switch (wParam)						// Check System Calls
+			{
+				case SC_SCREENSAVE:				// Screensaver Trying To Start?
+				case SC_MONITORPOWER:			// Monitor Trying To Enter Powersave?
+				return 0;				    	// Prevent From Happening
+			}
+			break;							    // Exit
+		}
+    	case WM_CLOSE:							// Did We Receive A Close Message?
+		{
+			PostQuitMessage(0);					// Send A Quit Message
+			return 0;					    	// Jump Back
+		}
+		
+		case WM_KEYDOWN:						// Is A Key Being Held Down?
+		{
+			//keys[wParam] = TRUE;			    // If So, Mark It As TRUE
+			return 0;					    	// Jump Back
+		}
+		case WM_KEYUP:							// Has A Key Been Released?
+		{
+			//keys[wParam] = FALSE;				// If So, Mark It As FALSE
+			return 0;						    // Jump Back
+		}
+		
+		case WM_SIZE:							// Resize The OpenGL Window
+		{
+			//ReSizeScene(LOWORD(lParam),HIWORD(lParam));		// LoWord=Width, HiWord=Height
+			return 0;						// Jump Back
+		}
+	}
+ 

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{afe46915-0a51-4c68-8f1c-3361c38a738b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6e11bf89-a43f-4947-9cc6-a8138f23172c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper">
+      <UniqueIdentifier>{3f1b2161-4d1e-473f-9baf-b05bba0276c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="urdp">
+      <UniqueIdentifier>{99df761e-8c63-4c03-9c5d-a95d2fb8c15f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00%29 configure">
+      <UniqueIdentifier>{08fad02c-b93f-4f4f-ac42-d331afc9e004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kcp">
+      <UniqueIdentifier>{6092396c-53f5-44f1-91d2-e6f68220a8d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quic">
+      <UniqueIdentifier>{bf6e4592-9544-4c4f-b6bc-d3b01544b93c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\net-helper.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net-client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net-peer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net-server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net-socket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net-rudp_socket.cpp">
+      <Filter>urdp</Filter>
+    </ClCompile>
+    <ClCompile Include="project.h">
+      <Filter>00%29 configure</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kcp\ikcp.c">
+      <Filter>kcp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\net-helper.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net-server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net-socket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\epoll-def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\iocp-def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net-client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net-peer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net-rudp_socket.h">
+      <Filter>urdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\kcp\ikcp.h">
+      <Filter>kcp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt">
+      <Filter>00%29 configure</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build_linux.sh">
+      <Filter>00%29 configure</Filter>
+    </None>
+  </ItemGroup>
+</Project>

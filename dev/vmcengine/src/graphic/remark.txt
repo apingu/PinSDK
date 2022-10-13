@@ -1,0 +1,429 @@
+
+
+
+
+static value
+
+_VGA_PixelFormat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	int i = 0;
+	while( i < count)
+	{
+		if( *alpha == 0XFF )
+		{
+			*(P_WORD*)dest = (*(P_WORD *)src);
+		}
+		else if( *alpha != 0X00 )
+		{
+			P_WORD n_a = ( MAX_ALPHA - ( *alpha ) );
+	        *(P_WORD*)dest = (P_WORD)(   (( ( ( ( (*(P_WORD *)src)  & R_Mask) * ( *alpha )) + 
+			                                  ( ( (*(P_WORD *)dest) & R_Mask) *    n_a   )) >> 8) & R_Mask)
+		                               | (( ( ( ( (*(P_WORD *)src)  & G_Mask) * ( *alpha )) +
+						                      ( ( (*(P_WORD *)dest) & G_Mask) *     n_a  )) >> 8) & G_Mask)
+		                               | (( ( ( ( (*(P_WORD *)src)  & B_Mask) * ( *alpha )) + 
+						                      ( ( (*(P_WORD *)dest) & B_Mask) *     n_a  )) >> 8) & B_Mask)    ); 
+		}
+        alpha = alpha + 1;	
+	    dest  = dest  + 2;								//將目的指標加上要跳過的點數，再指向下一點(拷貝的第一點)
+        src   = src   + 2;								//將目的指標加上要跳過的點數，再指向下一點(下一個訊息點)
+		i = i + 2;
+	}
+
+
+inline void VMC_ALPHA_memcpy( P_BYTE *dest, const P_BYTE* alpha, const P_BYTE *src, int count,  P_WORD R_Mask, P_WORD G_Mask, P_WORD B_Mask )
+{
+
+	int n_alpha = (MAX_ALPHA - alpha);
+
+	_asm
+	{
+        MOV         edi, dest
+	    MOV         esi, src
+		MOV         ecx, 0
+    Lp1:
+		PUSH        ecx
+	    MOV         ax,  WORD  PTR [esi]
+	    MOV         bx,  WORD  PTR [edi]
+	    MOV         dx,  R_Mask
+	    AND         eax, edx
+        IMUL        eax, alpha
+	    AND         ebx, edx
+        IMUL        ebx, n_alpha
+   	    ADD         eax, ebx
+	    SAR         eax, 8
+	    AND         eax, edx
+	    MOV         bx,  WORD  PTR [esi]
+	    MOV         cx,  WORD  PTR [edi]
+	    MOV         dx,  G_Mask
+	    AND         ebx, edx
+        IMUL        ebx, alpha
+	    AND         ecx, edx
+        IMUL        ecx, n_alpha
+   	    ADD         ebx, ecx
+	    SAR         ebx, 8
+	    AND         ebx, edx
+	    OR          eax, ebx//////////////////
+   	    MOV         bx,  WORD  PTR [esi]
+	    MOV         cx,  WORD  PTR [edi]
+	    MOV         dx,  B_Mask
+	    AND         ebx, edx
+        IMUL        ebx, alpha
+	    AND         ecx, edx
+        IMUL        ecx, n_alpha
+   	    ADD         ebx, ecx
+	    SAR         ebx, 8
+	    AND         ebx, edx
+	    OR          eax, ebx//////////////
+	    MOV         WORD PTR [edi], ax
+	    ADD         edi, 2
+        ADD         esi, 2
+
+		POP         ecx 
+	    ADD         ecx, 2
+		CMP         ecx, count
+        JL          Lp1
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////
+
+				/////////////////////////////////////////////////////////
+    			//source & r * alpha
+                PAND        mm0, R_Mask
+		        PMULHW      mm0, mm6
+				
+
+		        //dest   & r * n_alpha
+	            PAND        mm3, R_Mask
+		        PMULHW      mm3, mm7
+
+		        PADDW       mm0, mm3
+		        PSRLW       mm0, 12       // overflow
+		        PAND        mm0, R_Mask
+
+		        /////////////////////////////////////////////////////////
+		        //source & g * alpha
+                PAND        mm1, G_Mask
+		        PMULHW      mm1, mm6
+		
+
+		        //dest   & g * n_alpha
+	            PAND        mm4, G_Mask
+		        PMULHW      mm4, mm7
+		
+
+		        PADDW       mm1, mm4
+		        PSRLW       mm1, 12       // overflow
+		        PAND        mm1, G_Mask
+		        POR         mm0, mm1
+
+		        /////////////////////////////////////////////////////////
+		        //source & g * alpha
+                PAND        mm2, B_Mask
+		        PMULHW      mm2, mm6
+		
+
+		        //dest   & g * n_alpha
+	            PAND        mm5, B_Mask
+		        PMULHW      mm5, mm7
+		
+		        PADDW       mm2, mm5
+		        PSRLW       mm2, 12       // overflow
+		        PAND        mm2, B_Mask
+
+		        POR         mm0, mm2
+ 
+	            /////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////////
+
+                ///////////////////////////////////////////////////////////////////
+		        //source & r * alpha
+
+		        //pand    mm0,R_Mask
+		        psrlw     mm0,   11
+		        //pand    mm1,G_Mask
+				psllw     mm1,   5 
+		        psrlw     mm1,   10
+		        //pand    mm2,B_Mask
+				psllw     mm2,   11
+				psrlw     mm2,   11
+
+		        pmullw    mm0,   mm6
+		        pmullw    mm1,   mm6
+		        pmullw    mm2,   mm6
+
+		        // DourceColor * (MaxAlpha - Alpha)
+
+		        //pand    mm3,R_Mask
+		        psrlw     mm3,   11
+		        //pand    mm4,G_Mask
+		        psllw     mm4,   5
+				psrlw     mm4,   10
+		        //pand    mm5,B_Mask
+				psllw     mm5,   11
+				psrlw     mm5,   11
+
+
+		        pmullw    mm3,   mm7
+		        pmullw    mm4,   mm7
+		        pmullw    mm5,   mm7
+
+		        // (SourceColor * Alpha) + (DourceColor * (MaxAlpha	- Alpha))
+
+		        paddw     mm0,   mm3
+		        paddw     mm1,   mm4
+		        paddw     mm2,   mm5
+
+		        // (SourceColor * Alpha) + (DourceColor * (MaxAlpha	- Alpha))/ MaxAlpha
+
+		        psrlw     mm0,   8
+		        psrlw     mm1,   8
+		        psrlw     mm2,   8
+
+		        psllw     mm0,   11
+		        psllw     mm1,   5
+
+		        por	      mm0,   mm1
+		        por	      mm0,   mm2
+                ///////////////////////////////////////////////////////////////////////////////////           
+
+inline void VMC_MMX_ALPHA_memcpy( P_BYTE *dest, const P_BYTE* alpha, const P_BYTE *src, int count,  P_QWORD R_Mask, P_QWORD G_Mask, P_QWORD B_Mask )
+{
+	int C_MOD = count &  3;
+	__asm
+	{
+        MOV         edi, dest
+	    MOV         esi, src
+		MOV         eax, alpha
+
+		MOV         ecx, count
+		SAR         ecx, 3
+	    ALIGN 8
+    LP1:
+
+		MOVD        mm6, [eax]   //mm6 as alpha  | a  | a  | a  | a  |
+		PXOR        mm7, mm7
+		PUNPCKLBW   mm6, mm7
+		MOVQ        mm7, FULL_ALPHA
+		PSUBW       mm7, mm6     //mm7 as nalpha | na | na | na | na |
+
+	    MOVQ        mm0, [esi]
+		MOVQ        mm1, mm0
+	    MOVQ        mm2, mm0
+
+	    MOVQ        mm3, [edi]
+	    MOVQ        mm4, mm3
+	    MOVQ        mm5, mm3
+		/////////////////////////////////////////////////////////
+
+
+	    /////////////////////////////////////////////////////////
+	    ADD         edi, 8
+        ADD         esi, 8
+	    ADD         eax, 4
+	    DEC         ecx
+	    JNZ          LP1
+	    EMMS
+	}
+}
+
+
+int VMC::Alpha16DarkenStick(const HPINMAP *Src, POINT point, HPINMAP *DestVMC, int Diaphaneity)		
+{
+	
+	/*錯誤檢查*/
+	if( Error_Condition(Src) )
+		return _P_ERROR;
+	if( No_Alpha_Condition(Src) )
+	    return Stick(Src, point, DestVMC);
+
+	if(Diaphaneity > 256)
+		Diaphaneity = 256;
+
+		/*取出來源檔的檔頭*/
+	point.x     = point.x - Src->RelativeX;
+	point.y     = point.y - Src->RelativeY;
+	BYTE* Alpha_Ptr = Src->PicAlphaPtr;								//貼圖資料開始的距離
+	//-----------裁圖------------
+	RECT clipper_rect = { 0, 0, ( Src->Width - 1 ), ( Src->Height - 1 ) };
+	if( VMC_Clipper( &clipper_rect, &point, DestVMC->Width, DestVMC->Height ) )
+		return _P_OK;
+	int length = ( _RECT_LENGTH( clipper_rect.right, clipper_rect.left ) << 1 );
+    int tell   = _RECT_LENGTH( clipper_rect.bottom, clipper_rect.top );
+	//-----------裁Alpha圖------------
+	int step  = 0;
+	int clipper_count = (clipper_rect.top) * Src->RealWidthByte;
+	Alpha_Ptr++;
+	while(step < clipper_count)
+	{
+		step = step + *(WORD*)Alpha_Ptr;
+		Alpha_Ptr = Alpha_Ptr + 3;
+	}
+	Alpha_Ptr--;
+
+	/*---------- 一般 ------------------*/
+	clipper_rect.left  = clipper_rect.left << 1;
+	register BYTE* Srcptr = Src->PicImagePtr		+ (clipper_rect.top * Src->RealWidthByte) + clipper_rect.left;//將來源記憶體的控制指標移至第一行開始的位置	
+	register BYTE* VMCptr = DestVMC->PicImagePtr	+ (point.y * DestVMC->RealWidthByte) + ( point.x << 1 );//將目的記憶體的控制指標移至第一行開始的位置
+
+   	int DestLineMinus = DestVMC->RealWidthByte - length;
+	int Crop          = Src->RealWidthByte - length;                         //裁掉的長度
+	int RightCrop     = Crop - clipper_rect.left;
+	int snipWidth     = 0;
+
+	int row = 0;
+	while (row < tell)//for(register int row  = 0 ; row  < tell ; row++)
+	{
+		register int  i    = 1;
+		register int  Step = 0;
+		
+		//裁切Alpha的左邊======================================
+		for(;;)
+		{
+			Step = Step + *(WORD *)(Alpha_Ptr + i); 
+			if((Step - clipper_rect.left) <= 0)                                       //將數量一直減到超過裁切的數量
+			{
+				i = i + 3;
+				continue;
+			}
+			else
+			{
+				Step = Step - clipper_rect.left;                                      //if startx == 0 沒有做任何裁邊
+				break;
+			}
+		}
+
+		snipWidth = 0;
+		register int count = 0;											//存放目前已做的點數 
+		register BYTE Alpha = *(BYTE *)(Alpha_Ptr + i - 1);				//將目前的動作存入
+		Alpha_Ptr = Alpha_Ptr + i + 2;									//將指標移往下一開始的區段
+		do
+		{
+			if((count + Step) > length)										//檢查右邊裁圖		
+			{
+				snipWidth = (count + Step) - length;
+				Step = length - count;
+			}
+			if(Alpha != JUMP)
+			{
+				int a = Alpha - (256 - Diaphaneity);
+				if(a < 0)
+					a = 0;
+				//VMC_ALPHA_memcpy(VMCptr, a, Srcptr, Step,  _R_MASK, _G_MASK, _B_MASK);
+			}
+
+		    VMCptr = (VMCptr + Step) ;									//將目的指標加上要跳過的點數，再指向下一點(拷貝的第一點)
+		    Srcptr = (Srcptr + Step) ;									//將目的指標加上要跳過的點數，再指向下一點(下一個訊息點)
+
+			count = count + Step;
+			Alpha = *(BYTE *)Alpha_Ptr;                                    //下一段的動作
+			Step  = *(WORD *)(Alpha_Ptr + 1);                              //下一段的點數 
+			Alpha_Ptr = Alpha_Ptr + 3;
+		}while(count < length);
+		Alpha_Ptr = Alpha_Ptr - 2;
+		
+		//將Alpha跳至下一行====================================
+		for(;;)
+		{
+			if(snipWidth == RightCrop)
+				break;
+			else
+			{
+				snipWidth = snipWidth + *(WORD *)(Alpha_Ptr);
+				Alpha_Ptr  = Alpha_Ptr + 3;
+			}
+		}
+		Alpha_Ptr -- ;
+		//END 將Alpha跳至下一行================================
+		Srcptr     = Srcptr + Crop;
+		VMCptr	   = VMCptr + DestLineMinus;								//將目的的指標行數往下一行
+		row ++;
+	}
+
+	return true;
+}
+
+
+
+
+
+	
+	Stick                (BYTE *pSrc, WORD s_w, WORD s_h, POINT point, BYTE *pDest, WORD d_w, WORD d_h, short r_x, short r_y); //?????	        
+
+	//----------Stick---------------------------------------------------------------------
+    Ok => Stick                
+	Ok => Stick                
+    Ok => Darken16Stick        
+	Lighten16Stick       
+	SeamStick            
+	RotateStick          
+	Blend16Stick         
+	WarpStick            
+	PigmentStick         
+
+	//----------Alpha---------------------------------------------------------------------
+	Ok => AlphaStick           
+	Ok => Alpha16DarkenStick   
+	Alpha16LightenStick  
+	AlphaWarpStick       
+	AlphaRippleStick     
+	
+	//----------ColorKey-------------------------------------------------------------------
+	Ok => ColorKeyStick        
+	Ok => ColorKeyStick        
+	ColorKey16DarkenStick
+	ColorKey16DarkenStick
+    ColorKey16DarkenStick
+	ColorKey16DarkenStick
+
+
+//////////////////////////////////////////////////////////////////////////////
+one pixel move
+
+
+inline void VMC_Byte_Copy( int s_rw, int s_h, Pbyte* src, int width, int height, PCPoint point, int d_rw, int d_h, Pbyte* dest )
+{
+	double dx = (double)s_rw / (double)d_rw;
+    double dy = (double)s_h  / (double)d_h;
+
+	int diffy = 0;
+
+	for( int py =0; py <  height; py++ )
+	{
+		//float diffx = 0;
+		int diffx = 0;
+		
+		//destptr = dest + ( py * d_rw )+ (point.x << 1); 
+		//diffy += (float)dy;
+		for( int px = 0; px < width; px++ )
+		{
+			//diffx += (float)dx;
+			//srcp = *(Pword*)( src  + ( (int)ceil(diffy) * s_rw ) + ( (int)ceil(diffx)<<1 ) );
+			*(Pword*)( dest + (py * d_rw) + ( px<<1 ) ) = *(Pword*)( src  + (diffy * s_rw ) + ( diffx<<1 ) );
+			diffx++;
+			//destptr+=2;
+		}
+		diffy++;
+	}
+	return;
+}
+
+

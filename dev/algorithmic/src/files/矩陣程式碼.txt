@@ -1,0 +1,60 @@
+         矩陣程式碼
+
+　
+
+　
+
+         program ans---------------------------------這個名子隨你取  只要不重複其他的代號即可
+
+         implicit none------------這一行是要背的也是必要的程式   要在計算前把所有數字歸0
+
+                                                     不然怕會把其他數字一起做累加的動作   會出錯
+
+50     integer maxrow,maxcol-------------------------整數宣告
+         parameter(maxrow=10,maxcol=10)-------將矩陣最大設定成10x10的矩陣
+         real ma(maxrow,maxcol),mb(maxrow,maxcol),mc(maxrow,maxcol)將之宣告成實數
+         integer mar,mac,mbr,mbc------------------------整數宣告
+         integer I,J,K------------------------整數宣告
+
+         write(*,*) '輸入矩陣 A:'
+         write(*,*) '排 & 列='
+          read (*,*) mar,mac
+
+            do I=1,mar                       ---------------------------------這裡是迴圈 ...沒學過的同學只好
+                       DO J=1,mac                                            背ㄅ 
+                         write (*,100) I,J
+100                      format('輸入矩陣 A(',I2,',',I2,'):')
+                           read(*,*) ma(I,J)
+                        end do
+            end do
+
+            write(*,*) '輸入矩陣 B:'
+            write(*,*) '排 & 列='
+            read (*,*) mbr,mbc
+
+              if (mbr.NE.mac) then              -------------------避免矩陣格式錯誤造成當機
+            write(*,*)'輸入錯誤啦!!!!!!!!!'  -------------------所以要假設它出錯時可以讓它停止
+              stop
+              end if
+
+                    do I=1,mbr           ---------------------------------這裡是迴圈 ...沒學過的同學只好
+                        DO J=1,mbc                                      背ㄅ
+                        write (*,200) I,J
+200                   format('輸入矩陣 B(',I2,',',I2,'):')
+                         read(*,*) mb(I,J)
+                         end do
+                    end do
+
+              do I=1,mar                 ---------------------------------這裡也是迴圈.0.o.                             
+                    do J=2,mbr                                            不好背
+                     mc(I,J)=0.0
+                          do         k=1,mac
+                          mc(I,J)=mc(I,J)+ma(I,K)*mb(K,J)
+                          end do
+                       write(*,300) I,J,mc(I,J)
+300                 format(' matrix B(',I2,',',I2,'):',F6.2)
+                    end do
+              end do
+
+            stop
+            end

@@ -1,0 +1,63 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SDKMain", "SDKMain\SDKMain.vgdb_linux.vcxproj", "{1696934B-70CC-4F96-ACB9-C9DF96D795FC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "template", "template\template_vgdb_linux.vcxproj", "{8AA7BEC1-DD93-4D6F-96C0-E22C4FE0B03D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "parser", "parser\parser_vgdb_linux.vcxproj", "{8F2CC570-72B5-41AA-83AF-FFF3192E4045}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "algorithmic", "algorithmic\algorithmic_vgdb_linux.vcxproj", "{64D7CFEB-AAB2-4755-A819-616B2731B311}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ziplib", "ziplib\ziplib_vgdb_Linux.vcxproj", "{8F293506-3F70-45E2-83EE-7126A189A9E7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "utility", "utility\utility_vgdb_Linux.vcxproj", "{FCC220D0-ECF9-41C5-848A-741F4B37BF65}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netsocket", "netsocket\netsocket_vgdb_linux.vcxproj", "{A5B646AD-F141-4AD7-8A41-8ADDF2E317B5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileOperator", "FileOperator\FileOperator_vgdb_linux.vcxproj", "{F7739D8A-FA04-4E03-87C2-0EB01A65B29B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1696934B-70CC-4F96-ACB9-C9DF96D795FC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1696934B-70CC-4F96-ACB9-C9DF96D795FC}.Debug|Win32.Build.0 = Debug|Win32
+		{1696934B-70CC-4F96-ACB9-C9DF96D795FC}.Release|Win32.ActiveCfg = Release|Win32
+		{1696934B-70CC-4F96-ACB9-C9DF96D795FC}.Release|Win32.Build.0 = Release|Win32
+		{8AA7BEC1-DD93-4D6F-96C0-E22C4FE0B03D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8AA7BEC1-DD93-4D6F-96C0-E22C4FE0B03D}.Debug|Win32.Build.0 = Debug|Win32
+		{8AA7BEC1-DD93-4D6F-96C0-E22C4FE0B03D}.Release|Win32.ActiveCfg = Release|Win32
+		{8AA7BEC1-DD93-4D6F-96C0-E22C4FE0B03D}.Release|Win32.Build.0 = Release|Win32
+		{8F2CC570-72B5-41AA-83AF-FFF3192E4045}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8F2CC570-72B5-41AA-83AF-FFF3192E4045}.Debug|Win32.Build.0 = Debug|Win32
+		{8F2CC570-72B5-41AA-83AF-FFF3192E4045}.Release|Win32.ActiveCfg = Release|Win32
+		{8F2CC570-72B5-41AA-83AF-FFF3192E4045}.Release|Win32.Build.0 = Release|Win32
+		{64D7CFEB-AAB2-4755-A819-616B2731B311}.Debug|Win32.ActiveCfg = Debug|Win32
+		{64D7CFEB-AAB2-4755-A819-616B2731B311}.Debug|Win32.Build.0 = Debug|Win32
+		{64D7CFEB-AAB2-4755-A819-616B2731B311}.Release|Win32.ActiveCfg = Release|Win32
+		{64D7CFEB-AAB2-4755-A819-616B2731B311}.Release|Win32.Build.0 = Release|Win32
+		{8F293506-3F70-45E2-83EE-7126A189A9E7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8F293506-3F70-45E2-83EE-7126A189A9E7}.Debug|Win32.Build.0 = Debug|Win32
+		{8F293506-3F70-45E2-83EE-7126A189A9E7}.Release|Win32.ActiveCfg = Release|Win32
+		{8F293506-3F70-45E2-83EE-7126A189A9E7}.Release|Win32.Build.0 = Release|Win32
+		{FCC220D0-ECF9-41C5-848A-741F4B37BF65}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FCC220D0-ECF9-41C5-848A-741F4B37BF65}.Debug|Win32.Build.0 = Debug|Win32
+		{FCC220D0-ECF9-41C5-848A-741F4B37BF65}.Release|Win32.ActiveCfg = Release|Win32
+		{FCC220D0-ECF9-41C5-848A-741F4B37BF65}.Release|Win32.Build.0 = Release|Win32
+		{A5B646AD-F141-4AD7-8A41-8ADDF2E317B5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A5B646AD-F141-4AD7-8A41-8ADDF2E317B5}.Debug|Win32.Build.0 = Debug|Win32
+		{A5B646AD-F141-4AD7-8A41-8ADDF2E317B5}.Release|Win32.ActiveCfg = Release|Win32
+		{A5B646AD-F141-4AD7-8A41-8ADDF2E317B5}.Release|Win32.Build.0 = Release|Win32
+		{F7739D8A-FA04-4E03-87C2-0EB01A65B29B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F7739D8A-FA04-4E03-87C2-0EB01A65B29B}.Debug|Win32.Build.0 = Debug|Win32
+		{F7739D8A-FA04-4E03-87C2-0EB01A65B29B}.Release|Win32.ActiveCfg = Release|Win32
+		{F7739D8A-FA04-4E03-87C2-0EB01A65B29B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

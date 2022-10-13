@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;_LINUX;_LIB</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+      <AdditionalIncludeDirectories>../../include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>Minimal</DebugInformationFormat>
+      <ObjectFileName>$(IntDir)%(filename).o</ObjectFileName>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <CAdditionalWarning>switch;no-deprecated-declarations;empty-body;conversion;return-type;parentheses;no-pointer-sign;no-format;uninitialized;unreachable-code;unused-function;unused-value;unused-variable;%(CAdditionalWarning)</CAdditionalWarning>
+      <CppAdditionalWarning>switch;no-deprecated-declarations;empty-body;conversion;return-type;parentheses;no-format;uninitialized;unreachable-code;unused-function;unused-value;unused-variable;%(CppAdditionalWarning)</CppAdditionalWarning>
+      <Verbose>false</Verbose>
+      <Optimization>Full</Optimization>
+      <StrictAliasing>false</StrictAliasing>
+      <UnrollLoops>false</UnrollLoops>
+      <LinkTimeOptimization>false</LinkTimeOptimization>
+      <OmitFramePointers>true</OmitFramePointers>
+      <NoCommonBlocks>false</NoCommonBlocks>
+      <PositionIndependentCode>false</PositionIndependentCode>
+      <ThreadSafeStatics>Yes</ThreadSafeStatics>
+      <RelaxIEEE>false</RelaxIEEE>
+      <HideInlineMethods>false</HideInlineMethods>
+      <SymbolsHiddenByDefault>false</SymbolsHiddenByDefault>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>c11</CLanguageStandard>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+    <Lib>
+      <CreateIndex>true</CreateIndex>
+      <NoWarnOnCreate>true</NoWarnOnCreate>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;_LINUX;_LIB</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <AdditionalIncludeDirectories>../../include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>FullDebug</DebugInformationFormat>
+      <ObjectFileName>$(IntDir)%(filename).o</ObjectFileName>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <CAdditionalWarning>switch;no-deprecated-declarations;empty-body;conversion;return-type;parentheses;no-pointer-sign;no-format;uninitialized;unreachable-code;unused-function;unused-value;unused-variable;%(CAdditionalWarning)</CAdditionalWarning>
+      <CppAdditionalWarning>switch;no-deprecated-declarations;empty-body;conversion;return-type;parentheses;no-format;uninitialized;unreachable-code;unused-function;unused-value;unused-variable;%(CppAdditionalWarning)</CppAdditionalWarning>
+      <Verbose>false</Verbose>
+      <Optimization>Disabled</Optimization>
+      <StrictAliasing>false</StrictAliasing>
+      <UnrollLoops>false</UnrollLoops>
+      <LinkTimeOptimization>false</LinkTimeOptimization>
+      <OmitFramePointers>false</OmitFramePointers>
+      <NoCommonBlocks>false</NoCommonBlocks>
+      <PositionIndependentCode>false</PositionIndependentCode>
+      <ThreadSafeStatics>Yes</ThreadSafeStatics>
+      <RelaxIEEE>false</RelaxIEEE>
+      <HideInlineMethods>false</HideInlineMethods>
+      <SymbolsHiddenByDefault>false</SymbolsHiddenByDefault>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>c11</CLanguageStandard>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+    <Lib>
+      <CreateIndex>true</CreateIndex>
+      <NoWarnOnCreate>true</NoWarnOnCreate>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_LINUX;_LIB</PreprocessorDefinitions>
+      <DebugInformationFormat>FullDebug</DebugInformationFormat>
+      <ObjectFileName>$(IntDir)%(filename).o</ObjectFileName>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <CAdditionalWarning>switch;no-deprecated-declarations;empty-body;conversion;return-type;parentheses;no-pointer-sign;no-format;uninitialized;unreachable-code;unused-function;unused-value;unused-variable;%(CAdditionalWarning)</CAdditionalWarning>
+      <CppAdditionalWarning>switch;no-deprecated-declarations;empty-body;conversion;return-type;parentheses;no-format;uninitialized;unreachable-code;unused-function;unused-value;unused-variable;%(CppAdditionalWarning)</CppAdditionalWarning>
+      <Verbose>false</Verbose>
+      <Optimization>Disabled</Optimization>
+      <StrictAliasing>false</StrictAliasing>
+      <UnrollLoops>false</UnrollLoops>
+      <LinkTimeOptimization>false</LinkTimeOptimization>
+      <OmitFramePointers>false</OmitFramePointers>
+      <NoCommonBlocks>false</NoCommonBlocks>
+      <PositionIndependentCode>false</PositionIndependentCode>
+      <ThreadSafeStatics>Yes</ThreadSafeStatics>
+      <RelaxIEEE>false</RelaxIEEE>
+      <HideInlineMethods>false</HideInlineMethods>
+      <SymbolsHiddenByDefault>false</SymbolsHiddenByDefault>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>c11</CLanguageStandard>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+    <Lib>
+      <CreateIndex>true</CreateIndex>
+      <NoWarnOnCreate>true</NoWarnOnCreate>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_LINUX;_LIB</PreprocessorDefinitions>
+      <DebugInformationFormat>Minimal</DebugInformationFormat>
+      <ObjectFileName>$(IntDir)%(filename).o</ObjectFileName>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <CAdditionalWarning>switch;no-deprecated-declarations;empty-body;conversion;return-type;parentheses;no-pointer-sign;no-format;uninitialized;unreachable-code;unused-function;unused-value;unused-variable;%(CAdditionalWarning)</CAdditionalWarning>
+      <CppAdditionalWarning>switch;no-deprecated-declarations;empty-body;conversion;return-type;parentheses;no-format;uninitialized;unreachable-code;unused-function;unused-value;unused-variable;%(CppAdditionalWarning)</CppAdditionalWarning>
+      <Verbose>false</Verbose>
+      <Optimization>Full</Optimization>
+      <StrictAliasing>false</StrictAliasing>
+      <UnrollLoops>false</UnrollLoops>
+      <LinkTimeOptimization>false</LinkTimeOptimization>
+      <OmitFramePointers>true</OmitFramePointers>
+      <NoCommonBlocks>false</NoCommonBlocks>
+      <PositionIndependentCode>false</PositionIndependentCode>
+      <ThreadSafeStatics>Yes</ThreadSafeStatics>
+      <RelaxIEEE>false</RelaxIEEE>
+      <HideInlineMethods>false</HideInlineMethods>
+      <SymbolsHiddenByDefault>false</SymbolsHiddenByDefault>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>c11</CLanguageStandard>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+    <Lib>
+      <CreateIndex>true</CreateIndex>
+      <NoWarnOnCreate>true</NoWarnOnCreate>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_LINUX;_LIB</PreprocessorDefinitions>
+      <DebugInformationFormat>FullDebug</DebugInformationFormat>
+      <ObjectFileName>$(IntDir)%(filename).o</ObjectFileName>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <CAdditionalWarning>switch;no-deprecated-declarations;empty-body;conversion;return-type;parentheses;no-pointer-sign;no-format;uninitialized;unreachable-code;unused-function;unused-value;unused-variable;%(CAdditionalWarning)</CAdditionalWarning>
+      <CppAdditionalWarning>switch;no-deprecated-declarations;empty-body;conversion;return-type;parentheses;no-format;uninitialized;unreachable-code;unused-function;unused-value;unused-variable;%(CppAdditionalWarning)</CppAdditionalWarning>
+      <Verbose>false</Verbose>
+      <Optimization>Disabled</Optimization>
+      <StrictAliasing>false</StrictAliasing>
+      <UnrollLoops>false</UnrollLoops>
+      <LinkTimeOptimization>false</LinkTimeOptimization>
+      <OmitFramePointers>false</OmitFramePointers>
+      <NoCommonBlocks>false</NoCommonBlocks>
+      <PositionIndependentCode>false</PositionIndependentCode>
+      <ThreadSafeStatics>Yes</ThreadSafeStatics>
+      <RelaxIEEE>false</RelaxIEEE>
+      <HideInlineMethods>false</HideInlineMethods>
+      <SymbolsHiddenByDefault>false</SymbolsHiddenByDefault>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>c11</CLanguageStandard>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+    <Lib>
+      <CreateIndex>true</CreateIndex>
+      <NoWarnOnCreate>true</NoWarnOnCreate>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_LINUX;_LIB</PreprocessorDefinitions>
+      <DebugInformationFormat>Minimal</DebugInformationFormat>
+      <ObjectFileName>$(IntDir)%(filename).o</ObjectFileName>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <CAdditionalWarning>switch;no-deprecated-declarations;empty-body;conversion;return-type;parentheses;no-pointer-sign;no-format;uninitialized;unreachable-code;unused-function;unused-value;unused-variable;%(CAdditionalWarning)</CAdditionalWarning>
+      <CppAdditionalWarning>switch;no-deprecated-declarations;empty-body;conversion;return-type;parentheses;no-format;uninitialized;unreachable-code;unused-function;unused-value;unused-variable;%(CppAdditionalWarning)</CppAdditionalWarning>
+      <Verbose>false</Verbose>
+      <Optimization>Full</Optimization>
+      <StrictAliasing>false</StrictAliasing>
+      <UnrollLoops>false</UnrollLoops>
+      <LinkTimeOptimization>false</LinkTimeOptimization>
+      <OmitFramePointers>true</OmitFramePointers>
+      <NoCommonBlocks>false</NoCommonBlocks>
+      <PositionIndependentCode>false</PositionIndependentCode>
+      <ThreadSafeStatics>Yes</ThreadSafeStatics>
+      <RelaxIEEE>false</RelaxIEEE>
+      <HideInlineMethods>false</HideInlineMethods>
+      <SymbolsHiddenByDefault>false</SymbolsHiddenByDefault>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>c11</CLanguageStandard>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+    <Lib>
+      <CreateIndex>true</CreateIndex>
+      <NoWarnOnCreate>true</NoWarnOnCreate>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="build_linux.sh" />
+    <None Include="src\array.inl" />
+    <None Include="src\array2d.inl" />
+    <None Include="src\arraymap.inl" />
+    <None Include="src\catalog.inl" />
+    <None Include="src\collectpool.inl" />
+    <None Include="src\delist.inl" />
+    <None Include="src\depthqueue.inl" />
+    <None Include="src\dynarray.inl" />
+    <None Include="src\grid.inl" />
+    <None Include="src\mesh.inl" />
+    <None Include="src\ptrdlist.inl" />
+    <None Include="src\rndbox.inl" />
+    <None Include="src\safevalue.inl" />
+    <None Include="src\smartpointer.inl" />
+    <None Include="src\tmap.inl" />
+    <None Include="src\tridimension.inl" />
+    <None Include="src\vmapl.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="project.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\template.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{043712be-42d6-4e8b-a75a-0c05cecc6e09}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>template</RootNamespace>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <ProjectName>template</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

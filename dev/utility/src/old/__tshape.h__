@@ -1,0 +1,90 @@
+//Shape.h header file for shape.cpp
+//
+//    define shapeless 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//                                               Copyright    (C)    1999    Pin
+//
+#ifndef TSHAPE_H
+#define TSHAPE_H
+
+#include "pdef.h"
+#include <aMath.h>
+
+
+typedef Pdword shape_t;
+#define _MAX_SHAPE_BUF  64
+
+
+namespace LG
+{
+    class Shape
+    {
+        shape_t m_type;
+        //void*     m_pData;
+        BYTE    m_buf[ _MAX_SHAPE_BUF ];
+
+        //size_t    sizeofshapeclass( void );
+
+    public:
+
+        Shape();
+        ~Shape();
+
+        shape_t GetType( void )
+        {
+            return m_type;
+        }
+
+        size_t          BeNull( void );
+
+        size_t          BeVertex2f( float X, float Y );
+        LG::Vertex2f*   Vertex2f( void );
+
+        size_t          BeVertex3l( long X, long Y, long Z );
+        LG::Vertex3l*   Vertex3l( void );
+
+        size_t          BeVertex3f( float X, float Y, float Z );
+        LG::Vertex3f*   Vertex3f( void );
+
+        size_t          BeLinev3f( float X1,
+                                   float Y1,
+                                   float Z1,
+                                   float X2,
+                                   float Y2,
+                                   float Z2 );
+        LG::Line3df*    Linev3f( void );
+
+        size_t          BeSpheref( float cX, float cY, float cZ, float radius );
+        LG::Spheref*    Spheref( void );
+
+        size_t          BeCubef( float X1,
+                                float Y1,
+                                float Z1,
+                                float X2,
+                                float Y2,
+                                float Z2 );
+        LG::BBoxf*      Cubef( void );
+
+        size_t          BePlane3df( float nX, float nY, float nZ, float c );
+        LG::Plane3df*   Plane3df( void );
+
+        //void*           getBuffer( size_t &size );
+        //void            setBuffer( void* buf );
+    };
+};//namespace LG
+
+#endif
+
+
+
+
+

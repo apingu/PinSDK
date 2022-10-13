@@ -1,0 +1,15 @@
+#ifndef MYAUTOPTR_H
+#define MYAUTOPTR_H
+
+template <class _Type> class autoptr
+{
+	_Type m_Type;
+
+public:
+
+	autoptr( _Type t ){ m_Type = t; }
+	~autoptr(){ SAFE_DELETE( m_Type ); }
+	operator _Type() { return m_Type; }
+};
+
+#endif

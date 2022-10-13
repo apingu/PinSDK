@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{fc5b4f69-843c-4935-a2a1-d1ebe3b28ce5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{16828c96-5139-42b6-b22c-404d34cc0b74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00%29 configure">
+      <UniqueIdentifier>{ab4946ba-9024-471e-b81a-390311fd0321}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build_linux.sh">
+      <Filter>00%29 configure</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="project.h">
+      <Filter>00%29 configure</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdkbundle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sdkbundle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

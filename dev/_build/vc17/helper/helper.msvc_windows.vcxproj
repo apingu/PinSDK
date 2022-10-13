@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_Unicode|Win32">
+      <Configuration>Debug_Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Unicode|x64">
+      <Configuration>Debug_Unicode</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Unicode|Win32">
+      <Configuration>Release_Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Unicode|x64">
+      <Configuration>Release_Unicode</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D755224D-B02C-43C8-8ED4-F5E2B3782576}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Helper</RootNamespace>
+    <ProjectName>helper</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+    <IntDir>$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+    <IntDir>$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">
+    <OutDir>..\..\..\lib\windows_$(PlatformTarget)\Debug\</OutDir>
+    <TargetName>$(ProjectName)_u</TargetName>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+    <IntDir>$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|x64'">
+    <TargetName>$(ProjectName)_u</TargetName>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+    <OutDir>..\..\..\lib\windows_$(PlatformTarget)\Debug\</OutDir>
+    <IntDir>$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+    <IntDir>$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+    <IntDir>$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">
+    <OutDir>..\..\..\lib\windows_$(PlatformTarget)\Release\</OutDir>
+    <TargetName>$(ProjectName)_u</TargetName>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+    <IntDir>$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|x64'">
+    <TargetName>$(ProjectName)_u</TargetName>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+    <OutDir>..\..\..\lib\windows_$(PlatformTarget)\Release\</OutDir>
+    <IntDir>$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;CURL_STATICLIB;WIN32_LEAN_AND_MEAN;_OOoSDK_;_WINDOWS;_LIB;%(PreprocessorDefinitions);WIN32;_DEBUG</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;$(OOoSdkDir)\include;$(OOoSdkDir)\includecpp;..\..\..\helper\src\;..\..\..\helper\src\net\libhttp\include;..\..\..\helper\src\net\libcurl\include;..\..\..\helper\src\office\libxl\win\include_cpp;..\..\..\helper\src\msoffice\ExcelFormat\include\ExcelFormat</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y ..\..\..\helper\src\net\libhttp\include\*.h                   ..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-utility.h                       ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-listgrid.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txhelper.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txdialog.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txformview.h                    ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txstatic.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txbutton.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txsliderctrl.h                  ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txmarquee.h                     ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-treectrl.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-sxbutton.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\win32_utility.h                     ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\net\csbrowser.h                           ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\Openoffice\OOoHelper.h                    ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\dictionary\dictionary.h                   ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\office\*.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\net\nh-toolkit.h                          ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\office\libxl\win\bin\libxl.dll            ..\..\..\..\lib\windows_x86\Debug
+copy /y ..\..\..\helper\src\office\libxl\win\bin\libxl.dll            ..\..\..\..\lib\windows_x86\Release
+copy /y ..\..\..\helper\src\office\libxl\win\bin64\libxl.dll          ..\..\..\..\lib\windows_x64\Debug
+copy /y ..\..\..\helper\src\office\libxl\win\bin64\libxl.dll          ..\..\..\..\lib\windows_x64\Release</Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <Lib>
+      <AdditionalDependencies>libxl.lib;libssh2.lib;libcurl.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\..\..\..\helper\src\net\libcurl\lib\win$(PlatformArchitecture)\$(Configuration);.\..\..\..\helper\src\office\libxl\win\lib</AdditionalLibraryDirectories>
+    </Lib>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;CURL_STATICLIB;WIN32_LEAN_AND_MEAN;_OOoSDK_;_WINDOWS;_LIB;%(PreprocessorDefinitions);WIN64;_DEBUG</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;$(OOoSdkDir)\include;$(OOoSdkDir)\includecpp;..\..\..\helper\src\;..\..\..\helper\src\net\libhttp\include;..\..\..\helper\src\net\libcurl\include;..\..\..\helper\src\office\libxl\win\include_cpp;..\..\..\helper\src\msoffice\ExcelFormat\include\ExcelFormat</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y ..\..\..\helper\src\net\libhttp\include\*.h                   ..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-utility.h                       ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-listgrid.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txhelper.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txdialog.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txformview.h                    ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txstatic.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txbutton.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txsliderctrl.h                  ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txmarquee.h                     ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-treectrl.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-sxbutton.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\win32_utility.h                     ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\net\csbrowser.h                           ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\Openoffice\OOoHelper.h                    ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\dictionary\dictionary.h                   ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\office\*.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\net\nh-toolkit.h                          ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\office\libxl\win\bin\libxl.dll            ..\..\..\..\lib\windows_x86\Debug
+copy /y ..\..\..\helper\src\office\libxl\win\bin\libxl.dll            ..\..\..\..\lib\windows_x86\Release
+copy /y ..\..\..\helper\src\office\libxl\win\bin64\libxl.dll          ..\..\..\..\lib\windows_x64\Debug
+copy /y ..\..\..\helper\src\office\libxl\win\bin64\libxl.dll          ..\..\..\..\lib\windows_x64\Release</Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <Lib>
+      <AdditionalDependencies>libxl.lib;libssh2.lib;libcurl.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\..\..\..\helper\src\net\libcurl\lib\win$(PlatformArchitecture)\$(Configuration);.\..\..\..\helper\src\office\libxl\win\lib64</AdditionalLibraryDirectories>
+    </Lib>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;CURL_STATICLIB;WIN32_LEAN_AND_MEAN;_OOoSDK_;_WINDOWS;_LIB;%(PreprocessorDefinitions);WIN32;_DEBUG</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;$(OOoSdkDir)\include;$(OOoSdkDir)\includecpp;..\..\..\helper\src\;..\..\..\helper\src\net\libhttp\include;..\..\..\helper\src\net\libcurl\include;..\..\..\helper\src\office\libxl\win\include_cpp;..\..\..\helper\src\msoffice\ExcelFormat\include\ExcelFormat</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y ..\..\..\helper\src\net\libhttp\include\*.h                   ..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-utility.h                       ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-listgrid.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txhelper.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txdialog.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txformview.h                    ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txstatic.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txbutton.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txsliderctrl.h                  ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txmarquee.h                     ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-treectrl.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-sxbutton.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\win32_utility.h                     ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\net\csbrowser.h                           ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\Openoffice\OOoHelper.h                    ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\dictionary\dictionary.h                   ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\office\*.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\net\nh-toolkit.h                          ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\office\libxl\win\bin\libxl.dll            ..\..\..\..\lib\windows_x86\Debug
+copy /y ..\..\..\helper\src\office\libxl\win\bin\libxl.dll            ..\..\..\..\lib\windows_x86\Release
+copy /y ..\..\..\helper\src\office\libxl\win\bin64\libxl.dll          ..\..\..\..\lib\windows_x64\Debug
+copy /y ..\..\..\helper\src\office\libxl\win\bin64\libxl.dll          ..\..\..\..\lib\windows_x64\Release</Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <Lib>
+      <AdditionalDependencies>libxl.lib;libssh2.lib;libcurl.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\..\..\..\helper\src\net\libcurl\lib\win$(PlatformArchitecture)\Debug;.\..\..\..\helper\src\office\libxl\win\lib</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;CURL_STATICLIB;WIN32_LEAN_AND_MEAN;_OOoSDK_;_WINDOWS;_LIB;%(PreprocessorDefinitions);WIN64;_DEBUG</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;$(OOoSdkDir)\include;$(OOoSdkDir)\includecpp;..\..\..\helper\src\;..\..\..\helper\src\net\libhttp\include;..\..\..\helper\src\net\libcurl\include;..\..\..\helper\src\office\libxl\win\include_cpp;..\..\..\helper\src\msoffice\ExcelFormat\include\ExcelFormat</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessToFile>false</PreprocessToFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y ..\..\..\helper\src\net\libhttp\include\*.h                   ..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-utility.h                       ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-listgrid.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txhelper.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txdialog.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txformview.h                    ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txstatic.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txbutton.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txsliderctrl.h                  ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txmarquee.h                     ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-treectrl.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-sxbutton.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\win32_utility.h                     ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\net\csbrowser.h                           ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\Openoffice\OOoHelper.h                    ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\dictionary\dictionary.h                   ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\office\*.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\net\nh-toolkit.h                          ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\office\libxl\win\bin\libxl.dll            ..\..\..\..\lib\windows_x86\Debug
+copy /y ..\..\..\helper\src\office\libxl\win\bin\libxl.dll            ..\..\..\..\lib\windows_x86\Release
+copy /y ..\..\..\helper\src\office\libxl\win\bin64\libxl.dll          ..\..\..\..\lib\windows_x64\Debug
+copy /y ..\..\..\helper\src\office\libxl\win\bin64\libxl.dll          ..\..\..\..\lib\windows_x64\Release</Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <Lib>
+      <AdditionalDependencies>libxl.lib;libssh2.lib;libcurl.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\..\..\..\helper\src\net\libcurl\lib\win$(PlatformArchitecture)\Debug;.\..\..\..\helper\src\office\libxl\win\lib64</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;CURL_STATICLIB;WIN32_LEAN_AND_MEAN;_OOoSDK_;_WINDOWS;_LIB;%(PreprocessorDefinitions);WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;$(OOoSdkDir)\include;$(OOoSdkDir)\includecpp;..\..\..\helper\src\;..\..\..\helper\src\net\libhttp\include;..\..\..\helper\src\net\libcurl\include;..\..\..\helper\src\office\libxl\win\include_cpp;..\..\..\helper\src\msoffice\ExcelFormat\include\ExcelFormat</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y ..\..\..\helper\src\net\libhttp\include\*.h                   ..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-utility.h                       ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-listgrid.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txhelper.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txdialog.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txformview.h                    ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txstatic.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txbutton.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txsliderctrl.h                  ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txmarquee.h                     ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-treectrl.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-sxbutton.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\win32_utility.h                     ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\net\csbrowser.h                           ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\Openoffice\OOoHelper.h                    ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\dictionary\dictionary.h                   ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\office\*.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\net\nh-toolkit.h                          ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\office\libxl\win\bin\libxl.dll            ..\..\..\..\lib\windows_x86\Debug
+copy /y ..\..\..\helper\src\office\libxl\win\bin\libxl.dll            ..\..\..\..\lib\windows_x86\Release
+copy /y ..\..\..\helper\src\office\libxl\win\bin64\libxl.dll          ..\..\..\..\lib\windows_x64\Debug
+copy /y ..\..\..\helper\src\office\libxl\win\bin64\libxl.dll          ..\..\..\..\lib\windows_x64\Release</Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <Lib>
+      <AdditionalDependencies>libxl.lib;libssh2.lib;libcurl.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\..\..\..\helper\src\net\libcurl\lib\win$(PlatformArchitecture)\$(Configuration);.\..\..\..\helper\src\office\libxl\win\lib</AdditionalLibraryDirectories>
+    </Lib>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;CURL_STATICLIB;WIN32_LEAN_AND_MEAN;_OOoSDK_;_WINDOWS;_LIB;%(PreprocessorDefinitions);WIN64;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;$(OOoSdkDir)\include;$(OOoSdkDir)\includecpp;..\..\..\helper\src\;..\..\..\helper\src\net\libhttp\include;..\..\..\helper\src\net\libcurl\include;..\..\..\helper\src\office\libxl\win\include_cpp;..\..\..\helper\src\msoffice\ExcelFormat\include\ExcelFormat</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y ..\..\..\helper\src\net\libhttp\include\*.h                   ..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-utility.h                       ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-listgrid.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txhelper.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txdialog.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txformview.h                    ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txstatic.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txbutton.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txsliderctrl.h                  ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txmarquee.h                     ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-treectrl.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-sxbutton.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\win32_utility.h                     ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\net\csbrowser.h                           ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\Openoffice\OOoHelper.h                    ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\dictionary\dictionary.h                   ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\office\*.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\net\nh-toolkit.h                          ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\office\libxl\win\bin\libxl.dll            ..\..\..\..\lib\windows_x86\Debug
+copy /y ..\..\..\helper\src\office\libxl\win\bin\libxl.dll            ..\..\..\..\lib\windows_x86\Release
+copy /y ..\..\..\helper\src\office\libxl\win\bin64\libxl.dll          ..\..\..\..\lib\windows_x64\Debug
+copy /y ..\..\..\helper\src\office\libxl\win\bin64\libxl.dll          ..\..\..\..\lib\windows_x64\Release</Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <Lib>
+      <AdditionalDependencies>libxl.lib;libssh2.lib;libcurl.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\..\..\..\helper\src\net\libcurl\lib\win$(PlatformArchitecture)\$(Configuration);.\..\..\..\helper\src\office\libxl\win\lib64</AdditionalLibraryDirectories>
+    </Lib>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;CURL_STATICLIB;WIN32_LEAN_AND_MEAN;_OOoSDK_;_WINDOWS;_LIB;%(PreprocessorDefinitions);WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;$(OOoSdkDir)\include;$(OOoSdkDir)\includecpp;..\..\..\helper\src\;..\..\..\helper\src\net\libhttp\include;..\..\..\helper\src\net\libcurl\include;..\..\..\helper\src\office\libxl\win\include_cpp;..\..\..\helper\src\msoffice\ExcelFormat\include\ExcelFormat</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y ..\..\..\helper\src\net\libhttp\include\*.h                   ..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-utility.h                       ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-listgrid.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txhelper.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txdialog.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txformview.h                    ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txstatic.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txbutton.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txsliderctrl.h                  ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txmarquee.h                     ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-treectrl.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-sxbutton.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\win32_utility.h                     ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\net\csbrowser.h                           ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\Openoffice\OOoHelper.h                    ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\dictionary\dictionary.h                   ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\office\*.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\net\nh-toolkit.h                          ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\office\libxl\win\bin\libxl.dll            ..\..\..\..\lib\windows_x86\Debug
+copy /y ..\..\..\helper\src\office\libxl\win\bin\libxl.dll            ..\..\..\..\lib\windows_x86\Release
+copy /y ..\..\..\helper\src\office\libxl\win\bin64\libxl.dll          ..\..\..\..\lib\windows_x64\Debug
+copy /y ..\..\..\helper\src\office\libxl\win\bin64\libxl.dll          ..\..\..\..\lib\windows_x64\Release</Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <Lib>
+      <AdditionalDependencies>libxl.lib;libssh2.lib;libcurl.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\..\..\..\helper\src\net\libcurl\lib\win$(PlatformArchitecture)\Release;.\..\..\..\helper\src\office\libxl\win\lib</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;CURL_STATICLIB;WIN32_LEAN_AND_MEAN;_OOoSDK_;_WINDOWS;_LIB;%(PreprocessorDefinitions);WIN64;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;$(OOoSdkDir)\include;$(OOoSdkDir)\includecpp;..\..\..\helper\src\;..\..\..\helper\src\net\libhttp\include;..\..\..\helper\src\net\libcurl\include;..\..\..\helper\src\office\libxl\win\include_cpp;..\..\..\helper\src\msoffice\ExcelFormat\include\ExcelFormat</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessToFile>false</PreprocessToFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y ..\..\..\helper\src\net\libhttp\include\*.h                   ..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-utility.h                       ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-listgrid.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txhelper.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txdialog.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txformview.h                    ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txstatic.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txbutton.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txsliderctrl.h                  ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-txmarquee.h                     ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-treectrl.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\mfc-sxbutton.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\mswin\win32_utility.h                     ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\net\csbrowser.h                           ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\Openoffice\OOoHelper.h                    ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\dictionary\dictionary.h                   ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\office\*.h                      ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\net\nh-toolkit.h                          ..\..\..\..\include\helper\
+copy /y ..\..\..\helper\src\office\libxl\win\bin\libxl.dll            ..\..\..\..\lib\windows_x86\Debug
+copy /y ..\..\..\helper\src\office\libxl\win\bin\libxl.dll            ..\..\..\..\lib\windows_x86\Release
+copy /y ..\..\..\helper\src\office\libxl\win\bin64\libxl.dll          ..\..\..\..\lib\windows_x64\Debug
+copy /y ..\..\..\helper\src\office\libxl\win\bin64\libxl.dll          ..\..\..\..\lib\windows_x64\Release</Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <Lib>
+      <AdditionalDependencies>libxl.lib;libssh2.lib;libcurl.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\..\..\..\helper\src\net\libcurl\lib\win$(PlatformArchitecture)\Release;.\..\..\..\helper\src\office\libxl\win\lib64</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\helper\readme.txt" />
+    <Text Include="..\..\..\helper\src\mswin\readme.txt" />
+    <Text Include="..\..\..\helper\src\Openoffice\build openoffice sdk .txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\helper\project.h" />
+    <ClInclude Include="..\..\..\helper\src\dictionary\bing_translate.h" />
+    <ClInclude Include="..\..\..\helper\src\dictionary\dictionary.h" />
+    <ClInclude Include="..\..\..\helper\src\dictionary\excite_translater.h" />
+    <ClInclude Include="..\..\..\helper\src\dictionary\stdafx.h" />
+    <ClInclude Include="..\..\..\helper\src\dictionary\web_bing_client.h" />
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-input.h" />
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-txformview.h" />
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-txmarquee.h" />
+    <ClInclude Include="..\..\..\helper\src\Net\csbrowser.h" />
+    <ClInclude Include="..\..\..\helper\src\net\FtpClient.h" />
+    <ClInclude Include="..\..\..\helper\src\net\libhttp\include\libhttp.h" />
+    <ClInclude Include="..\..\..\helper\src\net\libhttp\src\httplib_main.h" />
+    <ClInclude Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread.h" />
+    <ClInclude Include="..\..\..\helper\src\net\libhttp\src\httplib_ssl.h" />
+    <ClInclude Include="..\..\..\helper\src\net\libhttp\src\httplib_utils.h" />
+    <ClInclude Include="..\..\..\helper\src\Net\nh-toolkit.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\Base64.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\Clients.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\Heap.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\LinkedList.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\Log.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\Messages.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTAsync.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTClient.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTClientPersistence.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTPacket.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTPacketOut.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTPersistence.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTPersistenceDefault.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTProperties.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTProtocol.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTProtocolClient.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTProtocolOut.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTReasonCodes.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTSubscribeOpts.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\mutex_type.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\OsWrapper.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\SHA1.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\Socket.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\SocketBuffer.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\SSLSocket.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\StackTrace.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\Thread.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\Tree.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\utf-8.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\VersionInfo.h" />
+    <ClInclude Include="..\..\..\helper\src\net\paho.mqtt.c\src\WebSocket.h" />
+    <ClInclude Include="..\..\..\helper\src\office\ExcelFormat\BasicExcel.hpp" />
+    <ClInclude Include="..\..\..\helper\src\office\ExcelFormat\ExcelFormat.h" />
+    <ClInclude Include="..\..\..\helper\src\office\excel_xml.h" />
+    <ClInclude Include="..\..\..\helper\src\office\xldb-query.h" />
+    <ClInclude Include="..\..\..\helper\src\office\xldb-sheet.h" />
+    <ClInclude Include="..\..\..\helper\src\office\xl_file.h" />
+    <ClInclude Include="..\..\..\helper\src\Openoffice\OOoHelper.h" />
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-utility.h" />
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-listgrid.h" />
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-sxbutton.h" />
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-treectrl.h" />
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-txbutton.h" />
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-txdialog.h" />
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-txhelper.h" />
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-txsliderctrl.h" />
+    <ClInclude Include="..\..\..\helper\src\mswin\mfc-txstatic.h" />
+    <ClInclude Include="..\..\..\helper\src\mswin\win32_utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\helper\src\dictionary\bing_translate.cpp" />
+    <ClCompile Include="..\..\..\helper\src\dictionary\dictionary.cpp" />
+    <ClCompile Include="..\..\..\helper\src\dictionary\excite_translater.cpp" />
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-input.cpp" />
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-txformview.cpp" />
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-txmarquee.cpp" />
+    <ClCompile Include="..\..\..\helper\src\Net\csbrowser.c" />
+    <ClCompile Include="..\..\..\helper\src\net\FtpClient.cpp" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\extern_md5.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\extern_sha1.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\extern_ssl_lut.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_abort_start.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_accept_new_connection.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_addenv.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_atomic_dec.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_atomic_inc.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_authorize.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_base64_encode.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_check_acl.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_check_authorization.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_check_feature.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_check_password.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_closedir.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_close_all_listening_sockets.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_close_connection.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_close_socket_gracefully.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_compare_dir_entries.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_connect_client.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_connect_socket.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_connect_websocket_client.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_construct_etag.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_consume_socket.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_create_client_context.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_cry.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_delete_file.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_destroy_client_context.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_difftimespec.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_dir_scan_callback.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_discard_unread_request_data.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_download.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_error_string.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_event_queue.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_fclose.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_fclose_on_exec.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_fgets.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_fopen.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_forward_body_data.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_free_config_options.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_free_context.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_getreq.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_builtin_mime_type.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_cookie.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_debug_level.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_first_ssl_listener_index.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_header.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_mime_type.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_option.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_random.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_rel_url_at_current_server.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_remote_ip.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_request_handler.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_request_info.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_request_len.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_response.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_response_code_text.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_server_ports.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_system_name.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_uri_type.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_user_connection_data.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_user_data.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_get_var.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_global_data.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_gmtime_r.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_gmt_time_string.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_handle_cgi_request.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_handle_directory_request.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_handle_file_based_request.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_handle_form_request.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_handle_not_modified_static_file_request.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_handle_propfind.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_handle_request.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_handle_static_file_request.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_handle_websocket_request.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_header_has_option.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_inet_pton.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_initialize_ssl.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_init_options.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_interpret_uri.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_is_authorized_for_put.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_is_file_in_memory.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_is_file_opened.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_is_not_modified.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_is_put_or_delete_method.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_is_valid_http_method.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_is_valid_port.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_is_websocket_protocol.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_kill.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_load_dll.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_localtime_r.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_lock_unlock_connection.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_lock_unlock_context.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_log_access.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_lowercase.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_malloc.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_master_thread.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_match_prefix.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_md5.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_mkcol.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_mkdir.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_modify_passwords_file.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_must_hide_file.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_next_option.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_opendir.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_open_auth_file.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_option_value_to_bool.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_option_value_to_int.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_parse_auth_header.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_parse_date_string.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_parse_http_headers.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_parse_http_message.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_parse_net.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_parse_range_header.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_path_to_unicode.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_poll.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_prepare_cgi_environment.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_printf.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_print_dir_entry.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_process_new_connection.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_process_options.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_produce_socket.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_cond_broadcast.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_cond_destroy.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_cond_init.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_cond_signal.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_cond_timedwait.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_cond_wait.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_getspecific.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_join.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_key_create.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_key_delete.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_mutex_destroy.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_mutex_init.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_mutex_lock.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_mutex_trylock.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_mutex_unlock.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_self.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pthread_setspecific.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pull.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_pull_all.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_push_all.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_put_dir.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_put_file.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_read.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_readdir.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_read_auth_file.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_read_request.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_read_websocket.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_redirect_to_https_port.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_refresh_trust.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_remove.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_remove_bad_file.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_remove_directory.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_remove_double_dots.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_reset_per_request_attributes.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_scan_directory.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_send_authorization_request.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_send_file.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_send_file_data.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_send_http_error.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_send_no_cache_header.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_send_options.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_send_static_cache_header.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_send_websocket_handshake.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_acl_option.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_auth_handler.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_close_on_exec.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_debug_level.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_gpass_option.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_handler_type.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_non_blocking_mode.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_ports_option.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_request_handler.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_sock_timeout.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_ssl_option.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_tcp_nodelay.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_thread_name.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_throttle.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_uid_option.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_user_connection_data.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_set_websocket_handler.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_should_decode_url.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_should_keep_alive.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_skip.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_skip_quoted.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_snprintf.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_sockaddr_to_string.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_spawn_process.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_ssi.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_sslize.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_ssl_error.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_ssl_get_client_cert_info.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_ssl_get_protocol.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_ssl_id_callback.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_ssl_locking_callback.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_ssl_use_pem_file.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_start.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_start_thread.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_start_thread_with_id.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_stat.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_stop.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_store_body.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_strcasecmp.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_strcasestr.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_strdup.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_strlcpy.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_strncasecmp.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_strndup.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_substitute_index_file.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_suggest_connection_header.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_system_exit.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_system_init.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_timer.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_tls_dtor.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_uninitialize_ssl.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_url_decode.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_url_encode.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_version.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_vprintf.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_vsnprintf.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_websocket_client_thread.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_websocket_client_write.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_websocket_write.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_websocket_write_exec.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_worker_thread.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\httplib_write.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\lh_ipt_to_ip.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\lh_ipt_to_ip4.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\lh_ipt_to_ip6.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\lh_ip_to_ipt.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\osx_clock_gettime.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\win32_clock_gettime.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\wince_rename.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\wince_stat.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\wince_strftime.c" />
+    <ClCompile Include="..\..\..\helper\src\net\libhttp\src\wince_time.c" />
+    <ClCompile Include="..\..\..\helper\src\Net\nh-toolkit.cpp" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\Base64.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\Clients.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\Heap.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\LinkedList.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\Log.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\Messages.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTAsync.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTClient.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTPacket.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTPacketOut.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTPersistence.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTPersistenceDefault.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTProperties.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTProtocolClient.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTProtocolOut.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTReasonCodes.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\MQTTVersion.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\OsWrapper.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\SHA1.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\Socket.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\SocketBuffer.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\SSLSocket.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\StackTrace.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\Thread.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\Tree.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\utf-8.c" />
+    <ClCompile Include="..\..\..\helper\src\net\paho.mqtt.c\src\WebSocket.c" />
+    <ClCompile Include="..\..\..\helper\src\office\ExcelFormat\BasicExcel.cpp" />
+    <ClCompile Include="..\..\..\helper\src\office\ExcelFormat\ExcelFormat.cpp" />
+    <ClCompile Include="..\..\..\helper\src\office\excel_xml.cpp" />
+    <ClCompile Include="..\..\..\helper\src\office\xldb-query.cpp" />
+    <ClCompile Include="..\..\..\helper\src\office\xldb-sheet.cpp" />
+    <ClCompile Include="..\..\..\helper\src\office\xl_file.cpp" />
+    <ClCompile Include="..\..\..\helper\src\Openoffice\OOoHelper.cpp" />
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-utility.cpp" />
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-listgrid.cpp" />
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-sxbutton.cpp" />
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-treectrl.cpp" />
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-txbutton.cpp" />
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-txdialog.cpp" />
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-txhelper.cpp" />
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-txsliderctrl.cpp" />
+    <ClCompile Include="..\..\..\helper\src\mswin\mfc-txstatic.cpp" />
+    <ClCompile Include="..\..\..\helper\src\mswin\win32_utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\helper\src\net\paho.mqtt.c\src\VersionInfo.h.in" />
+    <None Include="..\..\..\helper\src\office\xldb-query_sample.xlsx" />
+    <None Include="..\..\..\helper\src\office\xlutility.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

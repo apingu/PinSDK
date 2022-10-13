@@ -1,0 +1,5 @@
+1) get UnxUtils
+2) run C:\Program Files (x86)\OpenOffice 4\sdk\setsdkenv_windows.bat
+3) ?身頝臬? ?? C:\Users\ping-wang\AppData\Roaming 鋆⊿ openoffice ??folder
+4) cppumaker -Gc -BUCR -O "C:/Program Files (x86)/OpenOffice 4/sdk/includecpp" "C:/Program Files (x86)/OpenOffice 4/program/types.rdb" "C:/Program Files (x86)/OpenOffice 4/program/offapi.rdb"  
+   cppumaker -Gc -BUCR -O "C:/Program Files (x86)/OpenOffice 4/sdk/includecpp" "C:/Program Files (x86)/OpenOffice 4/program/types.rdb"

@@ -1,0 +1,139 @@
+物件Configure檔 keyword
+
+共用
+	==> ID			+ 物件編號
+	==> GID			+ 物件群組編號      
+    ==> POSITION	+ 物件位置x,物件位置y,物件位置z
+    ==> RESIDNAME   + 物件名稱
+    ==> TEXT		+ 顯示文字 + t + b + l + r
+    ==> PLAYMODE + (0:連續播放, 1:立刻停止, 4:撥放至第N張後停止) + (第N張, -1代表最後一張)
+	==> ALPHA       + 數字(透明度)
+	==> LAYER       + 0~8數字(畫在第幾層)
+	==> DRAGABLE    + 0/1 (可不可以拖曳)
+	==> VISIBLE     + 0/1 (可不可以看見)
+	==> ENABLE      + 0/1 (可不可以看見)
+	==> EXPRESSION  + 注解文字
+	==> POPUPTYPE   + 0 正常 1 淡入淡出 2 縮放
+
+
+
+"DIALOG2D"
+    ==> LOADRES  + 資源路徑名稱
+    ==> AFONT    + Ascii文字檔名 + w + h + d + fmt + cache要不要打開文字的cache
+    ==> CFONT    + Big5文字檔名 + w + h + d + fmt + cache要不要打開文字的cache
+
+"2DSTATIC"
+"2DBUTTON"
+"2DCHECKBOX"
+"2DEDIT"
+"2DTEXTLIST"
+"2DAMIN"
+"2DRADIO"
+    ==> LOADRES  + 資源路徑名稱
+	==> LOADANM  + 動畫檔路徑名稱
+    ==> LOADHINTRES  + 顯示文字 註解
+    ==> LOADHINTANM  + 動畫檔名
+    ==> HINTSUBPOS   + 物件位置x,物件位置y,物件位置z(如果沒寫會用預設的 出現在 指向的上方)
+    
+
+    
+
+"2DPROGRESS"
+    ==> LOADPANELRES  + 資源路徑名稱
+    ==> LOADBARRES    + 資源路徑名稱
+    ==> LOADPANELANM  + 動作路徑名稱
+    ==> LOADBARANM    + 動作路徑名稱
+    ==> SETMAXSTEP    + 最大位置
+    ==> SETCURRSTEP   + 位置
+    
+"2DMENU"
+	==> 若要置入項目，請使用置入子元件的方式，請注意，置入的元件必需是button
+    
+"2DFREERECT"
+    ==> LOAD_LT  + LT
+    ==> LOAD_T   + T
+    ==> LOAD_RT  + RT
+    ==> LOAD_L   + L
+    ==> LOAD_R   + R
+    ==> LOAD_LB  + LB
+    ==> LOAD_B   + B
+    ==> LOAD_RB  + RB
+    ==> LOADRES  + 資源路徑名稱
+    
+    
+"2DMAP"
+    ==> LOADALPH + 遮罩檔名
+    ==> LOADRES  + 資源路徑名稱
+    
+    
+"2DITEMARRAY"
+    ==> ARRAY    + X + Y
+	==> ITEMSIZE + CX + CY
+    ==> LOADALLCELLRES + 組成物件要讀的資源檔案
+    ==> SPACE    + x的間隔 + y的間隔
+    ==> LOADRES  + 資源路徑名稱
+    ==> CELLDRAGABLE    + 0/1 (可不可以拖曳)
+    
+"2DSCROLL"
+    ==> LOAD_BAR     + 資源路徑名稱
+	==> LOAD_TbUP    + 資源路徑名稱
+	==> LOAD_UP      + 資源路徑名稱
+	==> LOAD_DOWN    + 資源路徑名稱
+	==> LOAD_TbDOWN  + 資源路徑名稱
+	==> LOAD_DIVIDER + 資源路徑名稱
+	==> MAXSTEP      + int
+		==> SCROLL_RECT  + top + bottom + left + right
+
+ 
+"2DRICHTEXT"
+	==> LOAD_TbUP    + 資源路徑名稱
+	==> LOAD_UP      + 資源路徑名稱
+	==> LOAD_BAR     + 資源路徑名稱
+	==> LOAD_DOWN    + 資源路徑名稱
+	==> LOAD_TbDOWN  + 資源路徑名稱
+	==> LOAD_DIVIDER + 資源路徑名稱
+    ==> LOAD_EDIT    + 資源路徑名稱
+	==> SCROLL_RECT  + top + bottom + left + right
+	==> POS_TbUP     + X + Y
+	==> POS_UP       + X + Y
+	==> POS_DOWN     + X + Y
+	==> POS_TbDOWN   + X + Y
+	==> POS_EDIT     + X + Y
+
+
+"2DTAB"
+	==> LOADIMAGE	+ 資源路徑名稱
+	==> ATTACHPAGE	+ 資源路徑名稱
+	==> 若要置入項目，請使用置入子元件的方式，請注意，置入的元件必需是button，然後再將其上的元件，
+		以子元件的方式置入
+	
+		
+"2DNUMBER"
+	==> LOADIMAGE	+ 資源路徑名稱
+	==> NUMBER      + 數字(預設數字直)
+
+
+
+
+///////////////////////////////////////////
+"IWidget2d"
+"Static2d"
+"Edit2d"
+"Button2d"
+"AminBtn2d"
+"CheckBox2d"
+"MsgBox2d"
+"Menu2d"
+
+
+"ItemArray2d"
+
+"Number2d"
+
+"Scroll2d"
+
+"RichText2d"
+"Progress2d"
+
+"Tab2d"
+"Page2d"

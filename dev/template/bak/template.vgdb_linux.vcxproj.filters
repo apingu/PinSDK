@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{01e353e6-6729-4f5a-9bfe-59aeff646dcf}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{b8fab188-436c-4012-928c-8e750a443e08}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{4a86d9c6-b28f-4b99-a483-9b5915f5a964}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{e2240dfc-a392-43b4-b908-31fa0e9d914a}</UniqueIdentifier>
+      <Extensions>*.mak</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="src\delist.inl">
+      <Filter>Header files</Filter>
+    </None>
+    <None Include="src\depthqueue.inl">
+      <Filter>Header files</Filter>
+    </None>
+    <None Include="src\dynarray.inl">
+      <Filter>Header files</Filter>
+    </None>
+    <None Include="src\grid.inl">
+      <Filter>Header files</Filter>
+    </None>
+    <None Include="src\mesh.inl">
+      <Filter>Header files</Filter>
+    </None>
+    <None Include="src\ptrdlist.inl">
+      <Filter>Header files</Filter>
+    </None>
+    <None Include="src\rndbox.inl">
+      <Filter>Header files</Filter>
+    </None>
+    <None Include="src\safevalue.inl">
+      <Filter>Header files</Filter>
+    </None>
+    <None Include="src\smartpointer.inl">
+      <Filter>Header files</Filter>
+    </None>
+    <None Include="src\tmap.inl">
+      <Filter>Header files</Filter>
+    </None>
+    <None Include="src\tridimension.inl">
+      <Filter>Header files</Filter>
+    </None>
+    <None Include="src\array.inl">
+      <Filter>Header files</Filter>
+    </None>
+    <None Include="src\array2d.inl">
+      <Filter>Header files</Filter>
+    </None>
+    <None Include="src\arraymap.inl">
+      <Filter>Header files</Filter>
+    </None>
+    <None Include="src\collectpool.inl">
+      <Filter>Header files</Filter>
+    </None>
+    <None Include="src\vmapl.inl">
+      <Filter>Header files</Filter>
+    </None>
+    <None Include="src\vmaps.inl">
+      <Filter>Header files</Filter>
+    </None>
+    <None Include="Template_vgdb_linux-Debug.vgdbsettings" />
+    <None Include="Template_vgdb_linux-Release.vgdbsettings" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Template.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Template.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

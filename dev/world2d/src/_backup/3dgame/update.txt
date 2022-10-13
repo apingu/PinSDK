@@ -1,0 +1,6 @@
+
+
+2003/3/6
+
+1.Add sprite type value
+2.Add world sky

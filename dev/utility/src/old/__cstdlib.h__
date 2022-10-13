@@ -1,0 +1,22 @@
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+#ifndef CSTDLIB_H
+#define CSTDLIB_H
+
+
+#define _catolli _atoi64
+
+
+
+#endif  //CSTDLIB_H

@@ -1,0 +1,49 @@
+/*****************************************************************************/
+// This function acts as the main loop update.
+static void Idle(void)
+{
+  static RwUInt32 lastFrameTime = RsTimer();
+
+  gLastTime = gCurrentTime;
+  gCurrentTime = RsTimer();
+  gDeltaTime = gCurrentTime - gLastTime;
+
+  // Has a second elapsed since we last updated the FPS...
+  if( gCurrentTime > (lastFrameTime + 1000) )
+  {
+    // Capture the frame counter...
+    sFramesPerSecond = sFrameCounter;
+    // ...and reset...
+    sFrameCounter = 0;
+    lastFrameTime = gCurrentTime;
+  }
+
+	  // Step game here
+  switch(gTaskState)
+  {
+  case TS_SPLASH:
+    StepSplash();
+		gLoadingStep = 0;
+    break;
+
+  case TS_INITGAME:
+    {
+      InitGameResult rval = InitializeGame(&gLoadingStep);
+      if(rval == IGR_FAILURE) RsEventHandler(rsQUITAPP, NULL);
+      else if(rval == IGR_COMPLETE) gTaskState = TS_CRITICAL;
+#ifndef NO_ZONA_NO 
+-->>		  netreceive();	// single thread, will enable multi thread in the future	
+#endif
+    }
+    break;
+
+  case TS_CRITICAL:
+#ifndef NO_ZONA_NO 
+-->>		netreceive();	// single thread, will enable multi thread in the future	
+#endif
+    StepGame();
+    break;
+  }
+
+  return;
+}

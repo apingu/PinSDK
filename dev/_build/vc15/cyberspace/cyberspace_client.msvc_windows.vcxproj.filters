@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{e15e741c-058b-4c9c-9f47-5bb4b84de122}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{ca3a01a9-e2ca-4aa3-ba8a-2f788c05823f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Command">
+      <UniqueIdentifier>{f33a586c-8a04-47ef-8ca5-4e24c53db012}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{d92133a5-550d-43df-bfa0-6df46aaa301d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Def">
+      <UniqueIdentifier>{141ea090-1d39-4ca0-b416-5d54d26f1d88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{b106c9d4-c78b-4540-bf63-abde86888ee1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client">
+      <UniqueIdentifier>{67b5df0f-5e8f-4665-81b6-6cacb24d186e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\cyberspace\src\CsPacketFactory.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\CsProtocol.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\MessageDispatcher.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\CsCoreClient.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\CsUnitClient.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\CsPacketClient.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cyberspace\src\CsObjDescriptor.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\cyberspace\src\CsDef.h">
+      <Filter>Def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\CsErr.h">
+      <Filter>Def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\CsBaseCommand.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\CsCommBuf.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\CsPacketFactory.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\CsProtocol.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\MessageDispatcher.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\CsCoreClient.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\CsUnitClient.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\CsPacketClient.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cyberspace\src\CsObjDescriptor.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

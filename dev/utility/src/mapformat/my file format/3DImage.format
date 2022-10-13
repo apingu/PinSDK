@@ -1,0 +1,18 @@
+.anm
+.dff
+.bsp
+
+
+
+.tri   trigger
+.bsp
+.sw    = bsp*n1--->earth
+         dff*n2--->building
+         tgr*n3--->trigger system
+         
+
+
+
+[ num of vertex( 4b )  ][ spaceVertices........... ]
+[ num of polygon( 4b ) ][ spacepolygon ........... ]
+

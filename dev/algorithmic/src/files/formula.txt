@@ -1,0 +1,6 @@
+Leonardo Fibonacci 1170--1250 
+
+a1=a2=1,an+2=an+an+1(Girard1634年) 
+
+an = 1/aqrt(5)[ ( ( (1+sqrt(5)) / 2 )^n - ( ( (1-sqrt(5)) / 2 )^n ]
+

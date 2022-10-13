@@ -1,0 +1,7 @@
+#define COMMAND_LOGIN               1
+#define COMMAND_LOGOUT              2
+#define COMMAND_GAMESTATE           3
+#define COMMAND_ENTERSPHERE         4
+#define COMMAND_EXITSPHERE          5
+#define COMMAND_RECEIVE_SESSIONID   6
+#define COMMAND_MYENTITYPROPERTIES  7

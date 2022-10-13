@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{09f234fd-c92d-42bb-9ca2-4d40ff5143c0}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{d7ef53d0-6a72-428d-84fb-79076de14fab}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{bae65e65-a601-4b16-9290-ed7f5093fb78}</UniqueIdentifier>
+      <Extensions>*.mak</Extensions>
+    </Filter>
+    <Filter Include="Helper">
+      <UniqueIdentifier>{cb94ec6a-ecd3-46b8-b685-17997435950d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{d48c61b7-da14-451a-9de4-e0a62e3d9785}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="NetSocket_vgdb_linux-Debug.vgdbsettings" />
+    <None Include="NetSocket_vgdb_linux-Release.vgdbsettings" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\NetHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NetSocket.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NetServer.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NetClient.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NetPeer.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NetRUDPSocket.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\NetHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EPollDef.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IOCPDef.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NetSocket.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unp.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NetServer.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NetClient.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NetPeer.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NetRUDPSocket.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,6 @@
+[pep 4bytes][file count (unsigned short)]
+            [status count (unsigned short)]
+                                            [status 1 count (unsigned short)][status 2 count (unsigned short)]......
+                                            [file 1 offset  ()][file 2 offset ()]......
+            
+          

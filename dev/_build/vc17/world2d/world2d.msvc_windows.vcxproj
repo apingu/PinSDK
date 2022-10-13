@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5A6FE12B-B721-4C10-B575-FE9065814623}</ProjectGuid>
+    <RootNamespace>World2d</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <ProjectName>world2d</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\include\;..\..\..\..\include\;..\..\..\world2d\src\utility\;..\..\..\world2d\src\render\;..\..\..\world2d\src\2dgame\;(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>$(IntDir)</BrowseInformationFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0404</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy /y                  ..\..\..\world2d\src\utility\game_def.h                          ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\utility\gene.h                             ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\utility\chessboard_def.h                   ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\utility\data_stream.h                       ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\utility\data_stream_def.h                        ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\anim2d.h                            ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\sprite2d.h                          ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\element2d.h                         ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\ui\*.h                              ..\..\..\..\include\game\ui
+copy /y                  ..\..\..\world2d\src\2dgame\earth\ientity2d.h                   ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\role2d.h                      ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\building2d.h                  ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\zone2d.h                      ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\terrain2d.h                   ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\camera2d.h                    ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\partical_system.h             ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\render2dex.h                  ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\vmc-render_def.h                    ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\ivmc-render.h                       ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\vmc-render2d.h                      ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\vmc-render3d.h                      ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\draw_node.h                         ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\text_node.h                         ..\..\..\..\include\game</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\include\;..\..\..\..\include\;..\..\..\world2d\src\utility\;..\..\..\world2d\src\render\;..\..\..\world2d\src\2dgame\;(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>$(IntDir)</BrowseInformationFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0404</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy /y                  ..\..\..\world2d\src\utility\game_def.h                          ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\utility\gene.h                             ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\utility\chessboard_def.h                   ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\utility\data_stream.h                       ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\utility\data_stream_def.h                        ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\anim2d.h                            ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\sprite2d.h                          ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\element2d.h                         ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\ui\*.h                              ..\..\..\..\include\game\ui
+copy /y                  ..\..\..\world2d\src\2dgame\earth\ientity2d.h                   ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\role2d.h                      ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\building2d.h                  ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\zone2d.h                      ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\terrain2d.h                   ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\camera2d.h                    ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\partical_system.h             ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\render2dex.h                  ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\vmc-render_def.h                    ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\ivmc-render.h                       ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\vmc-render2d.h                      ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\vmc-render3d.h                      ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\draw_node.h                         ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\text_node.h                         ..\..\..\..\include\game</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\include\;..\..\..\..\include\;..\..\..\world2d\src\utility\;..\..\..\world2d\src\render\;..\..\..\world2d\src\2dgame\;(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalOptions> /utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0404</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy /y                  ..\..\..\world2d\src\utility\game_def.h                          ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\utility\gene.h                             ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\utility\chessboard_def.h                   ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\utility\data_stream.h                       ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\utility\data_stream_def.h                        ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\anim2d.h                            ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\sprite2d.h                          ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\element2d.h                         ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\ui\*.h                              ..\..\..\..\include\game\ui
+copy /y                  ..\..\..\world2d\src\2dgame\earth\ientity2d.h                   ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\role2d.h                      ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\building2d.h                  ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\zone2d.h                      ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\terrain2d.h                   ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\camera2d.h                    ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\partical_system.h             ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\render2dex.h                  ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\vmc-render_def.h                    ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\ivmc-render.h                       ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\vmc-render2d.h                      ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\vmc-render3d.h                      ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\draw_node.h                         ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\text_node.h                         ..\..\..\..\include\game</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\include\;..\..\..\..\include\;..\..\..\world2d\src\utility\;..\..\..\world2d\src\render\;..\..\..\world2d\src\2dgame\;(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalOptions> /utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0404</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy /y                  ..\..\..\world2d\src\utility\game_def.h                          ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\utility\gene.h                             ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\utility\chessboard_def.h                   ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\utility\data_stream.h                       ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\utility\data_stream_def.h                        ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\anim2d.h                            ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\sprite2d.h                          ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\element2d.h                         ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\ui\*.h                              ..\..\..\..\include\game\ui
+copy /y                  ..\..\..\world2d\src\2dgame\earth\ientity2d.h                   ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\role2d.h                      ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\building2d.h                  ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\zone2d.h                      ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\terrain2d.h                   ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\camera2d.h                    ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\partical_system.h             ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\2dgame\earth\render2dex.h                  ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\vmc-render_def.h                    ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\ivmc-render.h                       ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\vmc-render2d.h                      ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\vmc-render3d.h                      ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\draw_node.h                         ..\..\..\..\include\game
+copy /y                  ..\..\..\world2d\src\render\text_node.h                         ..\..\..\..\include\game</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\world2d\src\2dgame\anim2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\earth\building2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\earth\camera2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\earth\doll.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\earth\ientity2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\earth\load_world.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\earth\load_zone.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\earth\partical_system.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\earth\render2dex.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\earth\role2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\earth\scene2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\earth\terrain2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\earth\topog2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\earth\zone2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\element2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\resource2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\sprite2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\ui\button2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\ui\dialog2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\ui\edit2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\ui\form2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\ui\itemarray2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\ui\iwidget2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\ui\loaddialog.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\ui\menu2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\ui\msgbox2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\ui\number2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\ui\progress2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\ui\richtext2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\ui\scroll2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\ui\static2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\2dgame\ui\tab2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\render\text_node.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\render\vmc-render2d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\render\vmc-render3d.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\utility\chessboard.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\utility\data_stream.cpp" />
+    <ClCompile Include="..\..\..\world2d\src\utility\entity_pool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\algorithmic\..\..\..\world2d\src\algorithmic.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\anim2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\earth\avataritems.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\earth\avatarorder.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\earth\building2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\earth\camera2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\earth\doll.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\earth\ientity2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\earth\partical_system.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\earth\render2dex.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\earth\role2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\earth\scene2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\earth\terrain2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\earth\topog2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\earth\zone2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\element2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\resource2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\sprite2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\ui\aminbtn2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\ui\button2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\ui\dialog2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\ui\edit2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\ui\form2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\ui\itemarray2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\ui\iwidget2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\ui\menu2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\ui\messagebox2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\ui\msgbox2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\ui\number2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\ui\progress2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\ui\richtext2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\ui\scroll2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\ui\static2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\2dgame\ui\tab2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\render\draw_node.h" />
+    <ClInclude Include="..\..\..\world2d\src\render\ivmc-render.h" />
+    <ClInclude Include="..\..\..\world2d\src\render\text_node.h" />
+    <ClInclude Include="..\..\..\world2d\src\render\vmc-render2d.h" />
+    <ClInclude Include="..\..\..\world2d\src\render\vmc-render3d.h" />
+    <ClInclude Include="..\..\..\world2d\src\render\vmc-render_def.h" />
+    <ClInclude Include="..\..\..\world2d\src\utility\chessboard.h" />
+    <ClInclude Include="..\..\..\world2d\src\utility\chessboard_def.h" />
+    <ClInclude Include="..\..\..\world2d\src\utility\data_stream.h" />
+    <ClInclude Include="..\..\..\world2d\src\utility\entity_pool.h" />
+    <ClInclude Include="..\..\..\world2d\src\utility\game_def.h" />
+    <ClInclude Include="..\..\..\world2d\src\utility\resourcemgr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\world2d\readme.txt" />
+    <Text Include="..\..\..\world2d\src\2dgame\ui\keyword.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

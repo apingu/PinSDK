@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C63716F5-2BAB-49EE-87F9-92D15BAC8B97}</ProjectGuid>
+    <RootNamespace>netsocket</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <ProjectName>netsocket</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)$(BaseIntermediateOutputPath)$(ProjectName)</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\netsocket\src\msquic\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>QUIC_EVENTS_MANIFEST_TSBU;QUIC_LOGS_MANIFEST_TSUB;QUIC_TELEMETRY_ASSERTS=1;SECURITY_KERNEL;SECURITY_WIN32;QUIC_EVENTS_STUB;QUIC_LOGS_STUB;_WINDOWS;_LIB;WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalOptions> /utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0404</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy /y     ..\..\..\netsocket\src\unp.h          ..\..\..\..\include\net
+copy /y     ..\..\..\netsocket\src\net-socket.h    ..\..\..\..\include\net
+copy /y     ..\..\..\netsocket\src\net-server.h    ..\..\..\..\include\net
+copy /y     ..\..\..\netsocket\src\net-client.h    ..\..\..\..\include\net
+copy /y     ..\..\..\netsocket\src\net-peer.h      ..\..\..\..\include\net</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\netsocket\src\msquic\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>QUIC_EVENTS_MANIFEST_TSBU;QUIC_LOGS_MANIFEST_TSUB;QUIC_TELEMETRY_ASSERTS=1;SECURITY_KERNEL;SECURITY_WIN32;QUIC_EVENTS_STUB;QUIC_LOGS_STUB;_WINDOWS;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalOptions> /utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0404</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy /y     ..\..\..\netsocket\src\unp.h          ..\..\..\..\include\net
+copy /y     ..\..\..\netsocket\src\net-socket.h    ..\..\..\..\include\net
+copy /y     ..\..\..\netsocket\src\net-server.h    ..\..\..\..\include\net
+copy /y     ..\..\..\netsocket\src\net-client.h    ..\..\..\..\include\net
+copy /y     ..\..\..\netsocket\src\net-peer.h      ..\..\..\..\include\net</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\netsocket\src\msquic\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>QUIC_EVENTS_MANIFEST_TSBU;QUIC_LOGS_MANIFEST_TSUB;QUIC_TELEMETRY_ASSERTS=1;SECURITY_KERNEL;SECURITY_WIN32;QUIC_EVENTS_STUB;QUIC_LOGS_STUB;_WINDOWS;_LIB;WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>$(IntDir)</BrowseInformationFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0404</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy /y     ..\..\..\netsocket\src\unp.h          ..\..\..\..\include\net
+copy /y     ..\..\..\netsocket\src\net-socket.h    ..\..\..\..\include\net
+copy /y     ..\..\..\netsocket\src\net-server.h    ..\..\..\..\include\net
+copy /y     ..\..\..\netsocket\src\net-client.h    ..\..\..\..\include\net
+copy /y     ..\..\..\netsocket\src\net-peer.h      ..\..\..\..\include\net</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\netsocket\src\msquic\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>QUIC_EVENTS_MANIFEST_TSBU;QUIC_LOGS_MANIFEST_TSUB;QUIC_TELEMETRY_ASSERTS=1;SECURITY_KERNEL;SECURITY_WIN32;QUIC_EVENTS_STUB;QUIC_LOGS_STUB;_WINDOWS;_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>$(IntDir)</BrowseInformationFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0404</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy /y     ..\..\..\netsocket\src\unp.h          ..\..\..\..\include\net
+copy /y     ..\..\..\netsocket\src\net-socket.h    ..\..\..\..\include\net
+copy /y     ..\..\..\netsocket\src\net-server.h    ..\..\..\..\include\net
+copy /y     ..\..\..\netsocket\src\net-client.h    ..\..\..\..\include\net
+copy /y     ..\..\..\netsocket\src\net-peer.h      ..\..\..\..\include\net</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\netsocket\project.h" />
+    <ClInclude Include="..\..\..\netsocket\src\epoll-def.h" />
+    <ClInclude Include="..\..\..\netsocket\src\iocp-def.h" />
+    <ClInclude Include="..\..\..\netsocket\src\kcp\ikcp.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\ack_tracker.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\api.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\binding.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\cid.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\configuration.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\congestion_control.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\connection.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\crypto.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\cubic.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\datagram.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\frame.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\library.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\listener.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\lookup.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\loss_detection.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\mtu_discovery.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\operation.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\packet.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\packet_builder.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\packet_space.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\path.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\precomp.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\quicdef.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\range.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\recv_buffer.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\registration.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\send.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\send_buffer.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\sent_packet_metadata.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\settings.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\stream.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\stream_set.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\timer_wheel.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\transport_params.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\version_neg.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\core\worker.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\msquic.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\msquic.hpp" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\msquichelper.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\msquicp.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\msquic_fuzz.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\msquic_posix.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\msquic_winkernel.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\msquic_winuser.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_cert.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_crypt.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_datapath.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_driver_helpers.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_hashtable.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_pcp.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_platform.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_platform_posix.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_platform_winkernel.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_platform_winuser.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_sal_stub.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_storage.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_tls.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_toeplitz.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_trace.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_trace_manifested_etw.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_var_int.h" />
+    <ClInclude Include="..\..\..\netsocket\src\msquic\inc\quic_versions.h" />
+    <ClInclude Include="..\..\..\netsocket\src\net-client.h" />
+    <ClInclude Include="..\..\..\netsocket\src\net-helper.h" />
+    <ClInclude Include="..\..\..\netsocket\src\net-peer.h" />
+    <ClInclude Include="..\..\..\netsocket\src\net-rudp_socket.h" />
+    <ClInclude Include="..\..\..\netsocket\src\net-server.h" />
+    <ClInclude Include="..\..\..\netsocket\src\net-socket.h" />
+    <ClInclude Include="..\..\..\netsocket\src\unp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\netsocket\src\kcp\ikcp.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\ack_tracker.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\api.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\binding.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\configuration.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\congestion_control.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\connection.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\crypto.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\crypto_tls.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\cubic.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\datagram.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\frame.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\injection.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\inline.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\library.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\listener.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\lookup.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\loss_detection.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\mtu_discovery.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\operation.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\packet.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\packet_builder.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\packet_space.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\path.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\range.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\recv_buffer.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\registration.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\send.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\send_buffer.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\sent_packet_metadata.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\settings.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\stream.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\stream_recv.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\stream_send.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\stream_set.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\timer_wheel.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\version_neg.c" />
+    <ClCompile Include="..\..\..\netsocket\src\msquic\core\worker.c" />
+    <ClCompile Include="..\..\..\netsocket\src\net-client.cpp" />
+    <ClCompile Include="..\..\..\netsocket\src\net-helper.cpp" />
+    <ClCompile Include="..\..\..\netsocket\src\net-peer.cpp" />
+    <ClCompile Include="..\..\..\netsocket\src\net-rudp_socket.cpp" />
+    <ClCompile Include="..\..\..\netsocket\src\net-server.cpp" />
+    <ClCompile Include="..\..\..\netsocket\src\net-socket.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\netsocket\readme.txt" />
+    <Text Include="..\..\..\netsocket\src\msquic\readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

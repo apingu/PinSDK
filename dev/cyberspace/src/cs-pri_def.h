@@ -1,0 +1,21 @@
+//
+//
+// 只給內部用的 放在邊
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//////////////////////////////////////////////////////////////////////////
+
+#pragma once
+
+#include "cs-abtp_pr_socket.h"
+#include "cs-abtp_cn_socket.h"
+#include "cs-entity_def.h"

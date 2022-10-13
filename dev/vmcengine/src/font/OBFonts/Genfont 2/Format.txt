@@ -1,0 +1,99 @@
+=======================
+Yann Bitmap Font Format
+=======================
+
+Each bitmap font file is composed of a sequence of raw character bitmap
+images with no header and no compression.
+
+There are two formats of character bitmap images. One format images only
+appear in one font file.
+
+Usually, the filename of Format 0 will be end with "0" and Format 1 will
+be end with "1".
+
+Naming Conventions:
+
+B5 -> Traditional Chinese Big5 encoding
+GB -> Simplified Chinese GB2312 encoding
+JI -> Japanese SJIS encoding
+KC -> Korean KCS encoding
+
+M  -> Ming Te
+H  -> Hei Te
+K  -> Kai Su
+S  -> Song Te
+P  -> POP
+W  -> WaWa Te
+
+B5M16.F0 : means Chinese Big5 encoding sequence (aka. start at 0xA140)
+                 MingTe
+                 16x16 pixels
+                 in Format 0
+
+GBH14.F1 : means Chinese GB2312 encoding sequence
+                 HeiTe
+                 14x14 pixels
+                 in Format 1
+
+E1014.F0V: means English ASCII encoding sequence (0x20~0x7F)
+                 Stardard font
+                 10(Maximum)x14 pixels
+                 in format 0 with variable pitch prefixed
+
+
+
+[ FORMAT 0 ]
+
+    Each character bitmap image is structured by a sequence of scanlines
+    starting from top to bottom with one bit per pixel.
+
+    A bit is set means there is a visible pixel.
+
+    Size of each bitmap character image:
+
+    total in pixels = (pixels of width) * (pixels of height)
+    total in bytes  = (total in pixels + 7) / 8
+
+    Example: 
+
+    A 14x14 pixel character bitmap image is a size of 25 bytes.
+    There are 14 scanlines each is 14 bits long for this bitmap
+    but with at least 4 bits of no use. 
+
+    14 * 14 + 4 = 200 = 25 * 8
+
+
+
+[ FORMAT 1 ]
+
+    Most the same with Format 0 but this is 4 bits per pixel.
+
+    4 bits is a value 0-15 means the alpha value of a visible pixel.
+    
+            (font color) * alpha   (dest pixel color) * (15 - alpha)
+    pixel =[-------------------- + ----------------------------------]
+                      15                          15
+             
+    Size of each bitmap character image:
+
+    total in pixels = (pixels of width) * (pixels of height)
+    total in bytes  = total in pixels
+
+
+
+[ Variable picth prefixed ]
+
+    This is for English visible ASCII (96s:0x20~0x7F) characters only.
+    They are base on Format 1 or 2 but specified with 96 bytes prefixed
+    for the width of each character image continued. It means each 
+    character can has itself width.
+
+    [96 unsigned bytes][96 bitmap images of format 1 or format 2]
+
+    Each unsigned byte is a width of relative character. The valid
+    value is 1 ~ 255.
+
+
+
+--Yann 11/14/1999 released
+--Yann 12/06/1999 fixed

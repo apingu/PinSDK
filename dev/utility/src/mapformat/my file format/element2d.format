@@ -1,0 +1,12 @@
+<ELEMENT>
+    <DATA>
+        LOAD = 
+    </DATA>
+    <ACTION>
+        ID = 
+        LOAD = 
+    </ACTION>
+    <IMAGE>
+        LOAD = 
+    </IMAGE>
+</ELEMENT>

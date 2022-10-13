@@ -1,0 +1,279 @@
+作業繳交期限: 1:00pm, 12/6/2000
+撰寫一Java程式可自檔案內讀取矩陣運算的指令, 並呼叫下面的矩陣類別來做運算, 其範例與界面如下(請注意每一個class都應分別存放在同名的.java檔案內): 
+public class RunMatrix {
+    private static String nextToken(Reader din) throws IOException {
+        StringBuffer sb = new StringBuffer();
+        int c;
+        try {
+            do {
+                c = (char)din.read();
+            } while (c==' ' || c=='\n' || c=='\r' || c=='\t');
+            while (c!=-1 && c!=' ' && c!='\n' && c!='\t' && c!='\r') {
+                sb.append((char)c);
+                c = din.read();
+            }
+        } catch (EOFException e) {
+        }
+        if (sb.length()==0) {
+            return "";
+        }
+        return sb.toString();
+    }
+
+    private static double[][] readMatrix(Reader din) throws MalMatrixException, IOException {
+        String token = nextToken(din);
+        int x, y;
+        double[][] data;
+        if (!token.equals("matrix")) {
+            throw new MalMatrixException();
+        }
+        token = nextToken(din);
+        try {
+            x = Integer.parseInt(token);
+        } catch (NumberFormatException eNum) {
+            throw new MalMatrixException();
+        }
+        token = nextToken(din);
+        try {
+            y = Integer.parseInt(token);
+        } catch (NumberFormatException eNum) {
+            throw new MalMatrixException();
+        }
+        data = new double[x][y];
+        for (int i=0; i< x; i++) {
+            for (int j=0; j< y; j++) {
+                try {
+                    token = nextToken(din);
+                    data[i][j] = Double.valueOf(token).doubleValue();
+                } catch (NumberFormatException eNum) {
+                    throw new MalMatrixException();
+                }
+            }
+        }
+        return data;
+    }
+
+    public static void main(String[] args) {
+        BufferedReader din;
+        if (args.length != 1) {
+            System.out.println("Usage: java RunMatrix filename");
+            System.out.println("where filename is a file contains matrix data.");
+            System.exit(0);
+        }
+        try {
+            String inputbuf;
+            din = new BufferedReader(new FileReader(args[0]));
+            for (;!(inputbuf=nextToken(din)).equals("");) {
+                if (inputbuf.equals("+")) {
+                    Matrix a = new Matrix(readMatrix(din))
+                    a.print();
+                    System.out.println("+");
+                    Matrix b = new Matrix(readMatrix(din));
+                    b.print();
+                    System.out.println("=");
+                    a.add(b).print();
+                    System.out.println("");
+                } else if (inputbuf.equals("*")) {
+                    // fill it
+                } else if (inputbuf.equals("determinant")) {
+                    // fill it
+                } else {
+                    break;
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.exit(1);
+        }
+    }
+}
+
+public class MalMatrixException extends Exception {
+    public MalMatrixException() {
+        super("MalMatrixException:");
+    }
+}
+
+public class Matrix {
+    public Matrix(double[][] x);
+    public Matrix add(Matrix x) throws MalMatrixException;
+    public Matrix multiply(Matrix x) throws MalMatrixException;
+    public void print();
+    public double determinant() throws MalMatrixException;
+    public double[] solution() throws MalMatrixException;
+    public Matrix inverse() throws MalMatrixException;
+}
+
+其中 
+add(Matrix x)將x與此矩陣相加, 傳回一新矩陣. 若兩矩陣大小不相等則產生MalMatrixException. 
+multiply(Matrix x)將此矩陣和x相乘, 傳回結果. 若兩矩陣之大小無法相乘, 則產生MalMatrixException. 
+determinant()求矩陣值. 若該矩陣非n*n, 則產生MalMatrixException. 
+solution()求n元一次方程式的解, 限用高斯消去法, 若該矩陣非n*(n+1), 則產生MalMatrixException. 若該矩陣無解則傳回null. 
+print()將該矩陣列印在螢幕上. 
+inverse()求該矩陣之反矩陣. 若該矩陣不為正方形則產生MalMatrixException, 若該矩陣之反矩陣不存在則傳回null. 
+資料檔之範例如下: 
++
+matrix 3 3
+1 2 3
+4 5 6
+7 8 9
+matrix 3 3
+1 2 3
+4 5 6
+7 8 9
+*
+matrix 2 3
+1 0 0
+0 1 0
+matrix 3 2
+0 0
+1 1 
+0 0
+determinant
+matrix 4 4
+2 3 4 10
+9 32 2 11
+3 2 3 4
+12 0 8 1
+solution
+matrix 4 5
+1 0 0 0 1
+0 1 0 0 2
+0 0 1 0 3
+0 0 0 1 4
+inverse
+matrix 3 3 
+1 0 0
+0 1 0
+0 0 1
+
+>執行java RunMatrix data
+
+則應產生類似下列的結果 
+1.0 2.0 3.0
+4.0 5.0 6.0
+7.0 8.0 9.0
++
+1.0 2.0 3.0
+4.0 5.0 6.0
+7.0 8.0 9.0
+=
+2.0 4.0 6.0
+8.0 10.0 12.0
+14.0 16.0 18.0
+
+1.0 0.0 0.0
+0.0 1.0 0.0
+*
+0.0 0.0
+1.0 1.0
+0.0 0.0
+=
+0.0 0.0
+1.0 1.0
+
+determinant of
+2.0 3.0 4.0 10.0
+9.0 32.0 2.0 11.0
+3.0 2.0 3.0 4.0
+12.0 0.0 8.0 1.0
+=
+-626.9999999999987
+
+solution of
+1.0 0.0 0.0 0.0 1.0
+0.0 1.0 0.0 0.0 2.0
+0.0 0.0 1.0 0.0 3.0
+0.0 0.0 0.0 1.0 4.0
+=
+1.0 2.0 3.0 4.0
+
+inverse of
+1.0 0.0 0.0
+0.0 1.0 0.0
+0.0 0.0 1.0
+=
+1.0 0.0 0.0
+0.0 1.0 0.0
+0.0 0.0 1.0
+
+Matrix.java的範例程式如下: 
+/**
+ * FileName: Matrix.java
+ * Author:   Shiuh-Sheng Yu
+ * Date:     3/17/1998
+ * Last Update: 3/17/1998
+ */
+public class Matrix {
+    private double[][] data;
+
+    public Matrix(double[][] array) {
+        data = array;
+    }
+
+    private Matrix(int x, int y) {
+        data = new double[x][y];
+    }
+
+    /**
+     *  複製物件
+     */
+    public Object clone() {
+        double[][] x = new double[data.length][data[0].length];
+        for (int i=0; i < x.length; i++) {
+            for (int j=0; j < x[0].length; j++) {
+                x[i][j] = data[i][j];
+            }
+        }
+        return new Matrix(x);
+    }
+
+    /**
+     * 矩陣加法
+     */
+    public Matrix add(Matrix x) throws MalMatrixException {
+        /* 判斷兩矩陣是否同樣大小 */
+        if (data.length != x.data.length || data[0].length != x.data[0].length) {
+            throw new MalMatrixException(); // 丟出例外
+        }
+        Matrix rel = (Matrix)this.clone(); // 先將this物件複製到rel
+        for (int i=0; i < data.length; i++) {
+            for (int j=0; j < data[0].length; j++) {
+                rel.data[i][j] += x.data[i][j];
+            }
+        }
+        return rel;
+    }
+    /**
+     * 矩陣相乘
+     */
+    public Matrix multiply(Matrix x) throws MalMatrixException {
+        //deleted
+    }
+
+    /**
+     * 將矩陣內容印到螢幕上
+     */
+    public void print() {
+        for (int i=0; i < data.length; i++) {
+            for (int j=0; j < data[0].length; j++) {
+                System.out.print(data[i][j]+" ");
+            }
+            System.out.println("");
+        }
+    }
+
+    /**
+     * 高斯消去法求行列式值
+     */
+    public double determinant() throws MalMatrixException {
+        // deleted
+    }
+    public double[] solution() throws MalMatrixException {
+        // deleted
+    }
+    public Matrix inverse() throws MalMatrixException {
+        // deleted
+    }
+}
+

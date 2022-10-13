@@ -1,0 +1,77 @@
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//    message class for network
+//
+//
+//
+//
+//                                               Copyright    (C)    2001    Pin
+//
+#ifndef TMESSAGE_H
+#define TMESSAGE_H
+
+#include "pdef.h"
+#include "PBuffer.h"
+
+namespace MEM
+{
+    class Message : private Buffer
+    {
+    public:
+
+        Message()
+        {
+            m_buf = NULL; m_len = 0;
+        }
+        ~Message()
+        {
+            Release();
+        }
+
+        Pbyte* buf()
+        {
+            return ( Pbyte * ) m_buf;
+        }
+
+        Puint size()
+        {
+            return m_len;
+        }
+
+        void put( Pbyte* msg, Puint Size )
+        {
+            m_len = Size;
+            m_buf = msg;
+        }
+
+        Puint get( Pbyte* msg )
+        {
+            msg = ( Pbyte * ) m_buf;
+            return m_len;
+        }
+
+        void New( Pbyte* msg, Puint Size )
+        {
+            m_len = Size;
+            m_buf = new Pbyte[ m_len ];
+            memcpy( m_buf, msg, m_len );
+        }
+
+        void Release( void )
+        {
+            m_len = 0; 
+            if( m_buf != NULL )
+                delete [] m_buf;
+            m_buf = NULL;
+        }
+    };
+};
+
+#endif

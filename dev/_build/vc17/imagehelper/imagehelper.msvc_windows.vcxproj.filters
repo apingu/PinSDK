@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\imagehelper\src\image_processer.cpp">
+      <Filter>ImageProcesser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\imagehelper\src\batch_convert.cpp">
+      <Filter>image format\pin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\imagehelper\src\convert_pelm.cpp">
+      <Filter>image format\pin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\imagehelper\src\convert_pin_2_elem.cpp">
+      <Filter>image format\pin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\imagehelper\src\convert_pin_2_pinz.cpp">
+      <Filter>image format\pin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\imagehelper\src\convert_tga_2_pin.cpp">
+      <Filter>image format\pin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\imagehelper\src\covnert_bmp_2_pin.cpp">
+      <Filter>image format\pin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\imagehelper\src\covnert_psd_2_form.cpp">
+      <Filter>image format\pin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\imagehelper\src\save_anim.cpp">
+      <Filter>image format\pin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\imagehelper\src\save_elem.cpp">
+      <Filter>image format\pin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\imagehelper\src\save_pin.cpp">
+      <Filter>image format\pin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\imagehelper\src\write_pin_extra_data.cpp">
+      <Filter>image format\pin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\imagehelper\src\convert_func.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\imagehelper\src\image_helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\imagehelper\src\load_tga.cpp">
+      <Filter>image format\tga</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\imagehelper\src\load_psd.cpp">
+      <Filter>image format\psd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\imagehelper\src\lode_png.cpp">
+      <Filter>image format\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\imagehelper\src\load_bmp.cpp">
+      <Filter>image format\bmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\imagehelper\src\save_bmp.cpp">
+      <Filter>image format\bmp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\imagehelper\src\jpeglib.h">
+      <Filter>image format\jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\imagehelper\src\image_processer.h">
+      <Filter>ImageProcesser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\imagehelper\src\batch_convert.h">
+      <Filter>image format\pin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\imagehelper\src\convert_image.h">
+      <Filter>image format\pin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\imagehelper\src\save_anim.h">
+      <Filter>image format\pin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\imagehelper\src\save_elem.h">
+      <Filter>image format\pin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\imagehelper\src\save_pin.h">
+      <Filter>image format\pin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\imagehelper\src\write_pin_extra_data.h">
+      <Filter>image format\pin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\imagehelper\src\image_helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\imagehelper\src\convert_func.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\imagehelper\src\load_tga.h">
+      <Filter>image format\tga</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\imagehelper\src\load_psd.h">
+      <Filter>image format\psd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\imagehelper\src\lode_png.h">
+      <Filter>image format\png</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\imagehelper\src\load_bmp.h">
+      <Filter>image format\bmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\imagehelper\src\save_bmp.h">
+      <Filter>image format\bmp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{40b21c43-5ca6-47a1-8136-595e13ae2b66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4a248701-79b8-4374-976b-385261fa1d12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImageProcesser">
+      <UniqueIdentifier>{e9ce83ca-a704-410a-9c6f-6d3e8ea5a0d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="image format">
+      <UniqueIdentifier>{7f9b9b1d-cf78-4950-930d-80b765b31e51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="image format\jpeg">
+      <UniqueIdentifier>{e537e6af-0ae5-40da-9dfc-d2c0f42093f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="image format\pin">
+      <UniqueIdentifier>{1bf978ff-00f2-481b-9e58-289d4e3a67d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="image format\png">
+      <UniqueIdentifier>{c6593d09-3e9f-4e97-94dc-2165bc671895}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="image format\psd">
+      <UniqueIdentifier>{21abf226-f727-420c-8bab-b302f75af09a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="image format\tga">
+      <UniqueIdentifier>{fdf78476-d687-4ef2-9f4e-389482b55f00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="image format\bmp">
+      <UniqueIdentifier>{daf9ceb5-b77f-4ea5-823c-125bd04359d2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\imagehelper\src\jpeg.lib">
+      <Filter>image format\jpeg</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\imagehelper\readme.txt" />
+  </ItemGroup>
+</Project>

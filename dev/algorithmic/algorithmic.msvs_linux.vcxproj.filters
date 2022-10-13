@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\cryptology.cpp">
+      <Filter>cryptology</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ob_path_search.cpp">
+      <Filter>path finding</Filter>
+    </ClCompile>
+    <ClCompile Include="src\uri.cpp">
+      <Filter>uri</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypt-crc32.cpp">
+      <Filter>crc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypt-crc64.cpp">
+      <Filter>crc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypt-aes.cpp">
+      <Filter>aes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypt-md5.cpp">
+      <Filter>md5</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypt-base64.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypt-base32.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\cryptology.h">
+      <Filter>cryptology</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ob_path_search.h">
+      <Filter>path finding</Filter>
+    </ClInclude>
+    <ClInclude Include="src\path_search.h">
+      <Filter>path finding</Filter>
+    </ClInclude>
+    <ClInclude Include="src\uri.h">
+      <Filter>uri</Filter>
+    </ClInclude>
+    <ClInclude Include="project.h">
+      <Filter>00%29 configure</Filter>
+    </ClInclude>
+    <ClInclude Include="src\crypt-crc_common.h">
+      <Filter>crc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\crypt-crc32.h">
+      <Filter>crc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\crypt-crc64.h">
+      <Filter>crc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\crypt-aes.h">
+      <Filter>aes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\crypt-md5.h">
+      <Filter>md5</Filter>
+    </ClInclude>
+    <ClInclude Include="src\crypt-base64.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\crypt-base32.h">
+      <Filter>base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\example.txt">
+      <Filter>00%29 configure</Filter>
+    </Text>
+    <Text Include="readme.txt">
+      <Filter>00%29 configure</Filter>
+    </Text>
+    <Text Include="src\crypt-crc_readme.txt">
+      <Filter>crc</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="aes">
+      <UniqueIdentifier>{ffc9deae-5901-4fa7-93b7-0de2e0f3bc8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{1e772162-8ab5-4952-8ebe-aa6b38e570a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crc">
+      <UniqueIdentifier>{49029be6-8147-40f5-abea-c63fe4a34d17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="md5">
+      <UniqueIdentifier>{ea6e05a0-5c66-47fe-af97-58347ed13142}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="path finding">
+      <UniqueIdentifier>{16ea18fd-3d3c-46ca-baf4-77c31aa54345}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="uri">
+      <UniqueIdentifier>{adb5b3b8-facf-4af4-8aba-24fe9a55abd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00%29 configure">
+      <UniqueIdentifier>{553139ef-e32b-4a5e-93ba-13f544592365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cryptology">
+      <UniqueIdentifier>{ac8ba6d9-a208-430c-9fbe-c972dd5bd12e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build_linux.sh">
+      <Filter>00%29 configure</Filter>
+    </None>
+  </ItemGroup>
+</Project>

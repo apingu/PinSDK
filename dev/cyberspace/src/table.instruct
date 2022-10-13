@@ -1,0 +1,6 @@
+LG(number, username, password, ipaddress)
+ED()
+TS(32bytes)
+TI(time)
+TA(string)
+TK(string)

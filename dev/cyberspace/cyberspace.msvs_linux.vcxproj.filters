@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{51f12b52-96c9-4fec-918b-cc6e54d1a5bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{dd63cc66-53d9-4082-b914-d328829b074b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arbitration">
+      <UniqueIdentifier>{c430a6f1-e58d-4c75-9599-f1bef341bd5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{423e19f5-7c8d-4d7c-a747-10bfd48ef131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="database">
+      <UniqueIdentifier>{3cb94d9b-2f15-4715-ae6f-5e3ef33319fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scs">
+      <UniqueIdentifier>{60353b70-ee47-4865-a969-e3bfaca5a095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server">
+      <UniqueIdentifier>{e581aa6b-986c-4934-b5dd-add5402b5ee8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service">
+      <UniqueIdentifier>{a598d429-ff29-4acb-9829-abf3d7c965a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server\paper">
+      <UniqueIdentifier>{f92be709-80be-4f5f-bf7d-54412a11cfc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server\http">
+      <UniqueIdentifier>{e9f5de11-9242-4bd8-a035-c23defdeb2e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\socket">
+      <UniqueIdentifier>{8605f1e4-6245-4e78-ac2e-44937ec57971}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\socket\packet">
+      <UniqueIdentifier>{c7fafb9b-19c0-4dfa-98dc-efa24d6582c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{e23e9295-2568-4a2b-84b1-a1792bc69761}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00%29 configure">
+      <UniqueIdentifier>{ed72dfc5-24a8-4a9c-ade4-90d7e9807b65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server\http\http_session">
+      <UniqueIdentifier>{974beef6-ad66-45be-9034-0179bf60ffff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\cs-arbitration_client.cpp">
+      <Filter>arbitration</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cs-arbitration_server.cpp">
+      <Filter>arbitration</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cs-protocol.cpp">
+      <Filter>core\socket\packet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cs-packet_factory.cpp">
+      <Filter>core\socket\packet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cs-paper_system.cpp">
+      <Filter>server\paper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cs-record.cpp">
+      <Filter>server\paper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cs-paper_client.cpp">
+      <Filter>server\paper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cs-paper_server.cpp">
+      <Filter>server\paper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cs-scs-system.cpp">
+      <Filter>scs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cs-http_client.cpp">
+      <Filter>server\http</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cs-http_server.cpp">
+      <Filter>server\http</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cs-abtp_cn_socket.cpp">
+      <Filter>core\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cs-abtp_pr_socket.cpp">
+      <Filter>core\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cs-helper.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cs-database_service.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cs-log_file_service.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cs-json.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cs-log_file_exporter.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cs-obj_descriptor.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cs-core_server.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\cs-arbitration_client.h">
+      <Filter>arbitration</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-arbitration_delegate.h">
+      <Filter>arbitration</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-arbitration_server.h">
+      <Filter>arbitration</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-protocol.h">
+      <Filter>core\socket\packet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-packet_factory.h">
+      <Filter>core\socket\packet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-err.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-record.h">
+      <Filter>server\paper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-paper_client.h">
+      <Filter>server\paper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-paper_server.h">
+      <Filter>server\paper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-scs-system.h">
+      <Filter>scs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-scs-system_delegate.h">
+      <Filter>scs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-http_client.h">
+      <Filter>server\http</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-http_server.h">
+      <Filter>server\http</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-abtp_cn_socket.h">
+      <Filter>core\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-abtp_pr_socket.h">
+      <Filter>core\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-if_socket.h">
+      <Filter>core\socket\packet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-if_session.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-arbit_command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-base_command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-entity_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-paper_command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-helper.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-utility.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-paper_system.h">
+      <Filter>server\paper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-database_service.h">
+      <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-pri_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-scs_command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-db_function_game.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-db_function_game_model.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-db_query_game.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-db_query_game_model.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-log_file_service.h">
+      <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-json.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-uid_generator.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-db_cfg_reader.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-log_file_exporter.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-obj_descriptor.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="project.h">
+      <Filter>00%29 configure</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-http_cn_session.h">
+      <Filter>server\http\http_session</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-core_server.h">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-db_query_def.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-db_query_base.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cs-db_function_base.h">
+      <Filter>database</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build_linux.sh">
+      <Filter>00%29 configure</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt">
+      <Filter>00%29 configure</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

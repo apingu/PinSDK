@@ -1,0 +1,235 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 1\r\n"
+    "#pragma code_page(950)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\GenFont.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.cht\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\GenFont.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GENFONT_DIALOG DIALOGEX 0, 0, 300, 339
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "GenFont v2.0"
+FONT 9, "新細明體"
+BEGIN
+    EDITTEXT        IDC_EDIT_FACENAME,51,21,95,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "字寬:",IDC_STATIC,20,41,19,8
+    EDITTEXT        IDC_EDIT_WIDTH,51,39,35,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "字高:",IDC_STATIC,20,59,19,8
+    EDITTEXT        IDC_EDIT_HEIGHT,51,57,35,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Spin1",IDC_SPIN_HEIGHT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,89,57,11,
+                    14
+    LTEXT           "粗細:",IDC_STATIC,20,77,19,8
+    EDITTEXT        IDC_EDIT_WEIGHT,51,75,35,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Spin1",IDC_SPIN_WEIGHT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,89,75,11,
+                    14
+    LTEXT           "字集:",IDC_STATIC,20,96,19,8
+    EDITTEXT        IDC_EDIT_CHARSET,51,93,35,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "精確:",IDC_STATIC,20,115,19,8
+    EDITTEXT        IDC_EDIT_OUTPRECISION,51,111,35,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "品質:",IDC_STATIC,20,132,19,8
+    EDITTEXT        IDC_EDIT_QUALITY,51,129,35,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "家族:",IDC_STATIC,20,150,19,8
+    EDITTEXT        IDC_EDIT_PITCH,51,147,35,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "斜體",IDC_CHECK_ITALIC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,167,32,10
+    CONTROL         "底線",IDC_CHECK_UNDERLINE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,64,167,32,10
+    CONTROL         "刪除線",IDC_CHECK_STRIKEOUT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,181,40,10
+    LTEXT           "預視文字:",IDC_STATIC,7,211,35,8
+    EDITTEXT        IDC_EDIT_TEST,45,208,248,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DRAW_AREA,"Static",SS_BLACKFRAME,7,226,286,106
+    PUSHBUTTON      "字型...",IDC_FONT,16,21,32,14
+    LTEXT           "實際抓取寬高:",IDC_STATIC,167,172,51,8
+    EDITTEXT        IDC_EDIT_GRASP_WIDTH,222,170,28,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GRASP_HEIGHT,265,170,28,14,ES_AUTOHSCROLL
+    RADIOBUTTON     "非平滑字形 (1-bit font)",IDC_RADIO_NONSMOOTH,175,20,93,
+                    10
+    RADIOBUTTON     "平滑字形 (4-bits font)",IDC_RADIO_SMOOTH,175,34,87,10
+    PUSHBUTTON      "抓至檔案",IDC_GRASP,229,190,64,14
+    CONTROL         "特殊粗體",IDC_CHECK_BOLD,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,64,181,48,10
+    RADIOBUTTON     "ASCII",IDC_RADIO_ASCII,175,63,36,10
+    RADIOBUTTON     "BIG-5 中文繁體 ( 6172 )",IDC_RADIO_BIG5,175,77,97,10
+    RADIOBUTTON     "BIG-5 中文繁體 ( 13865 )",IDC_RADIO_BIG5EX,175,91,101,
+                    10
+    RADIOBUTTON     "KSC-5601 韓文",IDC_RADIO_KSC,175,119,67,10
+    GROUPBOX        "格式",IDC_STATIC,166,7,127,42
+    GROUPBOX        "字符集",IDC_STATIC,166,50,127,116
+    GROUPBOX        "使用字型",IDC_STATIC,7,7,149,192
+    RADIOBUTTON     "GB2312 中文簡體",IDC_RADIO_GB,175,105,77,10
+    RADIOBUTTON     "Shift-JIS 日文",IDC_RADIO_JIS,175,133,61,10
+    LTEXT           "x",IDC_STATIC,255,172,8,8
+    RADIOBUTTON     "USC-2 UNICODE",IDC_RADIO_UCS_2,175,147,73,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,1,1
+ PRODUCTVERSION 2,0,1,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x9L
+#else
+ FILEFLAGS 0x8L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "GenFont MFC Application\0"
+            VALUE "FileVersion", "2, 0, 1, 1\0"
+            VALUE "InternalName", "GenFont\0"
+            VALUE "LegalCopyright", "Copyright (C) 1999 - 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GenFont.exe\0"
+            VALUE "PrivateBuild", "Yann Chou\0"
+            VALUE "ProductName", "GenFont Application\0"
+            VALUE "ProductVersion", "2, 0, 1, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x404, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_GENFONT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 332
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE 4, 1
+#pragma code_page(950)
+#endif //_WIN32
+#include "res\GenFont.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.cht\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

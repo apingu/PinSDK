@@ -1,0 +1,14 @@
+#ifndef _LOCK_H_
+#define _LOCK_H_
+
+class LOCKRC
+{
+    File_ptr    fp;
+    Lock_ptr    lp;
+
+public:
+    LOCKRC( const char* x, const char* y ):fp( x, "rw" ),lp( y )
+    {
+    }
+};
+#endif

@@ -1,0 +1,25 @@
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//////////////////////////////////////////////////////////////////////////
+#pragma once
+
+#include <pf-def.h>
+
+namespace pfmat
+{
+
+    //  小數點後 留幾位
+    double          DecimalPoint( _IN double value, _IN int index );
+}

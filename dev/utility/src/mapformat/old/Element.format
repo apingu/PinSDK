@@ -1,0 +1,41 @@
+
+H.D          =====> data
+
+CElement
+{
+public:
+    char     Title[4]      ;
+    BYTE     ImageCount    ;
+    int      ID            ;         //element id
+    int      GID           ;         //element group id
+    PCPOINT  Situs         ;         //出現時位於畫面的位置
+    int      DirectionCount;         //方向數
+    int      MoveDistance  ;         //移動點數
+    int      colckcycle    ;         //動作的週期時間
+    bool     Visible:2     ,         //可見
+             Dragable:2    ,         //可拖曳
+             Enable:2      ,         //可作用
+             Moveable:2    ;         //可移動
+    BYTE     Role          ;         //角色
+    char     ApReserved[58];
+}
+
+A.T          =====> action table
+
+action number1, image number ..................
+
+action number2, image number ..................
+
+action number3, image number ..................
+                 .
+                 .
+                 .
+                 .
+                 .
+                 .
+                 .
+                 .
+
+I.L          =====> image list
+
+PK.........................

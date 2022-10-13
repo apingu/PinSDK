@@ -1,0 +1,44 @@
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//    message class for network
+//
+//
+//
+//
+//                                               Copyright    (C)    1999    Pin
+//
+#ifndef TBUFFER_H
+#define TBUFFER_H
+
+#include "pdef.h"
+
+namespace MEM
+{
+    class Buffer
+    {
+    public:
+        void*   m_buf;
+        Puint   m_len;
+
+        Buffer()
+        {
+            m_buf = 0; m_len = 0;
+        }
+        Buffer( void* buf, Puint len )
+        {
+            m_buf = buf; m_len = len;
+        }
+        ~Buffer()
+        {
+        }
+    };
+};
+
+#endif

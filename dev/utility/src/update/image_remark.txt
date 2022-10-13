@@ -1,0 +1,32 @@
+	lseek(f, m_file_offset + 4 , SEEK_SET); read(f, &AlphaOffset, sizeof(WORD));
+	lseek(f, m_file_offset + 6 , SEEK_SET);	read(f, &ImageOffset, sizeof(DWORD));
+
+	lseek(f, m_file_offset + 10, SEEK_SET);	read(f, &Width,  sizeof(WORD));
+	lseek(f, m_file_offset + 12, SEEK_SET);	read(f, &Height, sizeof(WORD));
+	lseek(f, m_file_offset + 14, SEEK_SET);	read(f, &Pixel,  sizeof(BYTE));
+	Pixel = Pixel / 8;
+	
+	RealWidthByte = ((Width) * (Pixel));
+	UINT Alpha_size = ImageOffset - AlphaOffset;
+	UINT Image_size = (RealWidthByte * Height);
+	Size            = Image_size + ImageOffset;
+
+	BYTE c_mode = 0;
+	lseek(f, m_file_offset + 15, SEEK_SET);  read(f, &c_mode, sizeof(BYTE));
+
+	lseek(f, m_file_offset + 16, SEEK_SET);	 read(f, &RelativeX,  sizeof(WORD));
+	lseek(f, m_file_offset + 18, SEEK_SET);  read(f, &RelativeY,  sizeof(WORD));
+
+	lseek(f, m_file_offset + 24, SEEK_SET);	 read(f, &MisregistrationX,  sizeof(WORD));
+	lseek(f, m_file_offset + 26, SEEK_SET);  read(f, &MisregistrationX,  sizeof(WORD));
+
+	lseek(f, m_file_offset + 32, SEEK_SET); read(f, &Ambit_Shape,  sizeof(BYTE));
+	lseek(f, m_file_offset + 33, SEEK_SET); read(f, &Ambit_Tall,  sizeof(WORD));
+
+	lseek(f, m_file_offset + 116, SEEK_SET); read(f, &(Ambit_Rect.left),  sizeof(WORD));
+	lseek(f, m_file_offset + 118, SEEK_SET); read(f, &(Ambit_Rect.top) ,  sizeof(WORD));
+	lseek(f, m_file_offset + 120, SEEK_SET); read(f, &(Ambit_Rect.right), sizeof(WORD));
+	lseek(f, m_file_offset + 122, SEEK_SET); read(f, &(Ambit_Rect.bottom),sizeof(WORD));
+	lseek(f, m_file_offset + 124, SEEK_SET); read(f, &(HitPoint.x),sizeof(WORD));
+	lseek(f, m_file_offset + 126, SEEK_SET); read(f, &(HitPoint.y),sizeof(WORD));
+

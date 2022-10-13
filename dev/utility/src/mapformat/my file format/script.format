@@ -1,0 +1,77 @@
+<FORM>          開始介面
+</FORM>         結束介面
+CLEAR           清除介面
+LOAD            載入檔案
+LOADBG          載入檔案
+AFONT           載入Ascii文字檔 = path,w,h,d,fmt,cache  // d/per byte, fmt(0/1), cache(0/1)
+CFONT           載入中文文字檔  = path,w,h,d,fmt,cache
+FONTCOLOR       文字顏色        = FR,FG,FB,BR,BG,BB
+
+
+<2DELEMENT>     開始元素
+</2DELEMENT>    結束元素
+<3DELEMENT>     開始元素
+</3DELEMENT>    結束元素
+ID              元素編號
+GID             群組編號
+POSITION        所在位置   = x y
+
+///
+MAXASPECT       方向總數
+MOVEDISTANCE    移動距離
+CLICLCYCLE      撥圖速度
+VISIBLE         可見
+ENABLE          可反應
+MOVEABLE        可移動
+DRAGABLE        可拖曳
+///
+
+
+<2DBUTTON>      開始按鈕
+</2DBUTTON>     結束按鈕
+<3DBUTTON>      開始按鈕
+</3DBUTTON>     結束按鈕
+LOAD            載入檔案
+CAPTION         文字內容   = string
+CAPTIONPOS      文字位置   = x y
+HREF            連結的檔案 = string
+ALIGN           文字編排   = LEFT,CENTER,RIGHT
+
+
+
+<3DWORLD>
+</3DWORLD>
+ID
+LOAD
+
+
+<SECTOR>
+</SECTOR>
+ID
+LOAD
+
+
+<3DROLE>
+</3DROLE>
+ID
+LOAD
+
+<CAMERA>
+</CAMERA>
+
+<LIGHT>
+</LIGHT>
+
+<TRIGGER>       開始事件
+</TRIGGER>      結束事件
+<EVENT>         開始事件
+</EVENT>        結束事件
+ID              事件編號
+TYPE            事件型態
+LIVETIME        存活時間
+CYCLETIME       間隔時間
+CONDITIONID     條件編號
+ACTIONID        反應編號
+SPHERE          球體範圍    = x,y,z,radius
+CUBE            立方體範圍  = x0,y0,z0,x1,x2,x3
+

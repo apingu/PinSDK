@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="office">
+      <UniqueIdentifier>{56a1cd4e-8d1e-45b4-a264-2df048170be3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="office\ExcelFormat">
+      <UniqueIdentifier>{4e03f0c4-2ba4-46dc-9162-2f6c2a90ccfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="office\libxl">
+      <UniqueIdentifier>{7afc647c-6273-4b7a-bf38-3e56b3201eef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00%29 configure">
+      <UniqueIdentifier>{22225a85-8831-40e7-a0e5-054504f233d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{ddd5a7b2-a016-49ec-ae1d-dab2143102c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\paho.mqtt.c">
+      <UniqueIdentifier>{16148ce5-520c-4501-90af-b817eb8b69e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="office\libxl\include_cpp">
+      <UniqueIdentifier>{dce4686d-ac8c-4dbc-9ea1-e79e68a9543e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="office\libxl\include_c">
+      <UniqueIdentifier>{274780e7-9553-436b-8737-e783bcaaed7e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Office\xldb-sheet.cpp">
+      <Filter>office</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Office\xldb-query.cpp">
+      <Filter>office</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Office\ExcelFormat\BasicExcel.cpp">
+      <Filter>office\ExcelFormat</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Office\ExcelFormat\ExcelFormat.cpp">
+      <Filter>office\ExcelFormat</Filter>
+    </ClCompile>
+    <ClCompile Include="src\office\xl_file.cpp">
+      <Filter>office</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\Base64.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\Clients.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\Heap.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\LinkedList.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\Log.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\Messages.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\MQTTAsync.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\MQTTClient.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\MQTTPacket.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\MQTTPacketOut.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\MQTTPersistence.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\MQTTPersistenceDefault.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\MQTTProperties.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\MQTTProtocolClient.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\MQTTProtocolOut.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\MQTTReasonCodes.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\MQTTVersion.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\OsWrapper.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\samples\MQTTAsync_publish.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\samples\MQTTAsync_subscribe.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\samples\MQTTClient_publish.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\samples\MQTTClient_publish_async.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\samples\MQTTClient_subscribe.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\samples\paho_cs_pub.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\samples\paho_cs_sub.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\samples\paho_c_pub.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\samples\paho_c_sub.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\samples\pubsub_opts.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\SHA1.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\Socket.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\SocketBuffer.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\SSLSocket.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\StackTrace.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\Thread.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\Tree.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\utf-8.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\paho.mqtt.c\src\WebSocket.c">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\nh-toolkit.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Office\xldb-sheet.h">
+      <Filter>office</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Office\xldb-query.h">
+      <Filter>office</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Office\ExcelFormat\BasicExcel.hpp">
+      <Filter>office\ExcelFormat</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Office\ExcelFormat\ExcelFormat.h">
+      <Filter>office\ExcelFormat</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\xl_file.h">
+      <Filter>office</Filter>
+    </ClInclude>
+    <ClInclude Include="project.h">
+      <Filter>00%29 configure</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\Base64.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\Clients.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\Heap.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\LinkedList.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\Log.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\Messages.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\MQTTAsync.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\MQTTClient.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\MQTTClientPersistence.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\MQTTPacket.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\MQTTPacketOut.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\MQTTPersistence.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\MQTTPersistenceDefault.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\MQTTProperties.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\MQTTProtocol.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\MQTTProtocolClient.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\MQTTProtocolOut.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\MQTTReasonCodes.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\MQTTSubscribeOpts.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\mutex_type.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\OsWrapper.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\samples\pubsub_opts.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\SHA1.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\Socket.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\SocketBuffer.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\SSLSocket.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\StackTrace.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\Thread.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\Tree.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\utf-8.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\VersionInfo.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\paho.mqtt.c\src\WebSocket.h">
+      <Filter>net\paho.mqtt.c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\nh-toolkit.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_c\AutoFilterA.h">
+      <Filter>office\libxl\include_c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_c\AutoFilterW.h">
+      <Filter>office\libxl\include_c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_c\BookA.h">
+      <Filter>office\libxl\include_c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_c\BookW.h">
+      <Filter>office\libxl\include_c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_c\enum.h">
+      <Filter>office\libxl\include_c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_c\FilterColumnA.h">
+      <Filter>office\libxl\include_c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_c\FilterColumnW.h">
+      <Filter>office\libxl\include_c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_c\FontA.h">
+      <Filter>office\libxl\include_c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_c\FontW.h">
+      <Filter>office\libxl\include_c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_c\FormatA.h">
+      <Filter>office\libxl\include_c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_c\FormatW.h">
+      <Filter>office\libxl\include_c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_c\handle.h">
+      <Filter>office\libxl\include_c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_c\libxl.h">
+      <Filter>office\libxl\include_c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_c\RichStringA.h">
+      <Filter>office\libxl\include_c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_c\RichStringW.h">
+      <Filter>office\libxl\include_c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_c\setup.h">
+      <Filter>office\libxl\include_c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_c\SheetA.h">
+      <Filter>office\libxl\include_c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_c\SheetW.h">
+      <Filter>office\libxl\include_c</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_cpp\enum.h">
+      <Filter>office\libxl\include_cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_cpp\IAutoFilterT.h">
+      <Filter>office\libxl\include_cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_cpp\IBookT.h">
+      <Filter>office\libxl\include_cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_cpp\IFilterColumnT.h">
+      <Filter>office\libxl\include_cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_cpp\IFontT.h">
+      <Filter>office\libxl\include_cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_cpp\IFormatT.h">
+      <Filter>office\libxl\include_cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_cpp\IRichStringT.h">
+      <Filter>office\libxl\include_cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_cpp\ISheetT.h">
+      <Filter>office\libxl\include_cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_cpp\libxl.h">
+      <Filter>office\libxl\include_cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\office\libxl\lin\include_cpp\setup.h">
+      <Filter>office\libxl\include_cpp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build_linux.sh">
+      <Filter>00%29 configure</Filter>
+    </None>
+    <None Include="src\office\xlutility.inl">
+      <Filter>office</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt">
+      <Filter>00%29 configure</Filter>
+    </Text>
+    <Text Include="src\net\paho.mqtt.c\readme_paho.mqtt.c.txt">
+      <Filter>net</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

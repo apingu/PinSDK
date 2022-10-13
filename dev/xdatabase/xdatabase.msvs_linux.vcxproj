@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{e586850d-8e60-4413-aa72-8b3ad3ee60f5}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>xdatabase</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{D51BCBC9-82E9-4017-911E-C93873C4EA2B}</LinuxProjectType>
+    <ProjectName>xdatabase</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <RemoteRootDir>~/projects/Engine/PinSDK/c/dev/</RemoteRootDir>
+    <UseOfStl>libstdc++_static</UseOfStl>
+    <RemoteProjectRelDir>$(ProjectName)/</RemoteProjectRelDir>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <OutDir>$(ProjectDir)..\lib\linux_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\$(BaseIntermediateOutputPath)</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)$(ProjectName)</RemoteProjectDir>
+    <RemoteIntRelDir>$(RemoteOutRelDir)$(BaseIntermediateOutputPath)</RemoteIntRelDir>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)../lib/linux_$(PlatformTarget)/$(Configuration)/</RemoteOutRelDir>
+    <RemoteDeployDir>$(RemoteRootDir)/$(ProjectName)/</RemoteDeployDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="project.h" />
+    <ClCompile Include="src\cpp_redis\sources\builders\array_builder.cpp" />
+    <ClCompile Include="src\cpp_redis\sources\builders\builders_factory.cpp" />
+    <ClCompile Include="src\cpp_redis\sources\builders\bulk_string_builder.cpp" />
+    <ClCompile Include="src\cpp_redis\sources\builders\error_builder.cpp" />
+    <ClCompile Include="src\cpp_redis\sources\builders\integer_builder.cpp" />
+    <ClCompile Include="src\cpp_redis\sources\builders\reply_builder.cpp" />
+    <ClCompile Include="src\cpp_redis\sources\builders\simple_string_builder.cpp" />
+    <ClCompile Include="src\cpp_redis\sources\core\client.cpp" />
+    <ClCompile Include="src\cpp_redis\sources\core\reply.cpp" />
+    <ClCompile Include="src\cpp_redis\sources\core\sentinel.cpp" />
+    <ClCompile Include="src\cpp_redis\sources\core\subscriber.cpp" />
+    <ClCompile Include="src\cpp_redis\sources\misc\logger_.cpp" />
+    <ClCompile Include="src\cpp_redis\sources\network\redis_connection.cpp" />
+    <ClCompile Include="src\cpp_redis\sources\network\tcp_client_.cpp" />
+    <ClCompile Include="src\cpp_redis\tacopie\sources\network\common\tcp_socket.cpp" />
+    <ClCompile Include="src\cpp_redis\tacopie\sources\network\io_service.cpp" />
+    <ClCompile Include="src\cpp_redis\tacopie\sources\network\tcp_client.cpp" />
+    <ClCompile Include="src\cpp_redis\tacopie\sources\network\tcp_server.cpp" />
+    <ClCompile Include="src\cpp_redis\tacopie\sources\network\unix\unix_self_pipe.cpp" />
+    <ClCompile Include="src\cpp_redis\tacopie\sources\network\unix\unix_tcp_socket.cpp" />
+    <ClCompile Include="src\cpp_redis\tacopie\sources\network\windows\windows_self_pipe.cpp" />
+    <ClCompile Include="src\cpp_redis\tacopie\sources\network\windows\windows_tcp_socket.cpp" />
+    <ClCompile Include="src\cpp_redis\tacopie\sources\utils\error.cpp" />
+    <ClCompile Include="src\cpp_redis\tacopie\sources\utils\logger.cpp" />
+    <ClCompile Include="src\cpp_redis\tacopie\sources\utils\thread_pool.cpp" />
+    <ClCompile Include="src\xdatabase.cpp" />
+    <ClCompile Include="src\xdb-helper.cpp" />
+    <ClCompile Include="src\xdb-mysqldb.cpp" />
+    <ClCompile Include="src\xdb-query.cpp" />
+    <ClCompile Include="src\xdb-redisdb.cpp" />
+    <ClCompile Include="src\xdb-uid_catalog.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\builders\array_builder.hpp" />
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\builders\builders_factory.hpp" />
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\builders\builder_iface.hpp" />
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\builders\bulk_string_builder.hpp" />
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\builders\error_builder.hpp" />
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\builders\integer_builder.hpp" />
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\builders\reply_builder.hpp" />
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\builders\simple_string_builder.hpp" />
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\core\client.hpp" />
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\core\reply.hpp" />
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\core\sentinel.hpp" />
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\core\subscriber.hpp" />
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\helpers\variadic_template.hpp" />
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\impl\client.ipp" />
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\misc\error.hpp" />
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\misc\logger.hpp" />
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\misc\macro.hpp" />
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\network\redis_connection.hpp" />
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\network\tcp_client.hpp" />
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\network\tcp_client_iface.hpp" />
+    <ClInclude Include="src\cpp_redis\tacopie\includes\tacopie\network\io_service.hpp" />
+    <ClInclude Include="src\cpp_redis\tacopie\includes\tacopie\network\self_pipe.hpp" />
+    <ClInclude Include="src\cpp_redis\tacopie\includes\tacopie\network\tcp_client.hpp" />
+    <ClInclude Include="src\cpp_redis\tacopie\includes\tacopie\network\tcp_server.hpp" />
+    <ClInclude Include="src\cpp_redis\tacopie\includes\tacopie\network\tcp_socket.hpp" />
+    <ClInclude Include="src\cpp_redis\tacopie\includes\tacopie\utils\error.hpp" />
+    <ClInclude Include="src\cpp_redis\tacopie\includes\tacopie\utils\logger.hpp" />
+    <ClInclude Include="src\cpp_redis\tacopie\includes\tacopie\utils\thread_pool.hpp" />
+    <ClInclude Include="src\cpp_redis\tacopie\includes\tacopie\utils\typedefs.hpp" />
+    <ClInclude Include="src\xdatabase.h" />
+    <ClInclude Include="src\xdb-helper.h" />
+    <ClInclude Include="src\xdb-mysqldb.h" />
+    <ClInclude Include="src\xdb-query.h" />
+    <ClInclude Include="src\xdb-redisdb.h" />
+    <ClInclude Include="src\xdb-uid_catalog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build_linux.sh" />
+    <None Include="src\cpp_redis\includes\cpp_redis\cpp_redis" />
+    <None Include="src\cpp_redis\tacopie\includes\tacopie\tacopie" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../include;./src/cpp_redis/includes;./src/cpp_redis/tacopie/includes;/usr/include/mysql;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_LINUX;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../include;./src/cpp_redis/includes;./src/cpp_redis/tacopie/includes;/usr/include/mysql;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_LINUX;_LIB;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../include;./src/cpp_redis/includes;./src/cpp_redis/tacopie/includes;/usr/include/mysql;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_LINUX;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../include;./src/cpp_redis/includes;./src/cpp_redis/tacopie/includes;/usr/include/mysql;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_LINUX;_LIB;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../include;./src/cpp_redis/includes;./src/cpp_redis/tacopie/includes;/usr/include/mysql;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_LINUX;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <RemotePostBuildEvent>
+      <Command>sh $(RemoteProjectDir)/build_linux.sh $(RemoteRootDir) $(RemoteProjectDir);</Command>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../include;./src/cpp_redis/includes;./src/cpp_redis/tacopie/includes;/usr/include/mysql;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_LINUX;_LIB;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{70108A4D-7CF5-45D7-9BFD-250A68944B98}</ProjectGuid>
+    <RootNamespace>Cyberspace_Server</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <ProjectName>xdatabase</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)$(BaseIntermediateOutputPath)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)$(BaseIntermediateOutputPath)</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)$(BaseIntermediateOutputPath)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)$(BaseIntermediateOutputPath)</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\include;.\..\..\..\xdatabase\src\cpp_redis\tacopie\includes;.\..\..\..\xdatabase\src\cpp_redis\includes;$(MYSQL_HOME)\$(PlatformShortName)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>false</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0404</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(MYSQL_HOME)\$(PlatformShortName)\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libmysql.lib</AdditionalDependencies>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy /y .\..\..\..\xdatabase\src\*.h              ..\..\..\..\include\database\
+copy $(MYSQL_HOME)\$(PlatformShortName)\lib\libmysql.dll   ..\..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(OutDir)log\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\include;.\..\..\..\xdatabase\src\cpp_redis\tacopie\includes;.\..\..\..\xdatabase\src\cpp_redis\includes;$(MYSQL_HOME)\$(PlatformShortName)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>false</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0404</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(MYSQL_HOME)\$(PlatformShortName)\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libmysql.lib</AdditionalDependencies>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy /y .\..\..\..\xdatabase\src\*.h              ..\..\..\..\include\database\
+copy $(MYSQL_HOME)\$(PlatformShortName)\lib\libmysql.dll   ..\..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(OutDir)log\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\..\include;.\..\..\..\xdatabase\src\cpp_redis\tacopie\includes;.\..\..\..\xdatabase\src\cpp_redis\includes;$(MYSQL_HOME)\$(PlatformShortName)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions> /utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0404</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(MYSQL_HOME)\$(PlatformShortName)\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libmysql.lib</AdditionalDependencies>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy /y .\..\..\..\xdatabase\src\*.h              ..\..\..\..\include\database\
+copy $(MYSQL_HOME)\$(PlatformShortName)\lib\libmysql.dll   ..\..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(OutDir)log\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\..\include;.\..\..\..\xdatabase\src\cpp_redis\tacopie\includes;.\..\..\..\xdatabase\src\cpp_redis\includes;$(MYSQL_HOME)\$(PlatformShortName)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions> /utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0404</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(MYSQL_HOME)\$(PlatformShortName)\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libmysql.lib</AdditionalDependencies>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy /y .\..\..\..\xdatabase\src\*.h              ..\..\..\..\include\database\
+copy $(MYSQL_HOME)\$(PlatformShortName)\lib\libmysql.dll   ..\..\..\..\lib\windows_$(PlatformTarget)\$(Configuration)</Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(OutDir)log\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="NetSocket.vcxproj">
+      <Project>{c63716f5-2bab-49ee-87f9-92d15bac8b97}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\sources\builders\array_builder.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\sources\builders\builders_factory.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\sources\builders\bulk_string_builder.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\sources\builders\error_builder.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\sources\builders\integer_builder.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\sources\builders\reply_builder.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\sources\builders\simple_string_builder.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\sources\core\client.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\sources\core\reply.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\sources\core\sentinel.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\sources\core\subscriber.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\sources\misc\logger_.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\sources\network\redis_connection.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\sources\network\tcp_client_.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\tacopie\sources\network\common\tcp_socket.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\tacopie\sources\network\io_service.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\tacopie\sources\network\tcp_client.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\tacopie\sources\network\tcp_server.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\tacopie\sources\network\unix\unix_self_pipe.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\tacopie\sources\network\unix\unix_tcp_socket.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\tacopie\sources\network\windows\windows_self_pipe.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\tacopie\sources\network\windows\windows_tcp_socket.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\tacopie\sources\utils\error.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\tacopie\sources\utils\logger.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\cpp_redis\tacopie\sources\utils\thread_pool.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\un_prompt_query.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\xdatabase.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\xdb-helper.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\xdb-redisdb.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\xdb-uid_catalog.cpp" />
+    <ClCompile Include="..\..\..\xdatabase\src\xdb-mysqldb.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\xdatabase\project.h" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\includes\cpp_redis\builders\array_builder.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\includes\cpp_redis\builders\builders_factory.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\includes\cpp_redis\builders\builder_iface.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\includes\cpp_redis\builders\bulk_string_builder.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\includes\cpp_redis\builders\error_builder.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\includes\cpp_redis\builders\integer_builder.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\includes\cpp_redis\builders\reply_builder.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\includes\cpp_redis\builders\simple_string_builder.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\includes\cpp_redis\core\client.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\includes\cpp_redis\core\reply.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\includes\cpp_redis\core\sentinel.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\includes\cpp_redis\core\subscriber.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\includes\cpp_redis\helpers\variadic_template.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\includes\cpp_redis\misc\error.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\includes\cpp_redis\misc\logger.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\includes\cpp_redis\misc\macro.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\includes\cpp_redis\network\redis_connection.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\includes\cpp_redis\network\tcp_client.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\includes\cpp_redis\network\tcp_client_iface.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\tacopie\includes\tacopie\network\io_service.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\tacopie\includes\tacopie\network\self_pipe.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\tacopie\includes\tacopie\network\tcp_client.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\tacopie\includes\tacopie\network\tcp_server.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\tacopie\includes\tacopie\network\tcp_socket.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\tacopie\includes\tacopie\utils\error.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\tacopie\includes\tacopie\utils\logger.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\tacopie\includes\tacopie\utils\thread_pool.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\cpp_redis\tacopie\includes\tacopie\utils\typedefs.hpp" />
+    <ClInclude Include="..\..\..\xdatabase\src\un_prompt_query.h" />
+    <ClInclude Include="..\..\..\xdatabase\src\xdatabase.h" />
+    <ClInclude Include="..\..\..\xdatabase\src\xdb-helper.h" />
+    <ClInclude Include="..\..\..\xdatabase\src\xdb-redisdb.h" />
+    <ClInclude Include="..\..\..\xdatabase\src\xdb-uid_catalog.h" />
+    <ClInclude Include="..\..\..\xdatabase\src\xdb-mysqldb.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\xdatabase\readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

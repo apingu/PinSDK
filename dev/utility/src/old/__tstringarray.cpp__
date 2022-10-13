@@ -1,0 +1,104 @@
+#include "tStringArray.h"
+
+
+namespace Util
+{
+    //=============================================================================
+    //  Name : 
+    //  Desc : 
+    //=============================================================================
+	StringArray_t::StringArray_t( unsigned int size )
+	{
+		SetSize( size );
+	}
+
+    //=============================================================================
+    //  Name : 
+    //  Desc : 
+    //=============================================================================
+	StringArray_t::StringArray_t( const StringArray_t& sa )
+	{
+		operator =( sa );
+	}
+
+    //=============================================================================
+    //  Name : 
+    //  Desc : 
+    //=============================================================================
+	StringArray_t::~StringArray_t()
+	{
+		m_Strings.clear();
+	}
+
+    //=============================================================================
+    //  Name : 
+    //  Desc : 
+    //=============================================================================
+	void StringArray_t::SetSize( int size )
+	{
+		m_Strings.resize( size );
+		return;
+	}
+
+    //=============================================================================
+    //  Name : 
+    //  Desc : 
+    //=============================================================================
+	int StringArray_t::GetSize( int size )
+	{
+		return m_Strings.size();
+	}
+
+    //=============================================================================
+    //  Name : 
+    //  Desc : 
+    //=============================================================================
+	void StringArray_t::operator = ( const StringArray_t& sa )
+	{
+		m_Strings.clear();
+		for( unsigned int i=0; i<sa.m_Strings.size(); i++ )
+		{
+			m_Strings.push_back( sa.m_Strings[i] );
+		}
+		return;
+
+	}
+
+    //=============================================================================
+    //  Name : 
+    //  Desc : 
+    //=============================================================================
+	String_t& StringArray_t::operator[] ( unsigned int index )
+	{
+		if( index > m_Strings.size() )
+			return m_Strings[index];
+		String_t str;
+		return str;
+	}
+
+    //=============================================================================
+    //  Name : 
+    //  Desc : 
+    //=============================================================================
+	bool StringArray_t::SetString( const char* str, unsigned int index )
+	{
+		if( index > m_Strings.size() )
+		{
+			m_Strings[index];
+			return true;
+		}
+		return false;
+	}
+
+    //=============================================================================
+    //  Name : 
+    //  Desc : 
+    //=============================================================================
+	String_t& StringArray_t::GetString( unsigned int index )
+	{
+		if( index > m_Strings.size() )
+			return m_Strings[index];
+		String_t str;
+		return str;
+	}
+};

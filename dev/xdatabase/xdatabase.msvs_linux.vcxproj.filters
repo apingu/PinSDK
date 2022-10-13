@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\xdatabase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xdb-helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xdb-mysqldb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xdb-uid_catalog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\tacopie\sources\network\common\tcp_socket.cpp">
+      <Filter>redis\tacopie</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\tacopie\sources\network\io_service.cpp">
+      <Filter>redis\tacopie</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\tacopie\sources\network\tcp_client.cpp">
+      <Filter>redis\tacopie</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\tacopie\sources\network\tcp_server.cpp">
+      <Filter>redis\tacopie</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\tacopie\sources\network\unix\unix_self_pipe.cpp">
+      <Filter>redis\tacopie</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\tacopie\sources\network\unix\unix_tcp_socket.cpp">
+      <Filter>redis\tacopie</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\tacopie\sources\network\windows\windows_self_pipe.cpp">
+      <Filter>redis\tacopie</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\tacopie\sources\network\windows\windows_tcp_socket.cpp">
+      <Filter>redis\tacopie</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\tacopie\sources\utils\error.cpp">
+      <Filter>redis\tacopie</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\tacopie\sources\utils\logger.cpp">
+      <Filter>redis\tacopie</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\tacopie\sources\utils\thread_pool.cpp">
+      <Filter>redis\tacopie</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\sources\builders\array_builder.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\sources\builders\builders_factory.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\sources\builders\bulk_string_builder.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\sources\builders\error_builder.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\sources\builders\integer_builder.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\sources\builders\reply_builder.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\sources\builders\simple_string_builder.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\sources\core\client.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\sources\core\reply.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\sources\core\sentinel.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\sources\core\subscriber.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\sources\network\redis_connection.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\sources\network\tcp_client_.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp_redis\sources\misc\logger_.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xdb-redisdb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="project.h">
+      <Filter>00%29 configure</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xdb-query.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5530d88e-2666-4879-b877-6cefa09bbbca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{e9cdfa24-be53-4b83-95fc-dad3e3765328}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="redis">
+      <UniqueIdentifier>{0db478aa-4796-4f54-a2df-cbbb7637ea70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="redis\tacopie">
+      <UniqueIdentifier>{39655169-df8d-4cfe-b4fd-de0d916d9d4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00%29 configure">
+      <UniqueIdentifier>{452ecf0f-7a81-4926-90d2-396eb535f540}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\XDatabase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xdb-helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xdb-mysqldb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xdb-uid_catalog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\tacopie\includes\tacopie\network\io_service.hpp">
+      <Filter>redis\tacopie</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\tacopie\includes\tacopie\network\self_pipe.hpp">
+      <Filter>redis\tacopie</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\tacopie\includes\tacopie\network\tcp_client.hpp">
+      <Filter>redis\tacopie</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\tacopie\includes\tacopie\network\tcp_server.hpp">
+      <Filter>redis\tacopie</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\tacopie\includes\tacopie\network\tcp_socket.hpp">
+      <Filter>redis\tacopie</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\tacopie\includes\tacopie\utils\error.hpp">
+      <Filter>redis\tacopie</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\tacopie\includes\tacopie\utils\logger.hpp">
+      <Filter>redis\tacopie</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\tacopie\includes\tacopie\utils\thread_pool.hpp">
+      <Filter>redis\tacopie</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\tacopie\includes\tacopie\utils\typedefs.hpp">
+      <Filter>redis\tacopie</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\builders\array_builder.hpp">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\builders\builders_factory.hpp">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\builders\builder_iface.hpp">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\builders\bulk_string_builder.hpp">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\builders\error_builder.hpp">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\builders\integer_builder.hpp">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\builders\reply_builder.hpp">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\builders\simple_string_builder.hpp">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\core\client.hpp">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\core\reply.hpp">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\core\sentinel.hpp">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\core\subscriber.hpp">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\helpers\variadic_template.hpp">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\misc\error.hpp">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\misc\logger.hpp">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\misc\macro.hpp">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\network\redis_connection.hpp">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\network\tcp_client.hpp">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\network\tcp_client_iface.hpp">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp_redis\includes\cpp_redis\impl\client.ipp">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xdb-redisdb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xdb-query.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\cpp_redis\tacopie\includes\tacopie\tacopie">
+      <Filter>redis\tacopie</Filter>
+    </None>
+    <None Include="src\cpp_redis\includes\cpp_redis\cpp_redis">
+      <Filter>redis</Filter>
+    </None>
+    <None Include="build_linux.sh">
+      <Filter>00%29 configure</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt">
+      <Filter>00%29 configure</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

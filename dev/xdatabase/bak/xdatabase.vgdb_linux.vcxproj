@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A2FC09A5-FD18-4C8C-AEFC-FEB6D05E25AC}</ProjectGuid>
+    <ProjectName>Cyberspace_Server</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0000\include\mysql;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0001\4.8.5;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0001\4.8.5\x86_64-redhat-linux;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0001\4.8.5\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0002\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0003\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0000\include;..\include;..\..\include;..\..\include\net;..\..\include\parser;..\..\include\template;..\..\include\algorithmic;.\src;.\src\database;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)Cyberspace_Server_vgdb_linux-Debug.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0000\include\mysql;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0001\4.8.5;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0001\4.8.5\x86_64-redhat-linux;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0001\4.8.5\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0002\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0003\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.202.3.111\0000\include;..\include;..\..\include;..\..\include\net;..\..\include\parser;..\..\include\template;..\..\include\algorithmic;.\src;.\src\database;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)Cyberspace_Server_vgdb_linux-Release.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="Cyberspace_Server_vgdb_linux-Debug.vgdbsettings" />
+    <None Include="Cyberspace_Server_vgdb_linux-Release.vgdbsettings" />
+    <None Include="debug.mak" />
+    <None Include="Makefile" />
+    <None Include="release.mak" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\CsArbitCommand.h" />
+    <ClInclude Include="src\CsArbitrationClient.h" />
+    <ClInclude Include="src\CsArbitrationDelegate.h" />
+    <ClInclude Include="src\CsArbitrationServer.h" />
+    <ClInclude Include="src\CsBaseCommand.h" />
+    <ClInclude Include="src\CsConnection.h" />
+    <ClInclude Include="src\CsCoreServer.h" />
+    <ClInclude Include="src\CsCoreUtility.h" />
+    <ClInclude Include="src\CsDatabaseServer.h" />
+    <ClInclude Include="src\CsDBFunction.h" />
+    <ClInclude Include="src\CsDef.h" />
+    <ClInclude Include="src\CsErr.h" />
+    <ClInclude Include="src\CsLogFileExporter.h" />
+    <ClInclude Include="src\CsLogService.h" />
+    <ClInclude Include="src\CsObjDescriptor.h" />
+    <ClInclude Include="src\CsPacketClient.h" />
+    <ClInclude Include="src\CsPacketConnection.h" />
+    <ClInclude Include="src\CsPacketFactory.h" />
+    <ClInclude Include="src\CsPacketPeer.h" />
+    <ClInclude Include="src\CsPaperClient.h" />
+    <ClInclude Include="src\CsPaperCommand.h" />
+    <ClInclude Include="src\CsPaperServer.h" />
+    <ClInclude Include="src\CsPaperSystem.h" />
+    <ClInclude Include="src\CsProtocol.h" />
+    <ClInclude Include="src\CsRecord.h" />
+    <ClInclude Include="src\CsSCSCommand.h" />
+    <ClInclude Include="src\CsSCSSectionClient.h" />
+    <ClInclude Include="src\CsSCSSectionServer.h" />
+    <ClInclude Include="src\CsSCSSessionSymbol.h" />
+    <ClInclude Include="src\CsSCSSystem.h" />
+    <ClInclude Include="src\CsServerInterface.h" />
+    <ClInclude Include="src\CsSocketInterface.h" />
+    <ClInclude Include="src\CstCDataDef.h" />
+    <ClInclude Include="src\CstSDataDef.h" />
+    <ClInclude Include="src\CsUnitServer.h" />
+    <ClInclude Include="src\CsUpdateOperation.h" />
+    <ClInclude Include="src\CsWebClient.h" />
+    <ClInclude Include="src\CsWebDef.h" />
+    <ClInclude Include="src\CsWebServer.h" />
+    <ClInclude Include="src\database\UnPromptQuery.h" />
+    <ClInclude Include="src\database\XDatabase.h" />
+    <ClInclude Include="src\database\XMySQLDB.h" />
+    <ClInclude Include="src\DBQueryFactory.h" />
+    <ClInclude Include="src\MessageDispatcher.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CsArbitrationClient.cpp" />
+    <ClCompile Include="src\CsArbitrationServer.cpp" />
+    <ClCompile Include="src\CsConnection.cpp" />
+    <ClCompile Include="src\CsCoreServer.cpp" />
+    <ClCompile Include="src\CsDatabaseServer.cpp" />
+    <ClCompile Include="src\CsLogFileExporter.cpp" />
+    <ClCompile Include="src\CsLogService.cpp" />
+    <ClCompile Include="src\CsObjDescriptor.cpp" />
+    <ClCompile Include="src\CsPacketClient.cpp" />
+    <ClCompile Include="src\CsPacketConnection.cpp" />
+    <ClCompile Include="src\CsPacketFactory.cpp" />
+    <ClCompile Include="src\CsPacketPeer.cpp" />
+    <ClCompile Include="src\CsPaperClient.cpp" />
+    <ClCompile Include="src\CsPaperServer.cpp" />
+    <ClCompile Include="src\CsPaperSystem.cpp" />
+    <ClCompile Include="src\CsProtocol.cpp" />
+    <ClCompile Include="src\CsRecord.cpp" />
+    <ClCompile Include="src\CsSCSSystem.cpp" />
+    <ClCompile Include="src\CsServerInterface.cpp" />
+    <ClCompile Include="src\CsUnitServer.cpp" />
+    <ClCompile Include="src\CsUpdateOperation.cpp" />
+    <ClCompile Include="src\CsWebClient.cpp" />
+    <ClCompile Include="src\CsWebServer.cpp" />
+    <ClCompile Include="src\database\UnPromptQuery.cpp" />
+    <ClCompile Include="src\database\XDatabase.cpp" />
+    <ClCompile Include="src\database\XMySQLDB.cpp" />
+    <ClCompile Include="src\MessageDispatcher.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
