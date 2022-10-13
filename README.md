@@ -26,11 +26,17 @@ cyberspace
     binary http
 
 ziplib        -> utility
+
 xdatabase     -> utility, algorithmic
+
 algorithmic   -> utility
+
 gadget        -> algorithmic
+
 parser        -> gadget, template
+
 helper        -> gadget, netsocket
+
 world2d       -> parser        
 
 
