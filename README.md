@@ -23,7 +23,8 @@ helper
 
 cyberspace
     linux windows socket server/clinet
-    binary http
+    
+    binary, http
 
 ziplib        -> utility
 
@@ -37,6 +38,9 @@ parser        -> gadget, template
 
 helper        -> gadget, netsocket
 
-world2d       -> parser        
+world2d       -> parser
+
+    01) 2D / 3D opengl D3D graphics engine
+    02) game element
 
 
